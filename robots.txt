@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://caryanvaz.github.io/Profile/sitemap.xml
