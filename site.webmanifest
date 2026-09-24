@@ -1,0 +1,20 @@
+{
+  "name": "Vaz & Associates, Chartered Accountants",
+  "short_name": "Vaz & Associates",
+  "icons": [
+    {
+      "src": "/assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#0f1e33",
+  "background_color": "#f7f6f2",
+  "display": "browser",
+  "start_url": "/"
+}
