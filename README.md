@@ -1,11 +1,11 @@
-# caryanvaz.github.io — Vaz & Associates, Chartered Accountants
+# vazassociates.in — Vaz & Associates, Chartered Accountants
 
 Static site (HTML, CSS, vanilla JS). No build step.
 
 ## Deploy to GitHub Pages
-1. Copy everything in this folder (including the hidden `.nojekyll`) to the root of the `caryanvaz.github.io` repository.
-2. Commit and push to the default branch. Pages serves it at https://caryanvaz.github.io/.
-3. Submit `https://caryanvaz.github.io/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
+1. Upload everything in this folder to the root of the GitHub repository (custom domain vazassociates.in, kept by the CNAME file).
+2. Commit and push to the default branch. Pages serves it at https://vazassociates.in/.
+3. Submit `https://vazassociates.in/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
 
 ## Preview locally
     python3 -m http.server 8080

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /404.html
 
-Sitemap: https://caryanvaz.github.io/sitemap.xml
+Sitemap: https://vazassociates.in/sitemap.xml

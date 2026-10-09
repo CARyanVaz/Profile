@@ -640,3 +640,9 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 /* Keep text contrast on the glass card over light backgrounds */
 .firm-card { background: linear-gradient(145deg, rgba(22,38,62,.93), rgba(15,30,51,.86)); }
 .firm-card dt { color: #b4bfd0; }
+
+/* Local map embed */
+.map-embed{position:relative;width:100%;aspect-ratio:16/9;min-height:280px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface-2);margin-top:var(--s4)}
+.map-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.local-list{columns:2;column-gap:var(--s6);padding-left:1.1em}
+@media (max-width:600px){.local-list{columns:1}}
