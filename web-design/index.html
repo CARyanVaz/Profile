@@ -122,6 +122,58 @@
 .wd-steps p{margin:0;line-height:1.55;color:var(--muted)}
 @media (max-width:860px){.wd-steps{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.wd-steps{grid-template-columns:1fr}}
+
+/* ===== 3D glass layer ===== */
+.wd-hero{background-color:#0b1730;isolation:isolate}
+.wd-aura{position:absolute;inset:-20%;z-index:-1;pointer-events:none;filter:blur(60px);opacity:.85}
+.wd-aura i{position:absolute;border-radius:50%;mix-blend-mode:screen}
+.wd-aura i:nth-child(1){width:46vw;height:46vw;left:48%;top:4%;background:radial-gradient(circle,#2f7bd8 0,transparent 65%);animation:wdDrift 18s ease-in-out infinite alternate}
+.wd-aura i:nth-child(2){width:36vw;height:36vw;left:70%;top:46%;background:radial-gradient(circle,#c04dd6 0,transparent 65%);animation:wdDrift 22s ease-in-out infinite alternate-reverse}
+.wd-aura i:nth-child(3){width:32vw;height:32vw;left:18%;top:58%;background:radial-gradient(circle,#f2c14e 0,transparent 62%);opacity:.55;animation:wdDrift 26s ease-in-out infinite alternate}
+@keyframes wdDrift{to{transform:translate3d(-6%,5%,0) scale(1.12)}}
+.wd-stage{perspective:1300px;perspective-origin:50% 40%}
+.wd-scene{position:relative;transform-style:preserve-3d;transform:rotateX(var(--sx,6deg)) rotateY(var(--sy,-14deg));transition:transform .6s cubic-bezier(.2,.7,.2,1);padding:28px 10px}
+.wd-scene.is-moving{transition:transform .12s linear}
+.wd-scene .wd-browser{transform:translateZ(0);background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.6);box-shadow:0 50px 90px -30px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.08)}
+.wd-scene .wd-bar{background:linear-gradient(180deg,rgba(233,238,244,.95),rgba(222,229,238,.9))}
+.wd-glass{position:absolute;z-index:2;display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:16px;color:#fff;font-size:.9rem;font-weight:600;white-space:nowrap;
+ background:linear-gradient(135deg,rgba(255,255,255,.26),rgba(255,255,255,.08));border:1px solid rgba(255,255,255,.38);
+ -webkit-backdrop-filter:blur(16px) saturate(170%);backdrop-filter:blur(16px) saturate(170%);
+ box-shadow:0 20px 40px -18px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.5)}
+.wd-glass svg{width:20px;height:20px;flex:none}
+.wd-glass small{display:block;font-weight:400;opacity:.8;font-size:.76rem}
+.wd-g1{top:-4px;left:-34px;transform:translateZ(90px)}
+.wd-g2{bottom:2px;right:-30px;transform:translateZ(130px)}
+.wd-g3{top:38%;right:-46px;transform:translateZ(70px)}
+.wd-g4{bottom:22%;left:-48px;transform:translateZ(110px)}
+.wd-glass .dot{width:9px;height:9px;border-radius:50%;background:#3ee07f;box-shadow:0 0 10px #3ee07f}
+.wd-hero h1{background:linear-gradient(180deg,#fff 40%,#bcd6f2);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wd-hero .wd-heropanel{position:relative}
+/* dark glass work section */
+.wd-glass-sec{position:relative;isolation:isolate;overflow:hidden;background:#0b1730;color:#e8f1fb}
+.wd-glass-sec .wd-aura{opacity:.6}
+.wd-glass-sec h2{color:#fff}
+.wd-glass-sec .lead{color:#b9cde3}
+.wd-glass-sec .wd-proj{background:linear-gradient(140deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.22);
+ -webkit-backdrop-filter:blur(18px) saturate(160%);backdrop-filter:blur(18px) saturate(160%);box-shadow:0 30px 60px -30px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.25);
+ transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateZ(0);transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .3s;position:relative;overflow:hidden}
+.wd-glass-sec .wd-proj.is-tilting{transition:transform .08s linear}
+.wd-glass-sec .wd-proj::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:radial-gradient(circle at var(--gx,50%) var(--gy,0%),rgba(255,255,255,.22),transparent 55%);opacity:0;transition:opacity .3s}
+.wd-glass-sec .wd-proj.is-tilting::after{opacity:1}
+.wd-glass-sec .wd-proj:hover{border-color:rgba(255,255,255,.45)}
+.wd-glass-sec .wd-proj h3{color:#fff}
+.wd-glass-sec .wd-proj .wd-kind{color:#9cc6ec}
+.wd-glass-sec .wd-proj p{color:#d6e4f3}
+.wd-glass-sec .wd-proj a{color:#f2c14e}
+.wd-glass-sec .wd-thumb{box-shadow:0 12px 24px -10px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.35)}
+/* glassy featured package */
+.wd-pack.is-main{background:linear-gradient(160deg,#163a5f,#0b1730);color:#e8f1fb;border-color:transparent;transform:translateY(-10px);box-shadow:0 40px 70px -35px rgba(11,23,48,.8)}
+.wd-pack.is-main h3{color:#fff}.wd-pack.is-main .wd-for{color:#b9cde3}
+.wd-pack.is-main .wd-tag{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.wd-pack.is-main .btn--primary{background:#f2c14e;color:#13233f;border-color:#f2c14e}
+@media (max-width:860px){.wd-scene{transform:rotateX(4deg) rotateY(-6deg)}.wd-g1{left:-6px}.wd-g2{right:-6px}.wd-g3{right:-8px}.wd-g4{left:-8px}.wd-pack.is-main{transform:none}}
+@media (max-width:520px){.wd-g3,.wd-g4{display:none}}
+@media (prefers-reduced-motion:reduce){.wd-aura i{animation:none}.wd-scene,.wd-glass-sec .wd-proj{transition:none}}
 </style>
 </head>
 <body>
@@ -153,6 +205,7 @@
 </header>
 <main id="main">
 <section class="wd-hero" aria-labelledby="wd-title">
+  <div class="wd-aura" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="container wd-hero-grid">
     <div>
       <p class="wd-kicker">Web design and development, Borivali West, Mumbai</p>
@@ -164,23 +217,30 @@
       </div>
       <p class="wd-note-hand">Free first discussion. Written quote before any work starts.</p>
     </div>
+    <div class="wd-stage"><div class="wd-scene" id="wd-scene">
     <div class="wd-browser" role="img" aria-label="Illustration of a sample bakery website being built, block by block">
-      <div class="wd-bar"><i></i><i></i><i></i><span class="wd-url">yourbusiness.in</span></div>
-      <div class="wd-page">
-        <div class="wd-blk wd-nav" style="--d:.2s"><span class="wd-logo">Kesar Bakes</span><span class="wd-links"><span>Menu</span><span>Order</span><span>Visit</span></span></div>
-        <div class="wd-blk wd-banner" style="--d:.7s"><div><b>Fresh from the oven, every morning in Borivali.</b><span>Cakes, cookies and custom orders for every celebration.</span><br><em>Order on WhatsApp</em></div></div>
-        <div class="wd-row">
-          <div class="wd-blk" style="--d:1.2s"><div class="wd-tile"><strong>Birthday cakes</strong>Made to order</div></div>
-          <div class="wd-blk" style="--d:1.4s"><div class="wd-tile"><strong>Tea-time</strong>Cookies and rusks</div></div>
-          <div class="wd-blk" style="--d:1.6s"><div class="wd-tile"><strong>Visit us</strong>Open 8 am to 9 pm</div></div>
+        <div class="wd-bar"><i></i><i></i><i></i><span class="wd-url">yourbusiness.in</span></div>
+        <div class="wd-page">
+          <div class="wd-blk wd-nav" style="--d:.2s"><span class="wd-logo">Kesar Bakes</span><span class="wd-links"><span>Menu</span><span>Order</span><span>Visit</span></span></div>
+          <div class="wd-blk wd-banner" style="--d:.7s"><div><b>Fresh from the oven, every morning in Borivali.</b><span>Cakes, cookies and custom orders for every celebration.</span><br><em>Order on WhatsApp</em></div></div>
+          <div class="wd-row">
+            <div class="wd-blk" style="--d:1.2s"><div class="wd-tile"><strong>Birthday cakes</strong>Made to order</div></div>
+            <div class="wd-blk" style="--d:1.4s"><div class="wd-tile"><strong>Tea-time</strong>Cookies and rusks</div></div>
+            <div class="wd-blk" style="--d:1.6s"><div class="wd-tile"><strong>Visit us</strong>Open 8 am to 9 pm</div></div>
+          </div>
+          <div class="wd-blk wd-cta" style="--d:2s"><span>Found on Google Maps and Search</span><b>Chat now</b></div>
         </div>
-        <div class="wd-blk wd-cta" style="--d:2s"><span>Found on Google Maps and Search</span><b>Chat now</b></div>
       </div>
-    </div>
+      <div class="wd-glass wd-g1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg><span>Mobile-first<small>Looks right on every phone</small></span></div>
+      <div class="wd-glass wd-g3" aria-hidden="true"><span class="dot"></span><span>New enquiry<small>From your contact form</small></span></div>
+      <div class="wd-glass wd-g4" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M7 16V9M12 16V5M17 16v-4"/></svg><span>Fast to load</span></div>
+      <div class="wd-glass wd-g2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20.5 20.5 16 16"/></svg><span>Found on Google<small>Search and Maps</small></span></div>
+    </div></div>
   </div>
 </section>
 
-<section class="section" aria-labelledby="work-title">
+<section class="section wd-glass-sec" aria-labelledby="work-title">
+  <div class="wd-aura" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="container">
     <div class="section-head">
       <h2 id="work-title" class="reveal">Recent work</h2>
@@ -346,6 +406,19 @@ function v(n){var x=f.querySelector('input[name="'+n+'"]:checked');return x?x.va
 var ex=[].map.call(f.querySelectorAll('input[name="extras"]:checked'),function(x){return x.value;}).join(", ")||"None";
 var body="Hello Ryan,\n\nI would like a quote.\n\nWhat I need: "+v("type")+"\nPages or screens: "+v("size")+"\nExtras: "+ex+"\nName and business: "+(document.getElementById("wd-name").value||"")+"\nNotes: "+(document.getElementById("wd-notes").value||"")+"\n";
 location.href="mailto:ryan@vazassociates.in?subject="+encodeURIComponent("Website quote request: "+v("type"))+"&body="+encodeURIComponent(body);});})();
+</script>
+<script>
+(function(){var still=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;if(still)return;
+var sc=document.getElementById("wd-scene"),hero=document.querySelector(".wd-hero");
+if(sc&&hero){var f=0;function set(x,y){sc.style.setProperty("--sy",(-14+x*18).toFixed(2)+"deg");sc.style.setProperty("--sx",(6-y*12).toFixed(2)+"deg");}
+hero.addEventListener("pointermove",function(e){if(f)return;f=requestAnimationFrame(function(){f=0;var r=hero.getBoundingClientRect();sc.classList.add("is-moving");set((e.clientX-r.left)/r.width-.5,(e.clientY-r.top)/r.height-.5);});});
+hero.addEventListener("pointerleave",function(){sc.classList.remove("is-moving");sc.style.removeProperty("--sx");sc.style.removeProperty("--sy");});
+window.addEventListener("deviceorientation",function(e){if(e.gamma==null)return;set(Math.max(-1,Math.min(1,e.gamma/30))/2,Math.max(-1,Math.min(1,(e.beta-45)/30))/2);});}
+var fine=window.matchMedia&&matchMedia("(hover: hover) and (pointer: fine)").matches;if(!fine)return;
+document.querySelectorAll(".wd-glass-sec .wd-proj").forEach(function(el){var q=0;
+el.addEventListener("pointermove",function(e){if(q)return;q=requestAnimationFrame(function(){q=0;var r=el.getBoundingClientRect(),px=(e.clientX-r.left)/r.width,py=(e.clientY-r.top)/r.height;
+el.classList.add("is-tilting");el.style.setProperty("--ry",((px-.5)*12).toFixed(2)+"deg");el.style.setProperty("--rx",((.5-py)*12).toFixed(2)+"deg");el.style.setProperty("--gx",(px*100)+"%");el.style.setProperty("--gy",(py*100)+"%");});});
+el.addEventListener("pointerleave",function(){el.classList.remove("is-tilting");el.style.setProperty("--rx","0deg");el.style.setProperty("--ry","0deg");});});})();
 </script>
 </main>
 <footer class="site-footer">
