@@ -156,3 +156,19 @@
     });
   }
 })();
+
+/* ga-events: count enquiry actions in Google Analytics */
+(function(){
+  function send(name,params){ if(typeof window.gtag==="function"){ window.gtag("event",name,params||{}); } }
+  document.addEventListener("click",function(e){
+    var a=e.target.closest&&e.target.closest("a"); if(!a) return;
+    var h=a.getAttribute("href")||"";
+    if(h.indexOf("tel:")===0) send("click_phone",{link_url:h,page:location.pathname});
+    else if(h.indexOf("mailto:")===0) send("click_email",{link_url:h.split("?")[0],page:location.pathname});
+    else if(/wa\.me|whatsapp/i.test(h)) send("click_whatsapp",{page:location.pathname});
+    else if(/quote/i.test(a.textContent||"")) send("click_get_quote",{page:location.pathname});
+  },true);
+  document.addEventListener("submit",function(e){
+    var f=e.target; send("generate_lead",{form_id:f.id||"form",page:location.pathname});
+  },true);
+})();
