@@ -646,3 +646,11 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .map-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .local-list{columns:2;column-gap:var(--s6);padding-left:1.1em}
 @media (max-width:600px){.local-list{columns:1}}
+
+/* Nav fit for 8 items on mid-width screens */
+.nav-list a { white-space: nowrap; }
+@media (min-width: 900px) and (max-width: 1299px) {
+  .nav-list { gap: 0; }
+  .nav-list a { padding: var(--s2) var(--s2); font-size: .88rem; }
+  .brand-sub { display: none; }
+}
