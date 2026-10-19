@@ -1,0 +1,466 @@
+{
+ "_readme": "Compliance calendar data for vazassociates.in/compliance-calendar/. Edit rows here, then run: python tools/update_calendar.py. act must be one of the keys in 'acts'. Dates are YYYY-MM-DD. Add 'note' to record the source of an extension.",
+ "last_updated": "2026-10-19",
+ "acts": {
+  "it": "Income-tax Act",
+  "gst": "GST",
+  "roc": "Companies Act (ROC)",
+  "llp": "LLP Act",
+  "pf": "EPF and ESI",
+  "pt": "Professional tax (Maharashtra)"
+ },
+ "rows": [
+  {
+   "date": "2026-10-20",
+   "act": "gst",
+   "text": "GSTR-3B for September 2026",
+   "who": "Monthly filers"
+  },
+  {
+   "date": "2026-10-21",
+   "act": "it",
+   "text": "Tax audit report for FY 2025-26 (Form 3CA or 3CB with Form 3CD), extended from 30 September 2026 by CBDT on 28 September 2026",
+   "who": "Taxpayers whose accounts must be audited",
+   "note": "CBDT press release 28 Sep 2026 (reported as Circular No. 07/2026)"
+  },
+  {
+   "date": "2026-10-22",
+   "act": "gst",
+   "text": "GSTR-3B for July to September 2026",
+   "who": "QRMP taxpayers in Maharashtra and other first-group states"
+  },
+  {
+   "date": "2026-10-30",
+   "act": "it",
+   "text": "Challan-cum-statement for TDS deducted in September 2026 on purchase of immovable property, rent paid by certain individuals and HUFs, and certain contract or professional payments by individuals (formerly Forms 26QB, 26QC and 26QD)",
+   "who": "Individual and HUF payers"
+  },
+  {
+   "date": "2026-10-30",
+   "act": "roc",
+   "text": "AOC-4 financial statements for FY 2025-26",
+   "who": "Companies that held the AGM on 30 September 2026"
+  },
+  {
+   "date": "2026-10-30",
+   "act": "llp",
+   "text": "Form 8, Statement of Account and Solvency, for FY 2025-26",
+   "who": "LLPs"
+  },
+  {
+   "date": "2026-10-31",
+   "act": "it",
+   "text": "Quarterly TDS statements for July to September 2026",
+   "who": "Deductors"
+  },
+  {
+   "date": "2026-10-31",
+   "act": "it",
+   "text": "Transfer pricing accountant's report for FY 2025-26",
+   "who": "Taxpayers with international or specified domestic transactions"
+  },
+  {
+   "date": "2026-10-31",
+   "act": "pt",
+   "text": "Professional tax (PTRC) payment and return for October 2026",
+   "who": "Employers paying monthly"
+  },
+  {
+   "date": "2026-11-07",
+   "act": "it",
+   "text": "TDS and TCS deducted or collected in October 2026 deposited",
+   "who": "Deductors and collectors"
+  },
+  {
+   "date": "2026-11-10",
+   "act": "gst",
+   "text": "GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators) for October 2026",
+   "who": "GST deductors and e-commerce operators"
+  },
+  {
+   "date": "2026-11-11",
+   "act": "gst",
+   "text": "GSTR-1 for October 2026",
+   "who": "Monthly filers"
+  },
+  {
+   "date": "2026-11-13",
+   "act": "gst",
+   "text": "Invoice Furnishing Facility (IFF) for October 2026, optional",
+   "who": "QRMP taxpayers"
+  },
+  {
+   "date": "2026-11-13",
+   "act": "gst",
+   "text": "GSTR-6 for October 2026",
+   "who": "Input service distributors"
+  },
+  {
+   "date": "2026-11-15",
+   "act": "it",
+   "text": "Quarterly TDS certificates (other than salary) for July to September 2026",
+   "who": "Deductors"
+  },
+  {
+   "date": "2026-11-15",
+   "act": "pf",
+   "text": "Provident Fund and ESI contributions for October 2026",
+   "who": "Employers"
+  },
+  {
+   "date": "2026-11-20",
+   "act": "gst",
+   "text": "GSTR-3B for October 2026",
+   "who": "Monthly filers"
+  },
+  {
+   "date": "2026-11-21",
+   "act": "it",
+   "text": "Income tax return for FY 2025-26, extended from 31 October 2026 by CBDT on 28 September 2026",
+   "who": "Companies, taxpayers requiring audit, partners of audited firms",
+   "note": "CBDT press release 28 Sep 2026 (reported as Circular No. 07/2026)"
+  },
+  {
+   "date": "2026-11-25",
+   "act": "gst",
+   "text": "PMT-06 GST payment for October 2026",
+   "who": "QRMP taxpayers"
+  },
+  {
+   "date": "2026-11-29",
+   "act": "roc",
+   "text": "MGT-7 / MGT-7A annual return for FY 2025-26",
+   "who": "Companies that held the AGM on 30 September 2026"
+  },
+  {
+   "date": "2026-11-30",
+   "act": "it",
+   "text": "Challan-cum-statement for TDS deducted in October 2026 on purchase of immovable property, rent paid by certain individuals and HUFs, and certain contract or professional payments by individuals (formerly Forms 26QB, 26QC and 26QD)",
+   "who": "Individual and HUF payers"
+  },
+  {
+   "date": "2026-11-30",
+   "act": "it",
+   "text": "Income tax return for FY 2025-26 (not covered by the 21 November extension)",
+   "who": "Taxpayers required to furnish a transfer pricing report"
+  },
+  {
+   "date": "2026-11-30",
+   "act": "pt",
+   "text": "Professional tax (PTRC) payment and return for November 2026",
+   "who": "Employers paying monthly"
+  },
+  {
+   "date": "2026-12-07",
+   "act": "it",
+   "text": "TDS and TCS deducted or collected in November 2026 deposited",
+   "who": "Deductors and collectors"
+  },
+  {
+   "date": "2026-12-10",
+   "act": "gst",
+   "text": "GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators) for November 2026",
+   "who": "GST deductors and e-commerce operators"
+  },
+  {
+   "date": "2026-12-11",
+   "act": "gst",
+   "text": "GSTR-1 for November 2026",
+   "who": "Monthly filers"
+  },
+  {
+   "date": "2026-12-13",
+   "act": "gst",
+   "text": "Invoice Furnishing Facility (IFF) for November 2026, optional",
+   "who": "QRMP taxpayers"
+  },
+  {
+   "date": "2026-12-13",
+   "act": "gst",
+   "text": "GSTR-6 for November 2026",
+   "who": "Input service distributors"
+  },
+  {
+   "date": "2026-12-15",
+   "act": "it",
+   "text": "Third instalment of advance tax for tax year 2026-27 (75 per cent cumulative)",
+   "who": "Taxpayers liable to advance tax"
+  },
+  {
+   "date": "2026-12-15",
+   "act": "pf",
+   "text": "Provident Fund and ESI contributions for November 2026",
+   "who": "Employers"
+  },
+  {
+   "date": "2026-12-20",
+   "act": "gst",
+   "text": "GSTR-3B for November 2026",
+   "who": "Monthly filers"
+  },
+  {
+   "date": "2026-12-25",
+   "act": "gst",
+   "text": "PMT-06 GST payment for November 2026",
+   "who": "QRMP taxpayers"
+  },
+  {
+   "date": "2026-12-30",
+   "act": "it",
+   "text": "Challan-cum-statement for TDS deducted in November 2026 on purchase of immovable property, rent paid by certain individuals and HUFs, and certain contract or professional payments by individuals (formerly Forms 26QB, 26QC and 26QD)",
+   "who": "Individual and HUF payers"
+  },
+  {
+   "date": "2026-12-31",
+   "act": "it",
+   "text": "Belated income tax return for FY 2025-26; revised return without late fee",
+   "who": "Individuals and businesses"
+  },
+  {
+   "date": "2026-12-31",
+   "act": "gst",
+   "text": "GSTR-9 annual return and GSTR-9C reconciliation statement for FY 2025-26",
+   "who": "Registered taxpayers, where applicable"
+  },
+  {
+   "date": "2026-12-31",
+   "act": "pt",
+   "text": "Professional tax (PTRC) payment and return for December 2026",
+   "who": "Employers paying monthly"
+  },
+  {
+   "date": "2027-01-07",
+   "act": "it",
+   "text": "TDS and TCS deducted or collected in December 2026 deposited",
+   "who": "Deductors and collectors"
+  },
+  {
+   "date": "2027-01-10",
+   "act": "gst",
+   "text": "GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators) for December 2026",
+   "who": "GST deductors and e-commerce operators"
+  },
+  {
+   "date": "2027-01-11",
+   "act": "gst",
+   "text": "GSTR-1 for December 2026",
+   "who": "Monthly filers"
+  },
+  {
+   "date": "2027-01-13",
+   "act": "gst",
+   "text": "GSTR-6 for December 2026",
+   "who": "Input service distributors"
+  },
+  {
+   "date": "2027-01-13",
+   "act": "gst",
+   "text": "GSTR-1 for October to December 2026",
+   "who": "QRMP taxpayers"
+  },
+  {
+   "date": "2027-01-15",
+   "act": "it",
+   "text": "Quarterly TCS statement for October to December 2026",
+   "who": "Collectors"
+  },
+  {
+   "date": "2027-01-15",
+   "act": "pf",
+   "text": "Provident Fund and ESI contributions for December 2026",
+   "who": "Employers"
+  },
+  {
+   "date": "2027-01-18",
+   "act": "gst",
+   "text": "CMP-08 for October to December 2026",
+   "who": "Composition taxpayers"
+  },
+  {
+   "date": "2027-01-20",
+   "act": "gst",
+   "text": "GSTR-3B for December 2026",
+   "who": "Monthly filers"
+  },
+  {
+   "date": "2027-01-22",
+   "act": "gst",
+   "text": "GSTR-3B for October to December 2026",
+   "who": "QRMP taxpayers in Maharashtra and other first-group states"
+  },
+  {
+   "date": "2027-01-30",
+   "act": "it",
+   "text": "Challan-cum-statement for TDS deducted in December 2026 on purchase of immovable property, rent paid by certain individuals and HUFs, and certain contract or professional payments by individuals (formerly Forms 26QB, 26QC and 26QD)",
+   "who": "Individual and HUF payers"
+  },
+  {
+   "date": "2027-01-30",
+   "act": "it",
+   "text": "Quarterly TCS certificates for October to December 2026",
+   "who": "Collectors"
+  },
+  {
+   "date": "2027-01-31",
+   "act": "it",
+   "text": "Quarterly TDS statements for October to December 2026",
+   "who": "Deductors"
+  },
+  {
+   "date": "2027-01-31",
+   "act": "pt",
+   "text": "Professional tax (PTRC) payment and return for January 2027",
+   "who": "Employers paying monthly"
+  },
+  {
+   "date": "2027-02-07",
+   "act": "it",
+   "text": "TDS and TCS deducted or collected in January 2027 deposited",
+   "who": "Deductors and collectors"
+  },
+  {
+   "date": "2027-02-10",
+   "act": "gst",
+   "text": "GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators) for January 2027",
+   "who": "GST deductors and e-commerce operators"
+  },
+  {
+   "date": "2027-02-11",
+   "act": "gst",
+   "text": "GSTR-1 for January 2027",
+   "who": "Monthly filers"
+  },
+  {
+   "date": "2027-02-13",
+   "act": "gst",
+   "text": "Invoice Furnishing Facility (IFF) for January 2027, optional",
+   "who": "QRMP taxpayers"
+  },
+  {
+   "date": "2027-02-13",
+   "act": "gst",
+   "text": "GSTR-6 for January 2027",
+   "who": "Input service distributors"
+  },
+  {
+   "date": "2027-02-15",
+   "act": "it",
+   "text": "Quarterly TDS certificates (other than salary) for October to December 2026",
+   "who": "Deductors"
+  },
+  {
+   "date": "2027-02-15",
+   "act": "pf",
+   "text": "Provident Fund and ESI contributions for January 2027",
+   "who": "Employers"
+  },
+  {
+   "date": "2027-02-20",
+   "act": "gst",
+   "text": "GSTR-3B for January 2027",
+   "who": "Monthly filers"
+  },
+  {
+   "date": "2027-02-25",
+   "act": "gst",
+   "text": "PMT-06 GST payment for January 2027",
+   "who": "QRMP taxpayers"
+  },
+  {
+   "date": "2027-02-28",
+   "act": "pt",
+   "text": "Professional tax (PTRC) payment and return for February 2027",
+   "who": "Employers paying monthly"
+  },
+  {
+   "date": "2027-03-02",
+   "act": "it",
+   "text": "Challan-cum-statement for TDS deducted in January 2027 on purchase of immovable property, rent paid by certain individuals and HUFs, and certain contract or professional payments by individuals (formerly Forms 26QB, 26QC and 26QD)",
+   "who": "Individual and HUF payers"
+  },
+  {
+   "date": "2027-03-07",
+   "act": "it",
+   "text": "TDS and TCS deducted or collected in February 2027 deposited",
+   "who": "Deductors and collectors"
+  },
+  {
+   "date": "2027-03-10",
+   "act": "gst",
+   "text": "GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators) for February 2027",
+   "who": "GST deductors and e-commerce operators"
+  },
+  {
+   "date": "2027-03-11",
+   "act": "gst",
+   "text": "GSTR-1 for February 2027",
+   "who": "Monthly filers"
+  },
+  {
+   "date": "2027-03-13",
+   "act": "gst",
+   "text": "Invoice Furnishing Facility (IFF) for February 2027, optional",
+   "who": "QRMP taxpayers"
+  },
+  {
+   "date": "2027-03-13",
+   "act": "gst",
+   "text": "GSTR-6 for February 2027",
+   "who": "Input service distributors"
+  },
+  {
+   "date": "2027-03-15",
+   "act": "it",
+   "text": "Fourth instalment of advance tax for tax year 2026-27 (100 per cent); single instalment for presumptive taxation",
+   "who": "Taxpayers liable to advance tax"
+  },
+  {
+   "date": "2027-03-15",
+   "act": "pf",
+   "text": "Provident Fund and ESI contributions for February 2027",
+   "who": "Employers"
+  },
+  {
+   "date": "2027-03-20",
+   "act": "gst",
+   "text": "GSTR-3B for February 2027",
+   "who": "Monthly filers"
+  },
+  {
+   "date": "2027-03-25",
+   "act": "gst",
+   "text": "PMT-06 GST payment for February 2027",
+   "who": "QRMP taxpayers"
+  },
+  {
+   "date": "2027-03-30",
+   "act": "it",
+   "text": "Challan-cum-statement for TDS deducted in February 2027 on purchase of immovable property, rent paid by certain individuals and HUFs, and certain contract or professional payments by individuals (formerly Forms 26QB, 26QC and 26QD)",
+   "who": "Individual and HUF payers"
+  },
+  {
+   "date": "2027-03-31",
+   "act": "it",
+   "text": "Revised income tax return for FY 2025-26 (late fee applies after 31 December 2026)",
+   "who": "Individuals and businesses"
+  },
+  {
+   "date": "2027-03-31",
+   "act": "it",
+   "text": "Last date for investments and payments that qualify for deductions under the old regime for tax year 2026-27",
+   "who": "Individuals choosing the old regime"
+  },
+  {
+   "date": "2027-03-31",
+   "act": "pt",
+   "text": "Professional tax (PTRC) payment and return for March 2027",
+   "who": "Employers paying monthly"
+  },
+  {
+   "date": "2027-03-31",
+   "act": "pt",
+   "text": "Professional tax annual return for 2026-27",
+   "who": "Employers paying annually"
+  }
+ ]
+}
