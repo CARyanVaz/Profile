@@ -1,6 +1,6 @@
 {
  "_readme": "Compliance calendar data for vazassociates.in/compliance-calendar/. Edit rows here, then run: python tools/update_calendar.py. act must be one of the keys in 'acts'. Dates are YYYY-MM-DD. Add 'note' to record the source of an extension.",
- "last_updated": "2026-10-19",
+ "last_updated": "2026-10-20",
  "acts": {
   "it": "Income-tax Act",
   "gst": "GST",
@@ -461,6 +461,13 @@
    "act": "pt",
    "text": "Professional tax annual return for 2026-27",
    "who": "Employers paying annually"
+  },
+  {
+   "date": "2026-10-31",
+   "act": "pf",
+   "text": "Provident Fund contributions and ECR for September 2026, extended from 15 October 2026 by EPFO on 13 October 2026; does not cover ESI contributions",
+   "who": "Employers",
+   "note": "EPFO circular dated 13 October 2026 under para 28(3) of the EPF Scheme, 1952, following the wage ceiling increase to Rs 25,000; reported by SCC Online, Deccan Herald, Business Today and CAclubindia"
   }
  ]
 }
