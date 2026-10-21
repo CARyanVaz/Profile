@@ -1,6 +1,6 @@
 {
  "_readme": "Compliance calendar data for vazassociates.in/compliance-calendar/. Edit rows here, then run: python tools/update_calendar.py. act must be one of the keys in 'acts'. Dates are YYYY-MM-DD. Add 'note' to record the source of an extension.",
- "last_updated": "2026-10-20",
+ "last_updated": "2026-10-21",
  "acts": {
   "it": "Income-tax Act",
   "gst": "GST",
@@ -27,7 +27,7 @@
    "date": "2026-10-22",
    "act": "gst",
    "text": "GSTR-3B for July to September 2026",
-   "who": "QRMP taxpayers in Maharashtra and other first-group states"
+   "who": "QRMP taxpayers in Maharashtra, Gujarat, Goa, Karnataka, Kerala, Tamil Nadu, Telangana, Andhra Pradesh, Madhya Pradesh, Chhattisgarh and some UTs"
   },
   {
    "date": "2026-10-30",
@@ -286,7 +286,7 @@
    "date": "2027-01-22",
    "act": "gst",
    "text": "GSTR-3B for October to December 2026",
-   "who": "QRMP taxpayers in Maharashtra and other first-group states"
+   "who": "QRMP taxpayers in Maharashtra, Gujarat, Goa, Karnataka, Kerala, Tamil Nadu, Telangana, Andhra Pradesh, Madhya Pradesh, Chhattisgarh and some UTs"
   },
   {
    "date": "2027-01-30",
@@ -468,6 +468,18 @@
    "text": "Provident Fund contributions and ECR for September 2026, extended from 15 October 2026 by EPFO on 13 October 2026; does not cover ESI contributions",
    "who": "Employers",
    "note": "EPFO circular dated 13 October 2026 under para 28(3) of the EPF Scheme, 1952, following the wage ceiling increase to Rs 25,000; reported by SCC Online, Deccan Herald, Business Today and CAclubindia"
+  },
+  {
+   "date": "2026-10-24",
+   "act": "gst",
+   "text": "GSTR-3B for July to September 2026",
+   "who": "QRMP taxpayers in Delhi, Uttar Pradesh, Rajasthan, Haryana, Punjab, Bihar, West Bengal, Odisha, Jharkhand, Himachal Pradesh, Uttarakhand, the North-East, J&K, Ladakh and Chandigarh"
+  },
+  {
+   "date": "2027-01-24",
+   "act": "gst",
+   "text": "GSTR-3B for October to December 2026",
+   "who": "QRMP taxpayers in Delhi, Uttar Pradesh, Rajasthan, Haryana, Punjab, Bihar, West Bengal, Odisha, Jharkhand, Himachal Pradesh, Uttarakhand, the North-East, J&K, Ladakh and Chandigarh"
   }
  ]
 }
