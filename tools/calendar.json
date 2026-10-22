@@ -1,6 +1,6 @@
 {
  "_readme": "Compliance calendar data for vazassociates.in/compliance-calendar/. Edit rows here, then run: python tools/update_calendar.py. act must be one of the keys in 'acts'. Dates are YYYY-MM-DD. Add 'note' to record the source of an extension.",
- "last_updated": "2026-10-21",
+ "last_updated": "2026-10-22",
  "acts": {
   "it": "Income-tax Act",
   "gst": "GST",
@@ -60,10 +60,11 @@
    "who": "Taxpayers with international or specified domestic transactions"
   },
   {
-   "date": "2026-10-31",
+   "date": "2026-11-15",
    "act": "pt",
-   "text": "Professional tax (PTRC) payment and return for October 2026",
-   "who": "Employers paying monthly"
+   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of October 2026 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
+   "who": "Employers paying monthly",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
   },
   {
    "date": "2026-11-07",
@@ -145,10 +146,11 @@
    "who": "Taxpayers required to furnish a transfer pricing report"
   },
   {
-   "date": "2026-11-30",
+   "date": "2026-12-15",
    "act": "pt",
-   "text": "Professional tax (PTRC) payment and return for November 2026",
-   "who": "Employers paying monthly"
+   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of November 2026 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
+   "who": "Employers paying monthly",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
   },
   {
    "date": "2026-12-07",
@@ -223,10 +225,11 @@
    "who": "Registered taxpayers, where applicable"
   },
   {
-   "date": "2026-12-31",
+   "date": "2027-01-15",
    "act": "pt",
-   "text": "Professional tax (PTRC) payment and return for December 2026",
-   "who": "Employers paying monthly"
+   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of December 2026 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
+   "who": "Employers paying monthly",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
   },
   {
    "date": "2027-01-07",
@@ -307,10 +310,11 @@
    "who": "Deductors"
   },
   {
-   "date": "2027-01-31",
+   "date": "2027-02-15",
    "act": "pt",
-   "text": "Professional tax (PTRC) payment and return for January 2027",
-   "who": "Employers paying monthly"
+   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of January 2027 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
+   "who": "Employers paying monthly",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
   },
   {
    "date": "2027-02-07",
@@ -367,10 +371,11 @@
    "who": "QRMP taxpayers"
   },
   {
-   "date": "2027-02-28",
+   "date": "2027-03-15",
    "act": "pt",
-   "text": "Professional tax (PTRC) payment and return for February 2027",
-   "who": "Employers paying monthly"
+   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of February 2027 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
+   "who": "Employers paying monthly",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
   },
   {
    "date": "2027-03-02",
@@ -451,16 +456,18 @@
    "who": "Individuals choosing the old regime"
   },
   {
-   "date": "2027-03-31",
+   "date": "2027-04-15",
    "act": "pt",
-   "text": "Professional tax (PTRC) payment and return for March 2027",
-   "who": "Employers paying monthly"
+   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of March 2027 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
+   "who": "Employers paying monthly",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
   },
   {
-   "date": "2027-03-31",
+   "date": "2027-03-15",
    "act": "pt",
-   "text": "Professional tax annual return for 2026-27",
-   "who": "Employers paying annually"
+   "text": "Professional tax annual return for 2026-27, moved from 31 March to 15 March by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026",
+   "who": "Employers paying annually",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion; 15 March annual date also stated in Maharashtra State Tax trade circular of 13 March 2026"
   },
   {
    "date": "2026-10-31",
