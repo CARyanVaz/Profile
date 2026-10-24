@@ -117,6 +117,10 @@
       status.textContent = msg;
       status.setAttribute("data-state", state || "ok");
     }
+    var via = "email";
+    form.querySelectorAll("button[data-via]").forEach(function (b) {
+      b.addEventListener("click", function () { via = b.getAttribute("data-via"); });
+    });
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (form.querySelector(".hp input").value) return; // spam trap
@@ -143,6 +147,14 @@
         return;
       }
 
+      if (via === "whatsapp") {
+        var wmsg = "Hello Ryan,\n\nName: " + data.get("name") + "\nEmail: " + data.get("email") +
+          "\nPhone: " + (data.get("phone") || "-") + "\nTopic: " + (data.get("topic") || "General") +
+          "\n\n" + data.get("message");
+        window.location.href = "https://wa.me/919538416161?text=" + encodeURIComponent(wmsg);
+        say("WhatsApp should open with your message ready to send.");
+        return;
+      }
       var subject = "Enquiry: " + (data.get("topic") || "General");
       var body =
         "Name: " + data.get("name") + "\n" +
@@ -171,4 +183,19 @@
   document.addEventListener("submit",function(e){
     var f=e.target; send("generate_lead",{form_id:f.id||"form",page:location.pathname});
   },true);
+})();
+
+/* Floating WhatsApp button on every page (pages can provide their own .wa-fab) */
+(function(){
+  if (document.querySelector(".wa-fab")) return;
+  var h1 = document.querySelector("h1");
+  var topic = h1 ? h1.textContent.replace(/\s+/g, " ").trim() : document.title;
+  var msg = "Hello Ryan, I have a query" + (topic ? " (from your page: " + topic + ")" : "") + ".";
+  var a = document.createElement("a");
+  a.className = "wa-fab";
+  a.href = "https://wa.me/919538416161?text=" + encodeURIComponent(msg);
+  a.target = "_blank"; a.rel = "noopener";
+  a.setAttribute("aria-label", "Chat on WhatsApp");
+  a.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg><span>WhatsApp</span>';
+  document.body.appendChild(a);
 })();
