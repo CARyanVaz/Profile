@@ -357,9 +357,10 @@
       <fieldset><legend>Roughly how many pages or screens?</legend><div class="wd-pills"><label><input type="radio" name="size" value="Up to 5" checked><span>Up to 5</span></label><label><input type="radio" name="size" value="6 to 12"><span>6 to 12</span></label><label><input type="radio" name="size" value="More than 12"><span>More than 12</span></label><label><input type="radio" name="size" value="Not sure"><span>Not sure</span></label></div></fieldset>
       <fieldset><legend>Extras</legend><div class="wd-pills"><label><input type="checkbox" name="extras" value="Enquiry forms"><span>Enquiry forms</span></label><label><input type="checkbox" name="extras" value="Online payments"><span>Online payments</span></label><label><input type="checkbox" name="extras" value="WhatsApp button"><span>WhatsApp button</span></label><label><input type="checkbox" name="extras" value="Google Business Profile"><span>Google Business Profile</span></label><label><input type="checkbox" name="extras" value="Ongoing maintenance"><span>Ongoing maintenance</span></label></div></fieldset>
       <div class="field"><label for="wd-name">Your name and business</label><input id="wd-name" type="text" autocomplete="organization"></div>
+      <div class="field"><label for="wd-phone">Phone or WhatsApp number (optional)</label><input id="wd-phone" type="tel" autocomplete="tel"></div>
       <div class="field"><label for="wd-notes">Anything else (optional)</label><textarea id="wd-notes" rows="3"></textarea></div>
-      <button class="btn btn--primary" type="submit">Email my request</button>
-      <p class="hint" style="margin-top:10px">Opens your email app with the details filled in.</p>
+      <div class="btn-row" style="margin-top:0"><button class="btn btn--primary" type="submit" data-via="whatsapp">Send on WhatsApp</button><button class="btn btn--ghost" type="submit" data-via="email">Email my request</button></div>
+      <p class="hint" style="margin-top:10px">Opens WhatsApp or your email app with the details filled in. Nothing is sent until you press send.</p>
     </form>
   </div>
 </section>
@@ -405,11 +406,11 @@
   </div>
 </section>
 <script>
-(function(){var f=document.getElementById("wd-form");if(!f)return;f.addEventListener("submit",function(ev){ev.preventDefault();
+(function(){var f=document.getElementById("wd-form");if(!f)return;var via="whatsapp";f.querySelectorAll("button[data-via]").forEach(function(b){b.addEventListener("click",function(){via=b.getAttribute("data-via");});});f.addEventListener("submit",function(ev){ev.preventDefault();
 function v(n){var x=f.querySelector('input[name="'+n+'"]:checked');return x?x.value:"";}
 var ex=[].map.call(f.querySelectorAll('input[name="extras"]:checked'),function(x){return x.value;}).join(", ")||"None";
-var body="Hello Ryan,\n\nI would like a quote.\n\nWhat I need: "+v("type")+"\nPages or screens: "+v("size")+"\nExtras: "+ex+"\nName and business: "+(document.getElementById("wd-name").value||"")+"\nNotes: "+(document.getElementById("wd-notes").value||"")+"\n";
-location.href="mailto:ryan@vazassociates.in?subject="+encodeURIComponent("Website quote request: "+v("type"))+"&body="+encodeURIComponent(body);});})();
+var body="Hello Ryan,\n\nI would like a quote.\n\nWhat I need: "+v("type")+"\nPages or screens: "+v("size")+"\nExtras: "+ex+"\nName and business: "+(document.getElementById("wd-name").value||"")+"\nPhone: "+((document.getElementById("wd-phone")||{}).value||"")+"\nNotes: "+(document.getElementById("wd-notes").value||"")+"\n";
+if(typeof window.gtag==="function"){window.gtag("event","generate_lead",{method:via,form:"web_design_quote"});}if(via==="whatsapp"){location.href="https://wa.me/919538416161?text="+encodeURIComponent(body);}else{location.href="mailto:ryan@vazassociates.in?subject="+encodeURIComponent("Website quote request: "+v("type"))+"&body="+encodeURIComponent(body);}});})();
 </script>
 <script>
 (function(){var still=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;if(still)return;
@@ -425,6 +426,8 @@ el.classList.add("is-tilting");el.style.setProperty("--ry",((px-.5)*12).toFixed(
 el.addEventListener("pointerleave",function(){el.classList.remove("is-tilting");el.style.setProperty("--rx","0deg");el.style.setProperty("--ry","0deg");});});})();
 </script>
 </main>
+<a class="wa-fab" href="https://wa.me/919538416161?text=Hello%20Ryan%2C%20I%20would%20like%20to%20discuss%20a%20website." target="_blank" rel="noopener" aria-label="Chat on WhatsApp about a website" onclick="if(window.gtag)gtag('event','generate_lead',{method:'whatsapp_button',form:'web_design_fab'})"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg><span>WhatsApp</span></a>
+<style>.wa-fab{position:fixed;right:18px;bottom:18px;z-index:60;display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:999px;background:#087e83;color:#fff;font:600 .95rem/1 var(--font-sans);text-decoration:none;box-shadow:0 8px 24px rgba(16,28,44,.3)}.wa-fab:hover{background:#066a6e;color:#fff}.wa-fab:focus-visible{outline:3px solid #8bd5d3;outline-offset:3px}@media print{.wa-fab{display:none}}</style>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
