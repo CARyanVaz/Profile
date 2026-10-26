@@ -1,6 +1,6 @@
 {
  "_readme": "Compliance calendar data for vazassociates.in/compliance-calendar/. Edit rows here, then run: python tools/update_calendar.py. act must be one of the keys in 'acts'. Dates are YYYY-MM-DD. Add 'note' to record the source of an extension.",
- "last_updated": "2026-10-22",
+ "last_updated": "2026-10-26",
  "acts": {
   "it": "Income-tax Act",
   "gst": "GST",
@@ -30,16 +30,16 @@
    "who": "QRMP taxpayers in Maharashtra, Gujarat, Goa, Karnataka, Kerala, Tamil Nadu, Telangana, Andhra Pradesh, Madhya Pradesh, Chhattisgarh and some UTs"
   },
   {
+   "date": "2026-10-24",
+   "act": "gst",
+   "text": "GSTR-3B for July to September 2026",
+   "who": "QRMP taxpayers in Delhi, Uttar Pradesh, Rajasthan, Haryana, Punjab, Bihar, West Bengal, Odisha, Jharkhand, Himachal Pradesh, Uttarakhand, the North-East, J&K, Ladakh and Chandigarh"
+  },
+  {
    "date": "2026-10-30",
    "act": "it",
    "text": "Challan-cum-statement for TDS deducted in September 2026 on purchase of immovable property, rent paid by certain individuals and HUFs, and certain contract or professional payments by individuals (formerly Forms 26QB, 26QC and 26QD)",
    "who": "Individual and HUF payers"
-  },
-  {
-   "date": "2026-10-30",
-   "act": "roc",
-   "text": "AOC-4 financial statements for FY 2025-26",
-   "who": "Companies that held the AGM on 30 September 2026"
   },
   {
    "date": "2026-10-30",
@@ -60,11 +60,11 @@
    "who": "Taxpayers with international or specified domestic transactions"
   },
   {
-   "date": "2026-11-15",
-   "act": "pt",
-   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of October 2026 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
-   "who": "Employers paying monthly",
-   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
+   "date": "2026-10-31",
+   "act": "pf",
+   "text": "Provident Fund contributions and ECR for September 2026, extended from 15 October 2026 by EPFO on 13 October 2026; does not cover ESI contributions",
+   "who": "Employers",
+   "note": "EPFO circular dated 13 October 2026 under para 28(3) of the EPF Scheme, 1952, following the wage ceiling increase to Rs 25,000; reported by SCC Online, Deccan Herald, Business Today and CAclubindia"
   },
   {
    "date": "2026-11-07",
@@ -98,6 +98,13 @@
   },
   {
    "date": "2026-11-15",
+   "act": "pt",
+   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of October 2026 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
+   "who": "Employers paying monthly",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
+  },
+  {
+   "date": "2026-11-15",
    "act": "it",
    "text": "Quarterly TDS certificates (other than salary) for July to September 2026",
    "who": "Deductors"
@@ -128,12 +135,6 @@
    "who": "QRMP taxpayers"
   },
   {
-   "date": "2026-11-29",
-   "act": "roc",
-   "text": "MGT-7 / MGT-7A annual return for FY 2025-26",
-   "who": "Companies that held the AGM on 30 September 2026"
-  },
-  {
    "date": "2026-11-30",
    "act": "it",
    "text": "Challan-cum-statement for TDS deducted in October 2026 on purchase of immovable property, rent paid by certain individuals and HUFs, and certain contract or professional payments by individuals (formerly Forms 26QB, 26QC and 26QD)",
@@ -144,13 +145,6 @@
    "act": "it",
    "text": "Income tax return for FY 2025-26 (not covered by the 21 November extension)",
    "who": "Taxpayers required to furnish a transfer pricing report"
-  },
-  {
-   "date": "2026-12-15",
-   "act": "pt",
-   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of November 2026 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
-   "who": "Employers paying monthly",
-   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
   },
   {
    "date": "2026-12-07",
@@ -184,6 +178,13 @@
   },
   {
    "date": "2026-12-15",
+   "act": "pt",
+   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of November 2026 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
+   "who": "Employers paying monthly",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
+  },
+  {
+   "date": "2026-12-15",
    "act": "it",
    "text": "Third instalment of advance tax for tax year 2026-27 (75 per cent cumulative)",
    "who": "Taxpayers liable to advance tax"
@@ -214,6 +215,13 @@
   },
   {
    "date": "2026-12-31",
+   "act": "roc",
+   "text": "AOC-4 financial statements for FY 2025-26 (all AOC-4 forms), extended from 30 October 2026 by MCA on 24 October 2026 without additional fees",
+   "who": "Companies that held the AGM on 30 September 2026",
+   "note": "MCA General Circular No. 05/2026 dated 24 October 2026 (F.No. Policy-17/111/2022-CL-V-MCA), https://www.mca.gov.in/bin/dms/getdocument?mds=5vSiNq59rdjIZwZqMbEIgQ%253D%253D&type=open; announced on MCA's official X account @MCA21India"
+  },
+  {
+   "date": "2026-12-31",
    "act": "it",
    "text": "Belated income tax return for FY 2025-26; revised return without late fee",
    "who": "Individuals and businesses"
@@ -223,13 +231,6 @@
    "act": "gst",
    "text": "GSTR-9 annual return and GSTR-9C reconciliation statement for FY 2025-26",
    "who": "Registered taxpayers, where applicable"
-  },
-  {
-   "date": "2027-01-15",
-   "act": "pt",
-   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of December 2026 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
-   "who": "Employers paying monthly",
-   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
   },
   {
    "date": "2027-01-07",
@@ -263,6 +264,13 @@
   },
   {
    "date": "2027-01-15",
+   "act": "pt",
+   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of December 2026 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
+   "who": "Employers paying monthly",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
+  },
+  {
+   "date": "2027-01-15",
    "act": "it",
    "text": "Quarterly TCS statement for October to December 2026",
    "who": "Collectors"
@@ -292,6 +300,12 @@
    "who": "QRMP taxpayers in Maharashtra, Gujarat, Goa, Karnataka, Kerala, Tamil Nadu, Telangana, Andhra Pradesh, Madhya Pradesh, Chhattisgarh and some UTs"
   },
   {
+   "date": "2027-01-24",
+   "act": "gst",
+   "text": "GSTR-3B for October to December 2026",
+   "who": "QRMP taxpayers in Delhi, Uttar Pradesh, Rajasthan, Haryana, Punjab, Bihar, West Bengal, Odisha, Jharkhand, Himachal Pradesh, Uttarakhand, the North-East, J&K, Ladakh and Chandigarh"
+  },
+  {
    "date": "2027-01-30",
    "act": "it",
    "text": "Challan-cum-statement for TDS deducted in December 2026 on purchase of immovable property, rent paid by certain individuals and HUFs, and certain contract or professional payments by individuals (formerly Forms 26QB, 26QC and 26QD)",
@@ -305,16 +319,16 @@
   },
   {
    "date": "2027-01-31",
+   "act": "roc",
+   "text": "MGT-7 / MGT-7A annual return for FY 2025-26, extended from 29 November 2026 by MCA on 24 October 2026 without additional fees",
+   "who": "Companies that held the AGM on 30 September 2026",
+   "note": "MCA General Circular No. 05/2026 dated 24 October 2026 (F.No. Policy-17/111/2022-CL-V-MCA), https://www.mca.gov.in/bin/dms/getdocument?mds=5vSiNq59rdjIZwZqMbEIgQ%253D%253D&type=open; announced on MCA's official X account @MCA21India"
+  },
+  {
+   "date": "2027-01-31",
    "act": "it",
    "text": "Quarterly TDS statements for October to December 2026",
    "who": "Deductors"
-  },
-  {
-   "date": "2027-02-15",
-   "act": "pt",
-   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of January 2027 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
-   "who": "Employers paying monthly",
-   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
   },
   {
    "date": "2027-02-07",
@@ -348,6 +362,13 @@
   },
   {
    "date": "2027-02-15",
+   "act": "pt",
+   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of January 2027 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
+   "who": "Employers paying monthly",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
+  },
+  {
+   "date": "2027-02-15",
    "act": "it",
    "text": "Quarterly TDS certificates (other than salary) for October to December 2026",
    "who": "Deductors"
@@ -369,13 +390,6 @@
    "act": "gst",
    "text": "PMT-06 GST payment for January 2027",
    "who": "QRMP taxpayers"
-  },
-  {
-   "date": "2027-03-15",
-   "act": "pt",
-   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of February 2027 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
-   "who": "Employers paying monthly",
-   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
   },
   {
    "date": "2027-03-02",
@@ -415,6 +429,13 @@
   },
   {
    "date": "2027-03-15",
+   "act": "pt",
+   "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of February 2027 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
+   "who": "Employers paying monthly",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
+  },
+  {
+   "date": "2027-03-15",
    "act": "it",
    "text": "Fourth instalment of advance tax for tax year 2026-27 (100 per cent); single instalment for presumptive taxation",
    "who": "Taxpayers liable to advance tax"
@@ -424,6 +445,13 @@
    "act": "pf",
    "text": "Provident Fund and ESI contributions for February 2027",
    "who": "Employers"
+  },
+  {
+   "date": "2027-03-15",
+   "act": "pt",
+   "text": "Professional tax annual return for 2026-27, moved from 31 March to 15 March by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026",
+   "who": "Employers paying annually",
+   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion; 15 March annual date also stated in Maharashtra State Tax trade circular of 13 March 2026"
   },
   {
    "date": "2027-03-20",
@@ -461,32 +489,6 @@
    "text": "Professional tax (PTRC) payment and monthly return for salaries and wages of March 2027 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)",
    "who": "Employers paying monthly",
    "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion"
-  },
-  {
-   "date": "2027-03-15",
-   "act": "pt",
-   "text": "Professional tax annual return for 2026-27, moved from 31 March to 15 March by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026",
-   "who": "Employers paying annually",
-   "note": "Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules, 2026, amending rule 11(3) of the 1975 Rules), listed on mahagst.gov.in; reported by TaxGuru, SGCMS and Lexplosion; 15 March annual date also stated in Maharashtra State Tax trade circular of 13 March 2026"
-  },
-  {
-   "date": "2026-10-31",
-   "act": "pf",
-   "text": "Provident Fund contributions and ECR for September 2026, extended from 15 October 2026 by EPFO on 13 October 2026; does not cover ESI contributions",
-   "who": "Employers",
-   "note": "EPFO circular dated 13 October 2026 under para 28(3) of the EPF Scheme, 1952, following the wage ceiling increase to Rs 25,000; reported by SCC Online, Deccan Herald, Business Today and CAclubindia"
-  },
-  {
-   "date": "2026-10-24",
-   "act": "gst",
-   "text": "GSTR-3B for July to September 2026",
-   "who": "QRMP taxpayers in Delhi, Uttar Pradesh, Rajasthan, Haryana, Punjab, Bihar, West Bengal, Odisha, Jharkhand, Himachal Pradesh, Uttarakhand, the North-East, J&K, Ladakh and Chandigarh"
-  },
-  {
-   "date": "2027-01-24",
-   "act": "gst",
-   "text": "GSTR-3B for October to December 2026",
-   "who": "QRMP taxpayers in Delhi, Uttar Pradesh, Rajasthan, Haryana, Punjab, Bihar, West Bengal, Odisha, Jharkhand, Himachal Pradesh, Uttarakhand, the North-East, J&K, Ladakh and Chandigarh"
   }
  ]
 }
