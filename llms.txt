@@ -44,3 +44,6 @@ Contact: +91 95384 16161, ryan@vazassociates.in. Office: Mangalmurti Apartments,
 
 ## Tax calculators
 - [Tax calculators for tax year 2026-27](https://vazassociates.in/tax-tools/): old versus new regime, advance tax instalments and interest, TDS on property bought from an NRI, and interest on late TDS or GST payment.
+
+## GST changes 2026-27
+- [GST changes 2026-27 explained](https://vazassociates.in/faq/#g6): refunds, inverted duty refund on input services, GSTR-3B linked to GSTR-1, arrest and penalty changes, show-cause notice threshold, ARQP scheme, late fee waiver, e-commerce seller registration. Status dated and updated as notifications are issued.
