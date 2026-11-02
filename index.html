@@ -260,6 +260,43 @@
   </div>
 </section>
 
+<section class="section section--alt" aria-labelledby="ig-title">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">On Instagram</p>
+      <h2 id="ig-title" class="reveal">Short videos on tax, GST and compliance</h2>
+      <p class="muted reveal">Thirty-second explainers on GST returns, account finalisation, income tax and NRI questions, posted on Instagram as <a href="https://www.instagram.com/ryan_ca_vaz/" target="_blank" rel="noopener me">@ryan_ca_vaz</a>.</p>
+      <p class="reveal"><a class="btn btn--primary ig-follow" href="https://www.instagram.com/ryan_ca_vaz/" target="_blank" rel="noopener me"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false" style="display:inline-block"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Follow on Instagram</a></p>
+    </div>
+    <div class="reveal">
+      <div id="ig-reels" class="ig-reels" hidden></div>
+      <ul id="ig-topics" class="ig-topics">
+        <li><a href="https://www.instagram.com/ryan_ca_vaz/" target="_blank" rel="noopener"><span class="ig-tag">GST</span>GSTR-1, GSTR-3B and the annual return GSTR-9, explained in plain words</a></li>
+        <li><a href="https://www.instagram.com/ryan_ca_vaz/" target="_blank" rel="noopener"><span class="ig-tag">Accounts</span>What account finalisation involves and what to keep ready</a></li>
+        <li><a href="https://www.instagram.com/ryan_ca_vaz/" target="_blank" rel="noopener"><span class="ig-tag">Income tax</span>Due dates, AIS and Form 26AS, and common notices</a></li>
+        <li><a href="https://www.instagram.com/ryan_ca_vaz/" target="_blank" rel="noopener"><span class="ig-tag">NRI</span>Residential status, NRE and NRO accounts, and property sales</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  document.querySelectorAll('.ig-follow, #ig-topics a').forEach(function(a){a.addEventListener('click',function(){if(window.gtag)gtag('event','click_instagram',{location:'home'});});});
+  var box=document.getElementById('ig-reels'); if(!box||!window.fetch) return;
+  fetch('assets/data/reels.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){
+    var list=(d&&d.reels||[]).map(function(u){var m=String(u).match(/instagram\.com\/(?:reels?|p)\/([A-Za-z0-9_-]+)/);return m?m[1]:null;}).filter(Boolean).slice(0,3);
+    if(!list.length) return;
+    list.forEach(function(code){
+      var f=document.createElement('iframe');
+      f.src='https://www.instagram.com/reel/'+code+'/embed';
+      f.loading='lazy'; f.title='Instagram reel by ryan_ca_vaz'; f.setAttribute('scrolling','no');
+      box.appendChild(f);
+    });
+    box.hidden=false; var t=document.getElementById('ig-topics'); if(t) t.hidden=true;
+  }).catch(function(){});
+})();
+</script>
+
 <section class="band" aria-labelledby="band-title">
   <div class="container">
     <h2 id="band-title">Contact</h2>

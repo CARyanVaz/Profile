@@ -1,0 +1,4 @@
+{
+  "_readme": "Instagram reels shown on the home page. Paste up to 3 reel links, newest first, e.g. https://www.instagram.com/reel/ABC123xyz/ . Leave the list empty to show only the Follow panel.",
+  "reels": []
+}
