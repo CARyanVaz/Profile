@@ -41,3 +41,6 @@ Contact: +91 95384 16161, ryan@vazassociates.in. Office: Mangalmurti Apartments,
 
 ## Calendar feed
 - [Compliance due dates (iCalendar feed)](https://vazassociates.in/compliance-calendar/due-dates.ics): subscribable feed of Indian statutory due dates, updated with extensions.
+
+## Tax calculators
+- [Tax calculators for tax year 2026-27](https://vazassociates.in/tax-tools/): old versus new regime, advance tax instalments and interest, TDS on property bought from an NRI, and interest on late TDS or GST payment.
