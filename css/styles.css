@@ -158,8 +158,8 @@ li + li { margin-top: var(--s2); }
 .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 var(--s4); }
 @media (min-width: 720px) { .container { padding: 0 var(--s6); } }
 
-.section { padding: var(--s8) 0; }
-@media (min-width: 900px) { .section { padding: var(--s9) 0; } }
+.section { padding: var(--s7) 0; }
+@media (min-width: 900px) { .section { padding: var(--s8) 0; } }
 .section--alt { background: var(--surface); border-block: 1px solid var(--line); }
 
 .eyebrow {
@@ -169,7 +169,7 @@ li + li { margin-top: var(--s2); }
 }
 .eyebrow::before { content: ""; width: 28px; height: 1px; background: currentColor; }
 .lead { font-size: 1rem; color: var(--muted); }
-.section-head { max-width: 720px; margin-bottom: var(--s7); }
+.section-head { max-width: 760px; margin-bottom: var(--s6); }
 .muted { color: var(--muted); }
 
 /* ---------- Buttons ---------- */
@@ -246,8 +246,8 @@ li + li { margin-top: var(--s2); }
 }
 
 /* ---------- Hero ---------- */
-.hero { position: relative; overflow: hidden; padding: var(--s8) 0 var(--s8); }
-@media (min-width: 900px) { .hero { padding: var(--s10) 0 var(--s9); } }
+.hero { position: relative; overflow: hidden; padding: var(--s7) 0; }
+@media (min-width: 900px) { .hero { padding: 80px 0 var(--s8); } }
 .hero::before {
   content: ""; position: absolute; inset: 0; pointer-events: none;
   background-image:
@@ -262,8 +262,8 @@ li + li { margin-top: var(--s2); }
 .hero h1 { max-width: 16ch; }
 .hero h1 em { font-style: italic; color: var(--accent); font-weight: 500; }
 
-.page-hero { padding: var(--s8) 0 var(--s7); border-bottom: 1px solid var(--line); }
-@media (min-width: 900px) { .page-hero { padding: var(--s9) 0 var(--s8); } }
+.page-hero { padding: 40px 0 var(--s6); border-bottom: 1px solid var(--line); }
+@media (min-width: 900px) { .page-hero { padding: 56px 0 40px; } }
 .page-hero h1 { max-width: 24ch; }
 
 /* Firm details card */
@@ -299,7 +299,7 @@ li + li { margin-top: var(--s2); }
 .card {
   position: relative; display: flex; flex-direction: column;
   background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
-  padding: var(--s6); transition: border-color .25s, transform .25s, box-shadow .25s;
+  padding: var(--s5); transition: border-color .25s, transform .25s, box-shadow .25s;
 }
 .card:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); box-shadow: var(--shadow); }
 .card h3 { margin-bottom: var(--s3); }
@@ -321,9 +321,9 @@ li + li { margin-top: var(--s2); }
 
 /* ---------- Two column prose ---------- */
 .split { display: grid; gap: var(--s7); }
-@media (min-width: 900px) { .split { grid-template-columns: 1fr 1.4fr; gap: var(--s9); } }
+@media (min-width: 900px) { .split { grid-template-columns: 1fr 1.4fr; gap: var(--s8); } }
 .prose p { max-width: var(--measure); }
-.prose h2 { margin-top: var(--s7); }
+.prose h2 { margin-top: var(--s6); }
 .prose h2:first-child { margin-top: 0; }
 
 .portrait {
@@ -379,7 +379,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-sp
 .faq-links a:hover { color: var(--accent); }
 
 /* ---------- FAQ accordion ---------- */
-.faq-group + .faq-group { margin-top: var(--s7); }
+.faq-group + .faq-group { margin-top: var(--s6); }
 .faq-group h2 { font-size: 1.35rem; margin-bottom: var(--s4); }
 .faq { border-top: 1px solid var(--line); }
 .faq details { border-bottom: 1px solid var(--line); }
@@ -433,7 +433,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .hp { position: absolute; left: -9999px; }
 
 /* ---------- CTA band ---------- */
-.band { background: var(--navy); color: var(--on-navy); padding: var(--s8) 0; }
+.band { background: var(--navy); color: var(--on-navy); padding: var(--s7) 0; }
 .band h2 { color: #fff; }
 .band p { color: var(--on-navy-muted); }
 .band .btn--primary { background: var(--cta); color: #fff; }
@@ -442,7 +442,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .band .btn--ghost:hover { border-color: #8bd5d3; color: #8bd5d3; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--navy); color: var(--on-navy-muted); padding: var(--s8) 0 var(--s6); font-size: .94rem; }
+.site-footer { background: var(--navy); color: var(--on-navy-muted); padding: var(--s7) 0 var(--s5); font-size: .94rem; }
 .site-footer a { color: var(--on-navy); }
 .site-footer a:hover { color: #8bd5d3; }
 .footer-grid { display: grid; gap: var(--s6); }
