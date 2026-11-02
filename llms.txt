@@ -38,3 +38,6 @@ Contact: +91 95384 16161, ryan@vazassociates.in. Office: Mangalmurti Apartments,
 
 ## International clients
 - [Remote accounting, virtual CFO and finance automation for businesses outside India](https://vazassociates.in/international/): bookkeeping in QuickBooks Online, Xero or Zoho, month-end close, CFO support, modelling and India tax support for clients in Singapore, Malaysia, Hong Kong and South-East Asia, the UAE, UK, US, Australia and East Africa.
+
+## Calendar feed
+- [Compliance due dates (iCalendar feed)](https://vazassociates.in/compliance-calendar/due-dates.ics): subscribable feed of Indian statutory due dates, updated with extensions.

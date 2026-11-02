@@ -37,6 +37,10 @@
 <script>(function(){var d=document.documentElement;d.classList.remove("no-js");d.classList.add("js");try{var t=localStorage.getItem("va-theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t);}catch(e){}})();</script>
 <link rel="stylesheet" href="../css/styles.css">
 <style>
+.cal-subscribe { margin-top: 28px; padding: 20px 22px; border: 1px solid var(--line, rgba(127,127,127,.25)); border-radius: 14px; }
+.cal-sub-title { font-size: 1.15rem; margin: 0 0 6px; }
+.cal-subscribe .btn-row { display:flex; flex-wrap:wrap; gap:10px; margin-top: 12px; }
+.cal-sub-note { margin: 12px 0 0; font-size: .9rem; overflow-wrap:anywhere; }
 .cal-filters { display:grid; gap: 0 16px; grid-template-columns: 1fr; align-items:end; margin-top: 24px; }
 @media (min-width: 720px) { .cal-filters { grid-template-columns: 1fr 1fr auto auto; } }
 .cal-filters .field { margin-bottom: 12px; }
@@ -126,6 +130,17 @@ Last updated 1 November 2026.
       <div class="field"><button type="button" id="f-reset" class="btn btn--ghost">Reset</button></div>
     </form>
     <p id="cal-count" class="muted" aria-live="polite"></p>
+    <div class="cal-subscribe" aria-labelledby="sub-title">
+      <h2 id="sub-title" class="cal-sub-title">Get these dates in your own calendar</h2>
+      <p class="muted">Subscribe once and every due date appears in your calendar. When a date is extended it is corrected here and your calendar picks up the change on its next refresh, usually within a day. Apple and Outlook calendars also show a reminder two days before each date.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="https://calendar.google.com/calendar/r?cid=webcal%3A%2F%2Fvazassociates.in%2Fcompliance-calendar%2Fdue-dates.ics" target="_blank" rel="noopener" data-cal="google">Add to Google Calendar</a>
+        <a class="btn btn--ghost" href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Fvazassociates.in%2Fcompliance-calendar%2Fdue-dates.ics&name=Compliance%20due%20dates%20%28India%29" target="_blank" rel="noopener" data-cal="outlook">Add to Outlook</a>
+        <a class="btn btn--ghost" href="webcal://vazassociates.in/compliance-calendar/due-dates.ics" data-cal="apple">Add to iPhone or Mac</a>
+        <a class="btn btn--ghost" href="due-dates.ics" download data-cal="download">Download .ics</a>
+      </div>
+      <p class="muted cal-sub-note">Feed address for any other calendar app: <code>https://vazassociates.in/compliance-calendar/due-dates.ics</code></p>
+    </div>
   </div>
 </section>
 
@@ -406,5 +421,6 @@ Last updated 1 November 2026.
     </div>
   </div>
 </footer>
+<script>document.querySelectorAll('[data-cal]').forEach(function(a){a.addEventListener('click',function(){if(window.gtag)gtag('event','calendar_subscribe',{method:a.getAttribute('data-cal')});});});</script>
 </body>
 </html>

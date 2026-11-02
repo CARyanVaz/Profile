@@ -1,0 +1,1571 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Vaz & Associates//Compliance calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Compliance due dates (India) - vazassociates.in
+X-WR-CALDESC:Statutory due dates under the Income-tax Act\, GST\, Companies
+  Act\, LLP Act\, EPF and ESI and Maharashtra professional tax. Source: htt
+ ps://vazassociates.in/compliance-calendar/
+X-WR-TIMEZONE:Asia/Kolkata
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:b67da01ee5e2e651c3b1@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Due: GSTR-3B for September 2026
+DESCRIPTION:GST. Applies to: Monthly filers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-3B for September 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bb736f2677a4a7c4e678@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Due: Tax audit report for FY 2025-26 (Form 3CA or 3CB with Form 3CD
+ )\, extended from 30 September 2026 by CBDT on 28 September 2026
+DESCRIPTION:Income-tax Act. Applies to: Taxpayers whose accounts must be au
+ dited. CBDT press release 28 Sep 2026 (reported as Circular No. 07/2026). 
+ Check the current position before filing: https://vazassociates.in/complia
+ nce-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Tax audit report for FY 2025-26 (Form 3CA or 3CB with Form
+  3CD)\, extended from 30 September 2026 by CBDT on 28 September 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4cac91d2af03706c55cc@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Due: GSTR-3B for July to September 2026
+DESCRIPTION:GST. Applies to: QRMP taxpayers in Maharashtra\, Gujarat\, Goa\
+ , Karnataka\, Kerala\, Tamil Nadu\, Telangana\, Andhra Pradesh\, Madhya Pr
+ adesh\, Chhattisgarh and some UTs. Check the current position before filin
+ g: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-3B for July to September 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:15b45d3d65ec56bd70bf@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Due: GSTR-3B for July to September 2026
+DESCRIPTION:GST. Applies to: QRMP taxpayers in Delhi\, Uttar Pradesh\, Raja
+ sthan\, Haryana\, Punjab\, Bihar\, West Bengal\, Odisha\, Jharkhand\, Hima
+ chal Pradesh\, Uttarakhand\, the North-East\, J&K\, Ladakh and Chandigarh.
+  Check the current position before filing: https://vazassociates.in/compli
+ ance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-3B for July to September 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e8ad5bcd7a204181b46c@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Due: Challan-cum-statement for TDS deducted in September 2026 on pu
+ rchase of immovable property\, rent paid by certain individuals and HUFs\,
+  and certain contract or professional payments by individuals (formerly Fo
+ rms 26QB\, 26QC and 26QD)
+DESCRIPTION:Income-tax Act. Applies to: Individual and HUF payers. Check th
+ e current position before filing: https://vazassociates.in/compliance-cale
+ ndar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Challan-cum-statement for TDS deducted in September 2026 o
+ n purchase of immovable property\, rent paid by certain individuals and HU
+ Fs\, and certain contract or professional payments by individuals (formerl
+ y Forms 26QB\, 26QC and 26QD)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:59e663606a2abb322c9a@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Due: Form 8\, Statement of Account and Solvency\, for FY 2025-26
+DESCRIPTION:LLP Act. Applies to: LLPs. Check the current position before fi
+ ling: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:LLP Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Form 8\, Statement of Account and Solvency\, for FY 2025-2
+ 6
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:85a7795ef63e60773599@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Due: Quarterly TDS statements for July to September 2026
+DESCRIPTION:Income-tax Act. Applies to: Deductors. Check the current positi
+ on before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Quarterly TDS statements for July to September 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:636bec6c50b58844b831@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Due: Transfer pricing accountant's report for FY 2025-26
+DESCRIPTION:Income-tax Act. Applies to: Taxpayers with international or spe
+ cified domestic transactions. Check the current position before filing: ht
+ tps://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Transfer pricing accountant's report for FY 2025-26
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:24d255a84ed9020addf0@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Due: Provident Fund contributions and ECR for September 2026\, exte
+ nded from 15 October 2026 by EPFO on 13 October 2026\; does not cover ESI 
+ contributions
+DESCRIPTION:EPF and ESI. Applies to: Employers. EPFO circular dated 13 Octo
+ ber 2026 under para 28(3) of the EPF Scheme\, 1952\, following the wage ce
+ iling increase to Rs 25\,000\; reported by SCC Online\, Deccan Herald\, Bu
+ siness Today and CAclubindia. Check the current position before filing: ht
+ tps://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:EPF and ESI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Provident Fund contributions and ECR for September 2026\, 
+ extended from 15 October 2026 by EPFO on 13 October 2026\; does not cover 
+ ESI contributions
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:463aa2a75a8c175b3fc9@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Due: TDS and TCS deducted or collected in October 2026 deposited
+DESCRIPTION:Income-tax Act. Applies to: Deductors and collectors. Check the
+  current position before filing: https://vazassociates.in/compliance-calen
+ dar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: TDS and TCS deducted or collected in October 2026 deposite
+ d
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:daf9ff9232e00f00a7f9@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Due: GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators
+ ) for October 2026
+DESCRIPTION:GST. Applies to: GST deductors and e-commerce operators. Check 
+ the current position before filing: https://vazassociates.in/compliance-ca
+ lendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce opera
+ tors) for October 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fbc807307e4e8371d097@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Due: GSTR-1 for October 2026
+DESCRIPTION:GST. Applies to: Monthly filers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-1 for October 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1fd008b0378c94b04433@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Due: Invoice Furnishing Facility (IFF) for October 2026\, optional
+DESCRIPTION:GST. Applies to: QRMP taxpayers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Invoice Furnishing Facility (IFF) for October 2026\, optio
+ nal
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:664c840a68492e0bbe73@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Due: GSTR-6 for October 2026
+DESCRIPTION:GST. Applies to: Input service distributors. Check the current 
+ position before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-6 for October 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d7340c9441ebcc414582@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Due: Quarterly TDS certificates (other than salary) for July to Sep
+ tember 2026
+DESCRIPTION:Income-tax Act. Applies to: Deductors. Check the current positi
+ on before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Quarterly TDS certificates (other than salary) for July to
+  September 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ad3f5c0641d3e8c8fae5@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Due: Provident Fund and ESI contributions for October 2026
+DESCRIPTION:EPF and ESI. Applies to: Employers. Check the current position 
+ before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:EPF and ESI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Provident Fund and ESI contributions for October 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3202c8a599770dd9be5a@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Due: Professional tax (PTRC) payment and monthly return for salarie
+ s and wages of October 2026 (due date moved from the last day of the month
+  to the 15th by the Profession Tax (Amendment) Rules\, 2026 notified on 28
+  February 2026)
+DESCRIPTION:Professional tax (Maharashtra). Applies to: Employers paying mo
+ nthly. Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/T
+ axation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules\, 2026\
+ , amending rule 11(3) of the 1975 Rules)\, listed on mahagst.gov.in\; repo
+ rted by TaxGuru\, SGCMS and Lexplosion. Check the current position before 
+ filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Professional tax (Maharashtra)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Professional tax (PTRC) payment and monthly return for sal
+ aries and wages of October 2026 (due date moved from the last day of the m
+ onth to the 15th by the Profession Tax (Amendment) Rules\, 2026 notified o
+ n 28 February 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:27b191e152da27a14e5d@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Due: GSTR-3B for October 2026
+DESCRIPTION:GST. Applies to: Monthly filers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-3B for October 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:41f9590eeab946206102@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Due: Income tax return for FY 2025-26\, extended from 31 October 20
+ 26 by CBDT on 28 September 2026
+DESCRIPTION:Income-tax Act. Applies to: Companies\, taxpayers requiring aud
+ it\, partners of audited firms. CBDT press release 28 Sep 2026 (reported a
+ s Circular No. 07/2026). Check the current position before filing: https:/
+ /vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Income tax return for FY 2025-26\, extended from 31 Octobe
+ r 2026 by CBDT on 28 September 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9de2c1f4dfebcb180808@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Due: PMT-06 GST payment for October 2026
+DESCRIPTION:GST. Applies to: QRMP taxpayers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: PMT-06 GST payment for October 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:75d096cd5ce7718d81dd@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Due: Challan-cum-statement for TDS deducted in October 2026 on purc
+ hase of immovable property\, rent paid by certain individuals and HUFs\, a
+ nd certain contract or professional payments by individuals (formerly Form
+ s 26QB\, 26QC and 26QD)
+DESCRIPTION:Income-tax Act. Applies to: Individual and HUF payers. Check th
+ e current position before filing: https://vazassociates.in/compliance-cale
+ ndar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Challan-cum-statement for TDS deducted in October 2026 on 
+ purchase of immovable property\, rent paid by certain individuals and HUFs
+ \, and certain contract or professional payments by individuals (formerly 
+ Forms 26QB\, 26QC and 26QD)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6f8988d69e507b1ce3b2@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Due: Income tax return for FY 2025-26 (not covered by the 21 Novemb
+ er extension)
+DESCRIPTION:Income-tax Act. Applies to: Taxpayers required to furnish a tra
+ nsfer pricing report. Check the current position before filing: https://va
+ zassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Income tax return for FY 2025-26 (not covered by the 21 No
+ vember extension)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2ffc59823771d1193ed0@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Due: TDS and TCS deducted or collected in November 2026 deposited
+DESCRIPTION:Income-tax Act. Applies to: Deductors and collectors. Check the
+  current position before filing: https://vazassociates.in/compliance-calen
+ dar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: TDS and TCS deducted or collected in November 2026 deposit
+ ed
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6c592548749afcec42a9@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Due: GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators
+ ) for November 2026
+DESCRIPTION:GST. Applies to: GST deductors and e-commerce operators. Check 
+ the current position before filing: https://vazassociates.in/compliance-ca
+ lendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce opera
+ tors) for November 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ad73af21f38efb90f40a@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Due: GSTR-1 for November 2026
+DESCRIPTION:GST. Applies to: Monthly filers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-1 for November 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b7f99caf51e75263da98@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Due: Invoice Furnishing Facility (IFF) for November 2026\, optional
+DESCRIPTION:GST. Applies to: QRMP taxpayers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Invoice Furnishing Facility (IFF) for November 2026\, opti
+ onal
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0ba7e5f099063f4fb53a@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Due: GSTR-6 for November 2026
+DESCRIPTION:GST. Applies to: Input service distributors. Check the current 
+ position before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-6 for November 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:250dcbc7715bb3b3da2a@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Due: Third instalment of advance tax for tax year 2026-27 (75 per c
+ ent cumulative)
+DESCRIPTION:Income-tax Act. Applies to: Taxpayers liable to advance tax. Ch
+ eck the current position before filing: https://vazassociates.in/complianc
+ e-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Third instalment of advance tax for tax year 2026-27 (75 p
+ er cent cumulative)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:07f42d4eee4fb02ec2a2@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Due: Provident Fund and ESI contributions for November 2026
+DESCRIPTION:EPF and ESI. Applies to: Employers. Check the current position 
+ before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:EPF and ESI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Provident Fund and ESI contributions for November 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e3ad54671c92755a7e4c@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Due: Professional tax (PTRC) payment and monthly return for salarie
+ s and wages of November 2026 (due date moved from the last day of the mont
+ h to the 15th by the Profession Tax (Amendment) Rules\, 2026 notified on 2
+ 8 February 2026)
+DESCRIPTION:Professional tax (Maharashtra). Applies to: Employers paying mo
+ nthly. Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/T
+ axation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules\, 2026\
+ , amending rule 11(3) of the 1975 Rules)\, listed on mahagst.gov.in\; repo
+ rted by TaxGuru\, SGCMS and Lexplosion. Check the current position before 
+ filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Professional tax (Maharashtra)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Professional tax (PTRC) payment and monthly return for sal
+ aries and wages of November 2026 (due date moved from the last day of the 
+ month to the 15th by the Profession Tax (Amendment) Rules\, 2026 notified 
+ on 28 February 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0580898da940dae2ce9f@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Due: GSTR-3B for November 2026
+DESCRIPTION:GST. Applies to: Monthly filers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-3B for November 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:227bdd170586dfaefa8c@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:Due: PMT-06 GST payment for November 2026
+DESCRIPTION:GST. Applies to: QRMP taxpayers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: PMT-06 GST payment for November 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bd3cd1a906e5af960415@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:Due: Challan-cum-statement for TDS deducted in November 2026 on pur
+ chase of immovable property\, rent paid by certain individuals and HUFs\, 
+ and certain contract or professional payments by individuals (formerly For
+ ms 26QB\, 26QC and 26QD)
+DESCRIPTION:Income-tax Act. Applies to: Individual and HUF payers. Check th
+ e current position before filing: https://vazassociates.in/compliance-cale
+ ndar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Challan-cum-statement for TDS deducted in November 2026 on
+  purchase of immovable property\, rent paid by certain individuals and HUF
+ s\, and certain contract or professional payments by individuals (formerly
+  Forms 26QB\, 26QC and 26QD)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b36e7ab13962ffe9af73@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Due: Belated income tax return for FY 2025-26\; revised return with
+ out late fee
+DESCRIPTION:Income-tax Act. Applies to: Individuals and businesses. Check t
+ he current position before filing: https://vazassociates.in/compliance-cal
+ endar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Belated income tax return for FY 2025-26\; revised return 
+ without late fee
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:98f34f62cfb1dc980fd4@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Due: GSTR-9 annual return and GSTR-9C reconciliation statement for 
+ FY 2025-26
+DESCRIPTION:GST. Applies to: Registered taxpayers\, where applicable. Check
+  the current position before filing: https://vazassociates.in/compliance-c
+ alendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-9 annual return and GSTR-9C reconciliation statement 
+ for FY 2025-26
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6992f1a6e98e631e76c2@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Due: AOC-4 / AOC-4 CFS / AOC-4 XBRL financial statements for FY 202
+ 5-26 (extended from 30 October 2026\, MCA General Circular 05/2026)
+DESCRIPTION:Companies Act (ROC). Applies to: Companies that held the AGM on
+  30 September 2026. Extended without additional fees by MCA General Circul
+ ar 05/2026 dated 24 October 2026\; original due date 30 October 2026. Sour
+ ce: https://www.mca.gov.in/bin/dms/getdocument?mds=5vSiNq59rdjIZwZqMbEIgQ%
+ 253D%253D&type=open (announced on MCA's official X account @MCA21India). C
+ heck the current position before filing: https://vazassociates.in/complian
+ ce-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Companies Act (ROC)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: AOC-4 / AOC-4 CFS / AOC-4 XBRL financial statements for FY
+  2025-26 (extended from 30 October 2026\, MCA General Circular 05/2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bd43a10c607ac1f1d8eb@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Due: CRA-4 cost audit report (XBRL) for FY 2025-26 can be filed wit
+ hout additional fees up to this date (MCA General Circular 06/2026)\; addi
+ tional fees for later filings count from the original due date under rule 
+ 6(6) of the Companies (Cost Records and Audit) Rules\, 2014
+DESCRIPTION:Companies Act (ROC). Applies to: Companies required to have a c
+ ost audit. MCA General Circular No. 06/2026 dated 27 October 2026 (F.No. P
+ olicy-17/52/2020-CL-V)\, listed under Circulars at https://www.mca.gov.in/
+ \; reported by TaxGuru and IBC Laws. Check the current position before fil
+ ing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Companies Act (ROC)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: CRA-4 cost audit report (XBRL) for FY 2025-26 can be filed
+  without additional fees up to this date (MCA General Circular 06/2026)\; 
+ additional fees for later filings count from the original due date under r
+ ule 6(6) of the Companies (Cost Records and Audit) Rules\, 2014
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:759a486f3fcca39efe56@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:Due: TDS and TCS deducted or collected in December 2026 deposited
+DESCRIPTION:Income-tax Act. Applies to: Deductors and collectors. Check the
+  current position before filing: https://vazassociates.in/compliance-calen
+ dar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: TDS and TCS deducted or collected in December 2026 deposit
+ ed
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e859671458bd56a06ce0@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Due: GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators
+ ) for December 2026
+DESCRIPTION:GST. Applies to: GST deductors and e-commerce operators. Check 
+ the current position before filing: https://vazassociates.in/compliance-ca
+ lendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce opera
+ tors) for December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2e504904844a187ba7de@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:Due: GSTR-1 for December 2026
+DESCRIPTION:GST. Applies to: Monthly filers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-1 for December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b37b0044edaeba8dcc72@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:Due: GSTR-6 for December 2026
+DESCRIPTION:GST. Applies to: Input service distributors. Check the current 
+ position before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-6 for December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:06e1e4071d181e578ba0@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:Due: GSTR-1 for October to December 2026
+DESCRIPTION:GST. Applies to: QRMP taxpayers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-1 for October to December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20a5d3a812f15f053372@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Due: Quarterly TCS statement for October to December 2026
+DESCRIPTION:Income-tax Act. Applies to: Collectors. Check the current posit
+ ion before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Quarterly TCS statement for October to December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e4eecf215bf63c8680f8@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Due: Provident Fund and ESI contributions for December 2026
+DESCRIPTION:EPF and ESI. Applies to: Employers. Check the current position 
+ before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:EPF and ESI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Provident Fund and ESI contributions for December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c543208c01a8247f9dc5@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Due: Professional tax (PTRC) payment and monthly return for salarie
+ s and wages of December 2026 (due date moved from the last day of the mont
+ h to the 15th by the Profession Tax (Amendment) Rules\, 2026 notified on 2
+ 8 February 2026)
+DESCRIPTION:Professional tax (Maharashtra). Applies to: Employers paying mo
+ nthly. Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/T
+ axation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules\, 2026\
+ , amending rule 11(3) of the 1975 Rules)\, listed on mahagst.gov.in\; repo
+ rted by TaxGuru\, SGCMS and Lexplosion. Check the current position before 
+ filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Professional tax (Maharashtra)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Professional tax (PTRC) payment and monthly return for sal
+ aries and wages of December 2026 (due date moved from the last day of the 
+ month to the 15th by the Profession Tax (Amendment) Rules\, 2026 notified 
+ on 28 February 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fdfe69eb1d80b6335c10@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:Due: CMP-08 for October to December 2026
+DESCRIPTION:GST. Applies to: Composition taxpayers. Check the current posit
+ ion before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: CMP-08 for October to December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:92d24e76a4a85669352f@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:Due: GSTR-3B for December 2026
+DESCRIPTION:GST. Applies to: Monthly filers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-3B for December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:96c5027572afc6108210@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:Due: GSTR-3B for October to December 2026
+DESCRIPTION:GST. Applies to: QRMP taxpayers in Maharashtra\, Gujarat\, Goa\
+ , Karnataka\, Kerala\, Tamil Nadu\, Telangana\, Andhra Pradesh\, Madhya Pr
+ adesh\, Chhattisgarh and some UTs. Check the current position before filin
+ g: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-3B for October to December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:86d7ca677b1b8a03ea09@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Due: GSTR-3B for October to December 2026
+DESCRIPTION:GST. Applies to: QRMP taxpayers in Delhi\, Uttar Pradesh\, Raja
+ sthan\, Haryana\, Punjab\, Bihar\, West Bengal\, Odisha\, Jharkhand\, Hima
+ chal Pradesh\, Uttarakhand\, the North-East\, J&K\, Ladakh and Chandigarh.
+  Check the current position before filing: https://vazassociates.in/compli
+ ance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-3B for October to December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:965b0329c82fd301710c@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Due: Challan-cum-statement for TDS deducted in December 2026 on pur
+ chase of immovable property\, rent paid by certain individuals and HUFs\, 
+ and certain contract or professional payments by individuals (formerly For
+ ms 26QB\, 26QC and 26QD)
+DESCRIPTION:Income-tax Act. Applies to: Individual and HUF payers. Check th
+ e current position before filing: https://vazassociates.in/compliance-cale
+ ndar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Challan-cum-statement for TDS deducted in December 2026 on
+  purchase of immovable property\, rent paid by certain individuals and HUF
+ s\, and certain contract or professional payments by individuals (formerly
+  Forms 26QB\, 26QC and 26QD)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:44788d01b0e102ff5e06@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Due: Quarterly TCS certificates for October to December 2026
+DESCRIPTION:Income-tax Act. Applies to: Collectors. Check the current posit
+ ion before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Quarterly TCS certificates for October to December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e5a4cf1e737b195a963a@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Due: Quarterly TDS statements for October to December 2026
+DESCRIPTION:Income-tax Act. Applies to: Deductors. Check the current positi
+ on before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Quarterly TDS statements for October to December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b372bfc0a5f8c474f1fa@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Due: MGT-7 / MGT-7A annual return for FY 2025-26 (extended from 29 
+ November 2026\, MCA General Circular 05/2026)
+DESCRIPTION:Companies Act (ROC). Applies to: Companies that held the AGM on
+  30 September 2026. Extended without additional fees by MCA General Circul
+ ar 05/2026 dated 24 October 2026\; original due date 29 November 2026. Sou
+ rce: https://www.mca.gov.in/bin/dms/getdocument?mds=5vSiNq59rdjIZwZqMbEIgQ
+ %253D%253D&type=open (announced on MCA's official X account @MCA21India). 
+ Check the current position before filing: https://vazassociates.in/complia
+ nce-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Companies Act (ROC)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: MGT-7 / MGT-7A annual return for FY 2025-26 (extended from
+  29 November 2026\, MCA General Circular 05/2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d8942f79b34f839fce47@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Due: TDS and TCS deducted or collected in January 2027 deposited
+DESCRIPTION:Income-tax Act. Applies to: Deductors and collectors. Check the
+  current position before filing: https://vazassociates.in/compliance-calen
+ dar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: TDS and TCS deducted or collected in January 2027 deposite
+ d
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:98864de884aadd538d0d@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:Due: GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators
+ ) for January 2027
+DESCRIPTION:GST. Applies to: GST deductors and e-commerce operators. Check 
+ the current position before filing: https://vazassociates.in/compliance-ca
+ lendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce opera
+ tors) for January 2027
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2eacb6390a2e457582be@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:Due: GSTR-1 for January 2027
+DESCRIPTION:GST. Applies to: Monthly filers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-1 for January 2027
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cf0b4ed97ed4863e003a@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Due: Invoice Furnishing Facility (IFF) for January 2027\, optional
+DESCRIPTION:GST. Applies to: QRMP taxpayers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Invoice Furnishing Facility (IFF) for January 2027\, optio
+ nal
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0b7fdbd79be55187e446@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Due: GSTR-6 for January 2027
+DESCRIPTION:GST. Applies to: Input service distributors. Check the current 
+ position before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-6 for January 2027
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c3bc7450f738d5d02dc1@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:Due: Quarterly TDS certificates (other than salary) for October to 
+ December 2026
+DESCRIPTION:Income-tax Act. Applies to: Deductors. Check the current positi
+ on before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Quarterly TDS certificates (other than salary) for October
+  to December 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d21199795a6178f6abe5@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:Due: Provident Fund and ESI contributions for January 2027
+DESCRIPTION:EPF and ESI. Applies to: Employers. Check the current position 
+ before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:EPF and ESI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Provident Fund and ESI contributions for January 2027
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ab553aaa893295af5337@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:Due: Professional tax (PTRC) payment and monthly return for salarie
+ s and wages of January 2027 (due date moved from the last day of the month
+  to the 15th by the Profession Tax (Amendment) Rules\, 2026 notified on 28
+  February 2026)
+DESCRIPTION:Professional tax (Maharashtra). Applies to: Employers paying mo
+ nthly. Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/T
+ axation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules\, 2026\
+ , amending rule 11(3) of the 1975 Rules)\, listed on mahagst.gov.in\; repo
+ rted by TaxGuru\, SGCMS and Lexplosion. Check the current position before 
+ filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Professional tax (Maharashtra)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Professional tax (PTRC) payment and monthly return for sal
+ aries and wages of January 2027 (due date moved from the last day of the m
+ onth to the 15th by the Profession Tax (Amendment) Rules\, 2026 notified o
+ n 28 February 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:57e6001f40f0ccad63df@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Due: GSTR-3B for January 2027
+DESCRIPTION:GST. Applies to: Monthly filers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-3B for January 2027
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:47e8204a29b9b06059c2@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:Due: PMT-06 GST payment for January 2027
+DESCRIPTION:GST. Applies to: QRMP taxpayers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: PMT-06 GST payment for January 2027
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:df4b05df1a9b8f99c429@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:Due: Challan-cum-statement for TDS deducted in January 2027 on purc
+ hase of immovable property\, rent paid by certain individuals and HUFs\, a
+ nd certain contract or professional payments by individuals (formerly Form
+ s 26QB\, 26QC and 26QD)
+DESCRIPTION:Income-tax Act. Applies to: Individual and HUF payers. Check th
+ e current position before filing: https://vazassociates.in/compliance-cale
+ ndar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Challan-cum-statement for TDS deducted in January 2027 on 
+ purchase of immovable property\, rent paid by certain individuals and HUFs
+ \, and certain contract or professional payments by individuals (formerly 
+ Forms 26QB\, 26QC and 26QD)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:029ce10de741b635f538@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Due: TDS and TCS deducted or collected in February 2027 deposited
+DESCRIPTION:Income-tax Act. Applies to: Deductors and collectors. Check the
+  current position before filing: https://vazassociates.in/compliance-calen
+ dar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: TDS and TCS deducted or collected in February 2027 deposit
+ ed
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cc6cc7dd73257b0e68e9@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:Due: GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators
+ ) for February 2027
+DESCRIPTION:GST. Applies to: GST deductors and e-commerce operators. Check 
+ the current position before filing: https://vazassociates.in/compliance-ca
+ lendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce opera
+ tors) for February 2027
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b864b32e5b134dedffc4@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270312
+SUMMARY:Due: GSTR-1 for February 2027
+DESCRIPTION:GST. Applies to: Monthly filers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-1 for February 2027
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fe32ba5537cec7ca1d40@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Due: Invoice Furnishing Facility (IFF) for February 2027\, optional
+DESCRIPTION:GST. Applies to: QRMP taxpayers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Invoice Furnishing Facility (IFF) for February 2027\, opti
+ onal
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ab442901e36426b30856@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Due: GSTR-6 for February 2027
+DESCRIPTION:GST. Applies to: Input service distributors. Check the current 
+ position before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-6 for February 2027
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c3bade971b88adfed0b7@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Due: Fourth instalment of advance tax for tax year 2026-27 (100 per
+  cent)\; single instalment for presumptive taxation
+DESCRIPTION:Income-tax Act. Applies to: Taxpayers liable to advance tax. Ch
+ eck the current position before filing: https://vazassociates.in/complianc
+ e-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Fourth instalment of advance tax for tax year 2026-27 (100
+  per cent)\; single instalment for presumptive taxation
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:38cb13a1dcd71d015379@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Due: Provident Fund and ESI contributions for February 2027
+DESCRIPTION:EPF and ESI. Applies to: Employers. Check the current position 
+ before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:EPF and ESI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Provident Fund and ESI contributions for February 2027
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:85d272beb46aa69cf29e@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Due: Professional tax (PTRC) payment and monthly return for salarie
+ s and wages of February 2027 (due date moved from the last day of the mont
+ h to the 15th by the Profession Tax (Amendment) Rules\, 2026 notified on 2
+ 8 February 2026)
+DESCRIPTION:Professional tax (Maharashtra). Applies to: Employers paying mo
+ nthly. Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/T
+ axation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules\, 2026\
+ , amending rule 11(3) of the 1975 Rules)\, listed on mahagst.gov.in\; repo
+ rted by TaxGuru\, SGCMS and Lexplosion. Check the current position before 
+ filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Professional tax (Maharashtra)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Professional tax (PTRC) payment and monthly return for sal
+ aries and wages of February 2027 (due date moved from the last day of the 
+ month to the 15th by the Profession Tax (Amendment) Rules\, 2026 notified 
+ on 28 February 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:48ed26caa3c4fde30872@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Due: Professional tax annual return for 2026-27\, moved from 31 Mar
+ ch to 15 March by the Profession Tax (Amendment) Rules\, 2026 notified on 
+ 28 February 2026
+DESCRIPTION:Professional tax (Maharashtra). Applies to: Employers paying an
+ nually. Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/
+ Taxation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules\, 2026
+ \, amending rule 11(3) of the 1975 Rules)\, listed on mahagst.gov.in\; rep
+ orted by TaxGuru\, SGCMS and Lexplosion\; 15 March annual date also stated
+  in Maharashtra State Tax trade circular of 13 March 2026. Check the curre
+ nt position before filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Professional tax (Maharashtra)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Professional tax annual return for 2026-27\, moved from 31
+  March to 15 March by the Profession Tax (Amendment) Rules\, 2026 notified
+  on 28 February 2026
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b78acac8109b9295eaa5@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Due: GSTR-3B for February 2027
+DESCRIPTION:GST. Applies to: Monthly filers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: GSTR-3B for February 2027
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d42db1b14866f68e553c@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270326
+SUMMARY:Due: PMT-06 GST payment for February 2027
+DESCRIPTION:GST. Applies to: QRMP taxpayers. Check the current position bef
+ ore filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:GST
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: PMT-06 GST payment for February 2027
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2b3399fa1d14f57bd5b3@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270331
+SUMMARY:Due: Challan-cum-statement for TDS deducted in February 2027 on pur
+ chase of immovable property\, rent paid by certain individuals and HUFs\, 
+ and certain contract or professional payments by individuals (formerly For
+ ms 26QB\, 26QC and 26QD)
+DESCRIPTION:Income-tax Act. Applies to: Individual and HUF payers. Check th
+ e current position before filing: https://vazassociates.in/compliance-cale
+ ndar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Challan-cum-statement for TDS deducted in February 2027 on
+  purchase of immovable property\, rent paid by certain individuals and HUF
+ s\, and certain contract or professional payments by individuals (formerly
+  Forms 26QB\, 26QC and 26QD)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b7be5868ed35f1eba0e3@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:Due: Revised income tax return for FY 2025-26 (late fee applies aft
+ er 31 December 2026)
+DESCRIPTION:Income-tax Act. Applies to: Individuals and businesses. Check t
+ he current position before filing: https://vazassociates.in/compliance-cal
+ endar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Revised income tax return for FY 2025-26 (late fee applies
+  after 31 December 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:27ed7869b881b88e7389@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:Due: Last date for investments and payments that qualify for deduct
+ ions under the old regime for tax year 2026-27
+DESCRIPTION:Income-tax Act. Applies to: Individuals choosing the old regime
+ . Check the current position before filing: https://vazassociates.in/compl
+ iance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Income-tax Act
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Last date for investments and payments that qualify for de
+ ductions under the old regime for tax year 2026-27
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e4b2723063f467d5242e@vazassociates.in
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:Due: Professional tax (PTRC) payment and monthly return for salarie
+ s and wages of March 2027 (due date moved from the last day of the month t
+ o the 15th by the Profession Tax (Amendment) Rules\, 2026 notified on 28 F
+ ebruary 2026)
+DESCRIPTION:Professional tax (Maharashtra). Applies to: Employers paying mo
+ nthly. Maharashtra Finance Department notification No. VYAKAR-2026/C.R.4/T
+ axation-3 dated 28 February 2026 (Profession Tax (Amendment) Rules\, 2026\
+ , amending rule 11(3) of the 1975 Rules)\, listed on mahagst.gov.in\; repo
+ rted by TaxGuru\, SGCMS and Lexplosion. Check the current position before 
+ filing: https://vazassociates.in/compliance-calendar/
+URL:https://vazassociates.in/compliance-calendar/
+CATEGORIES:Professional tax (Maharashtra)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due: Professional tax (PTRC) payment and monthly return for sal
+ aries and wages of March 2027 (due date moved from the last day of the mon
+ th to the 15th by the Profession Tax (Amendment) Rules\, 2026 notified on 
+ 28 February 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
