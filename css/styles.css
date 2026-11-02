@@ -119,7 +119,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
-  font-size: 1.0625rem;
+  font-size: 1rem;
   line-height: 1.65;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -137,9 +137,9 @@ h1, h2, h3, h4 {
   letter-spacing: -0.01em;
   margin: 0 0 var(--s4);
 }
-h1 { font-size: clamp(2.1rem, 1.4rem + 3.2vw, 3.6rem); font-weight: 600; }
-h2 { font-size: clamp(1.6rem, 1.25rem + 1.6vw, 2.35rem); }
-h3 { font-size: 1.3rem; }
+h1 { font-size: clamp(1.8rem, 1.3rem + 2.2vw, 2.85rem); font-weight: 600; }
+h2 { font-size: clamp(1.4rem, 1.15rem + 1.1vw, 1.95rem); }
+h3 { font-size: 1.15rem; }
 p { margin: 0 0 var(--s4); max-width: var(--measure); }
 ul, ol { padding-left: 1.2em; }
 li + li { margin-top: var(--s2); }
@@ -168,7 +168,7 @@ li + li { margin-top: var(--s2); }
   color: var(--accent); margin-bottom: var(--s4);
 }
 .eyebrow::before { content: ""; width: 28px; height: 1px; background: currentColor; }
-.lead { font-size: clamp(1.1rem, 1rem + .4vw, 1.3rem); color: var(--muted); }
+.lead { font-size: clamp(1.02rem, .97rem + .25vw, 1.15rem); color: var(--muted); }
 .section-head { max-width: 720px; margin-bottom: var(--s7); }
 .muted { color: var(--muted); }
 
@@ -240,7 +240,7 @@ li + li { margin-top: var(--s2); }
   }
   .site-nav.is-open { display: block; }
   .nav-list { flex-direction: column; }
-  .nav-list a { padding: var(--s3) var(--s2); font-size: 1.05rem; }
+  .nav-list a { padding: var(--s3) var(--s2); font-size: 1rem; }
   .nav-list a[aria-current="page"] { box-shadow: inset 3px 0 0 var(--accent); padding-left: var(--s4); }
   .no-js .site-nav { position: static; display: block; }
 }
@@ -264,7 +264,7 @@ li + li { margin-top: var(--s2); }
 
 .page-hero { padding: var(--s8) 0 var(--s7); border-bottom: 1px solid var(--line); }
 @media (min-width: 900px) { .page-hero { padding: var(--s9) 0 var(--s8); } }
-.page-hero h1 { max-width: 20ch; }
+.page-hero h1 { max-width: 24ch; }
 
 /* Firm details card */
 .firm-card {
@@ -288,7 +288,7 @@ li + li { margin-top: var(--s2); }
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
   padding: var(--s5) var(--s5);
 }
-.stat dd { order: 1; margin: 0; font: 600 clamp(2rem, 1.6rem + 1.5vw, 2.8rem)/1 var(--font-serif); color: var(--ink); font-variant-numeric: tabular-nums lining-nums; }
+.stat dd { order: 1; margin: 0; font: 600 clamp(1.7rem, 1.4rem + 1.1vw, 2.3rem)/1 var(--font-serif); color: var(--ink); font-variant-numeric: tabular-nums lining-nums; }
 .stat dt { order: 2; margin-top: var(--s2); color: var(--muted); font-size: .92rem; }
 
 /* ---------- Cards / services ---------- */
