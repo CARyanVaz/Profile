@@ -1,6 +1,6 @@
 {
  "_readme": "Compliance calendar data for vazassociates.in/compliance-calendar/. Edit rows here, then run: python tools/update_calendar.py. act must be one of the keys in 'acts'. Dates are YYYY-MM-DD. Add 'note' to record the source of an extension.",
- "last_updated": "2026-10-26",
+ "last_updated": "2026-11-01",
  "acts": {
   "it": "Income-tax Act",
   "gst": "GST",
@@ -231,6 +231,13 @@
    "act": "gst",
    "text": "GSTR-9 annual return and GSTR-9C reconciliation statement for FY 2025-26",
    "who": "Registered taxpayers, where applicable"
+  },
+  {
+   "date": "2026-12-31",
+   "act": "roc",
+   "text": "CRA-4 cost audit report (XBRL) for FY 2025-26 can be filed without additional fees up to this date (MCA General Circular 06/2026); additional fees for later filings count from the original due date under rule 6(6) of the Companies (Cost Records and Audit) Rules, 2014",
+   "who": "Companies required to have a cost audit",
+   "note": "MCA General Circular No. 06/2026 dated 27 October 2026 (F.No. Policy-17/52/2020-CL-V), listed under Circulars at https://www.mca.gov.in/; reported by TaxGuru and IBC Laws"
   },
   {
    "date": "2027-01-07",
