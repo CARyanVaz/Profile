@@ -16,4 +16,4 @@ Left as is, the form opens the visitor's email app addressed to ryan@vazassociat
 Optional: set `data-endpoint` on the form in contact/index.html to a form service URL (e.g. Formspree) to send directly.
 
 ## Site assistant (Piju)
-The "Ask Piju" button opens js/chatbot.js. It runs in the browser, uses no AI service and only repeats answers already published on the site, from assets/data/chatbot.json. That file is built by `python tools/build_chatbot.py`, and the GitHub Action "Rebuild assistant answers" reruns it whenever a page changes on main. Questions it cannot match go to Ryan on WhatsApp. Typed questions are not stored or sent to analytics.
+The "Ask a question" button opens js/chatbot.js. It runs in the browser, uses no AI service and only repeats answers already published on the site, from assets/data/chatbot.json. That file is built by `python tools/build_chatbot.py`, and the GitHub Action "Rebuild assistant answers" reruns it whenever a page changes on main. Questions it cannot match go to Ryan on WhatsApp. Typed questions are not stored or sent to analytics.
