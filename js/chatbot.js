@@ -1,4 +1,4 @@
-/* Vaz & Associates: site assistant (vanilla JS, no dependencies).
+/* Vaz & Associates: Piju, the site assistant (vanilla JS, no dependencies).
    Runs entirely in the visitor's browser and only repeats answers published on this site
    (assets/data/chatbot.json, built by tools/build_chatbot.py). It uses no AI service,
    writes nothing of its own, and sends what is typed nowhere unless the visitor chooses
@@ -91,8 +91,8 @@ window.VazChatbot = (function () {
       text: "Hello. Type a question, or choose a topic below." },
     { re: /^(thanks?|thank you|ok|okay|fine|great)\b[\s.!]*$/i,
       text: "You are welcome. If your question needs more detail, Ryan can take it up with you directly.", wa: true },
-    { re: /\b(are you|is this) (a |an )?(bot|human|real|person|ai|robot|chatbot)\b|\bwho are you\b/i,
-      text: "I am an automated assistant. I repeat answers published on this website and do not replace advice from Ryan Vaz, FCA.", wa: true },
+    { re: /\b(are you|is this) (a |an )?(bot|human|real|person|ai|robot|chatbot)\b|\bwho are you\b|\b(what is|what's) your name\b|\b(who|what) is piju\b|^piju\b[\s?.!]*$/i,
+      text: "I am Piju, an automated assistant. I repeat answers published on this website and do not replace advice from Ryan Vaz, FCA.", wa: true },
     { re: /\b(talk|speak|call|meet|connect|contact|reach)\b.*\b(ryan|ca|someone|person|you|human|office|firm)\b|\bcontact (details|number)\b|\b(phone|mobile|whatsapp|email|e-mail)\b|^contact\b/i,
       text: "You can reach Ryan Vaz by phone or WhatsApp on +91 95384 16161, or by email at ryan@vazassociates.in. The contact page has a form too.", link: ["/contact/", "Contact page"], wa: true },
     { re: /\b(where|address|location|located|office|directions?|timings?|hours|open)\b.*\b(you|your|office|firm|ryan)\b|^(address|location|office)\b|\byour (address|office|location|timings?|hours)\b/i,
@@ -128,15 +128,15 @@ window.VazChatbot = (function () {
 
     var panel = el("div", "cb-panel");
     panel.setAttribute("role", "dialog");
-    panel.setAttribute("aria-label", "Site assistant");
+    panel.setAttribute("aria-label", "Piju, site assistant");
     panel.hidden = true;
     var head = el("div", "cb-head");
     var heading = el("div");
-    heading.appendChild(el("p", "cb-title", "Site assistant"));
-    heading.appendChild(el("p", "cb-sub", "Automated. Answers from this website only."));
+    heading.appendChild(el("p", "cb-title", "Piju"));
+    heading.appendChild(el("p", "cb-sub", "Automated assistant. Answers from this website only."));
     var close = el("button", "cb-close");
     close.type = "button";
-    close.setAttribute("aria-label", "Close assistant");
+    close.setAttribute("aria-label", "Close Piju");
     close.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>';
     head.appendChild(heading); head.appendChild(close);
     var log = el("div", "cb-log");
@@ -250,7 +250,7 @@ window.VazChatbot = (function () {
       if (open) input.focus(); else launcher.focus();
     }
 
-    var hello = bubble("Hello. I can find answers published on this website on tax, GST, audit and related services. What would you like to know?", "bot");
+    var hello = bubble("Hello, I am Piju. I can find answers published on this website on tax, GST, audit and related services. What would you like to know?", "bot");
     hello.appendChild(waLink(""));
     log.appendChild(chipRow(CHIPS));
     load().catch(function () { /* retried on the first question */ });

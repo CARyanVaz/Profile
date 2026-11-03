@@ -200,7 +200,7 @@
   document.body.appendChild(a);
 })();
 
-/* Site assistant button. The assistant itself (js/chatbot.js) loads only when first opened. */
+/* Piju (site assistant) button. The assistant itself (js/chatbot.js) loads only when first opened. */
 (function(){
   var script = document.querySelector('script[src$="js/main.js"]');
   if (!script) return;
@@ -208,8 +208,8 @@
   var btn = document.createElement("button");
   btn.type = "button";
   btn.className = "cb-fab";
-  btn.setAttribute("aria-label", "Open site assistant");
-  btn.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a8 8 0 0 1-8 8H4l2.2-3A8 8 0 1 1 21 12z"/></svg><span>Ask a question</span>';
+  btn.setAttribute("aria-label", "Ask Piju, the site assistant");
+  btn.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a8 8 0 0 1-8 8H4l2.2-3A8 8 0 1 1 21 12z"/></svg><span>Ask Piju</span>';
   document.body.appendChild(btn);
   var bot = null, loading = false;
   function track(name, params){ if (typeof window.gtag === "function") window.gtag("event", name, params || {}); }
