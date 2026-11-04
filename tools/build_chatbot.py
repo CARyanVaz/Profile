@@ -4,7 +4,8 @@ Usage (from the repository root):  python tools/build_chatbot.py
 
 The assistant only ever repeats what this file holds, and this file only holds
 what is already published on the site: the FAQPage answers and each page's
-meta description, taken from the pages listed in sitemap.xml. To change an
+meta description, taken from the pages listed in sitemap.xml, plus the reel
+captions Ryan has reviewed in assets/data/reel_answers.json. To change an
 answer, change the page and rebuild. Standard library only.
 """
 import html
@@ -15,6 +16,9 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets" / "data" / "chatbot.json"
+REELS = ROOT / "assets" / "data" / "reel_answers.json"
+MONTHS = ("January", "February", "March", "April", "May", "June", "July", "August",
+          "September", "October", "November", "December")
 LD = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
 TAG = re.compile(r"<[^>]+>")
 
@@ -35,6 +39,22 @@ def faq_items(source):
         for node in nodes:
             if node.get("@type") == "FAQPage":
                 yield from node["mainEntity"]
+
+
+def reel_entries():
+    """Reviewed reel captions, each stating its date so that older law is not read as current."""
+    if not REELS.exists():
+        return []
+    out = []
+    for r in json.loads(REELS.read_text(encoding="utf8")).get("reels", []):
+        caption = clean(r.get("caption", ""))
+        if r.get("hide") or not caption:
+            continue
+        y, m, d = (int(x) for x in r["date"].split("-"))
+        posted = f"{d} {MONTHS[m - 1]} {y}"
+        out.append({"q": caption[:120], "a": f"From a reel posted on {posted}: {caption}", "u": r["url"],
+                    "t": f"reel posted on {posted}", "k": "reel", "d": r["date"]})
+    return out
 
 
 def main():
@@ -63,6 +83,7 @@ def main():
         desc = first(r'<meta name="description" content="([^"]*)"', source)
         if desc and path not in ("/", "/faq/"):
             entries.append({"q": title, "a": desc, "u": path, "t": title, "k": "summary"})
+    entries += reel_entries()
     if len(entries) < 100:
         raise SystemExit(f"Only {len(entries)} entries found; check the page markup")
     OUT.write_text(json.dumps({"entries": entries}, ensure_ascii=False, separators=(",", ":")) + "\n",

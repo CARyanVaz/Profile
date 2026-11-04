@@ -734,6 +734,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .ig-tag { display: inline-block; margin-right: var(--s3); font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
 .ig-reels { display: grid; gap: var(--s4); grid-template-columns: 1fr; }
 @media (min-width: 640px) { .ig-reels { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); } }
+.ig-reels figure { margin: 0; }
+.ig-reels figcaption { margin-top: 8px; font-size: 14px; color: var(--muted); }
 .ig-reels iframe { width: 100%; aspect-ratio: 9 / 16; min-height: 480px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
 
 /* ---------- Tax tools ---------- */

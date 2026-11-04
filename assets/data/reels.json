@@ -1,4 +1,4 @@
 {
-  "_readme": "Instagram reels shown on the home page. Paste up to 3 reel links, newest first, e.g. https://www.instagram.com/reel/ABC123xyz/ . Leave the list empty to show only the Follow panel.",
+  "_readme": "Written daily by tools/update_reels.py: the 3 newest Instagram reels shown on the home page. An empty list shows only the Follow panel.",
   "reels": []
 }

@@ -1,6 +1,6 @@
 /* Vaz & Associates: Piju, the site assistant (vanilla JS, no dependencies).
    Runs entirely in the visitor's browser and only repeats answers published on this site
-   (assets/data/chatbot.json, built by tools/build_chatbot.py). It uses no AI service,
+   and reel captions reviewed by Ryan (assets/data/chatbot.json, built by tools/build_chatbot.py). It uses no AI service,
    writes nothing of its own, and sends what is typed nowhere unless the visitor chooses
    to pass it on by WhatsApp. Loaded by js/main.js when the assistant is first opened. */
 window.VazChatbot = (function () {
@@ -43,7 +43,7 @@ window.VazChatbot = (function () {
       return { e: e, q: q, all: all };
     });
     var N = docs.length;
-    var RANK = { faq: 1.25, page: 1, summary: 0.9, local: 0.8 };
+    var RANK = { faq: 1.25, page: 1, summary: 0.9, local: 0.8, reel: 1 };
     function idf(w) { return Math.log(1 + N / ((df[w] || 0) + 0.5)); }
     return function search(text) {
       var original = words(text);
@@ -133,7 +133,8 @@ window.VazChatbot = (function () {
     var head = el("div", "cb-head");
     var heading = el("div");
     heading.appendChild(el("p", "cb-title", "Piju"));
-    heading.appendChild(el("p", "cb-sub", "Automated assistant. Answers from this website only."));
+    var subtitle = el("p", "cb-sub", "Automated assistant. Answers from this website only.");
+    heading.appendChild(subtitle);
     var close = el("button", "cb-close");
     close.type = "button";
     close.setAttribute("aria-label", "Close Piju");
@@ -156,7 +157,17 @@ window.VazChatbot = (function () {
     panel.appendChild(head); panel.appendChild(log); panel.appendChild(form); panel.appendChild(note);
     document.body.appendChild(panel);
 
-    function url(path) { return base + path.replace(/^\//, ""); }
+    function url(path) { return /^https:/.test(path) ? path : base + path.replace(/^\//, ""); }
+    function reelLink(e) {
+      var a = el("a", "cb-link", "Watch the " + e.t);
+      a.href = e.u; a.target = "_blank"; a.rel = "noopener";
+      return a;
+    }
+    /* The newest reel among those that match the question about as well as the best one. */
+    function newestReel(reels) {
+      return reels.filter(function (h) { return h.score >= reels[0].score * 0.6; })
+        .sort(function (x, y) { return x.e.d < y.e.d ? 1 : -1; })[0].e;
+    }
     function waLink(question) {
       var msg = question ? "Hello Ryan, I have a query: " + question
         : "Hello Ryan, I have a query" + (topic ? " (from your page: " + topic.replace(/\s+/g, " ").trim() + ")" : "") + ".";
@@ -198,8 +209,17 @@ window.VazChatbot = (function () {
           return fb;
         }
       }
-      var hits = search(question);
-      track("chatbot_question", { matched: hits.length > 0 });
+      var all = search(question);
+      var reels = all.filter(function (h) { return h.e.k === "reel"; });
+      var hits = all.filter(function (h) { return h.e.k !== "reel"; });
+      track("chatbot_question", { matched: all.length > 0 });
+      /* Published answers come first. A reel's caption is the answer only when nothing else matches. */
+      if (!hits.length && reels.length) {
+        var re = newestReel(reels), rb = bubble(re.a, "bot");
+        rb.appendChild(reelLink(re));
+        rb.appendChild(waLink(question));
+        return rb;
+      }
       if (!hits.length) {
         var nb = bubble("I could not find this on the website. Ryan can answer it directly.", "bot");
         nb.appendChild(waLink(question));
@@ -209,6 +229,7 @@ window.VazChatbot = (function () {
       var more = el("a", "cb-link", "Read on: " + top.t);
       more.href = url(top.u);
       b.appendChild(more);
+      if (reels.length) b.appendChild(reelLink(newestReel(reels)));
       b.appendChild(waLink(question));
       var seen = {}; seen[top.q] = 1;
       var related = [];
@@ -239,7 +260,10 @@ window.VazChatbot = (function () {
       if (!loading) {
         loading = fetch(url("assets/data/chatbot.json"))
           .then(function (r) { if (!r.ok) throw new Error("load"); return r.json(); })
-          .then(function (d) { search = makeIndex(d.entries); })
+          .then(function (d) {
+            search = makeIndex(d.entries);
+            if (d.entries.some(function (e) { return e.k === "reel"; })) subtitle.textContent = "Automated assistant. Answers from this website and Ryan's reels.";
+          })
           .catch(function (err) { loading = null; throw err; });
       }
       return loading;

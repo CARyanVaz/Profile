@@ -4,7 +4,7 @@ name: Rebuild assistant answers
 on:
   push:
     branches: [main]
-    paths: ["**/*.html", "sitemap.xml", "tools/build_chatbot.py"]
+    paths: ["**/*.html", "sitemap.xml", "tools/build_chatbot.py", "assets/data/reel_answers.json"]
   workflow_dispatch:
 permissions:
   contents: write

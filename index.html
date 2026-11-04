@@ -326,13 +326,17 @@
   document.querySelectorAll('.ig-follow, #ig-topics a').forEach(function(a){a.addEventListener('click',function(){if(window.gtag)gtag('event','click_instagram',{location:'home'});});});
   var box=document.getElementById('ig-reels'); if(!box||!window.fetch) return;
   fetch('assets/data/reels.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){
-    var list=(d&&d.reels||[]).map(function(u){var m=String(u).match(/instagram\.com\/(?:reels?|p)\/([A-Za-z0-9_-]+)/);return m?m[1]:null;}).filter(Boolean).slice(0,3);
+    var MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+    var list=(d&&d.reels||[]).map(function(r){var m=String(r&&r.url||r).match(/instagram\.com\/(?:[\w.]+\/)?(?:reels?|p)\/([A-Za-z0-9_-]+)/);return m?{code:m[1],date:r&&r.date}:null;}).filter(Boolean).slice(0,3);
     if(!list.length) return;
-    list.forEach(function(code){
+    list.forEach(function(item){
       var f=document.createElement('iframe');
-      f.src='https://www.instagram.com/reel/'+code+'/embed';
+      f.src='https://www.instagram.com/reel/'+item.code+'/embed';
       f.loading='lazy'; f.title='Instagram reel by ryan_ca_vaz'; f.setAttribute('scrolling','no');
-      box.appendChild(f);
+      var fig=document.createElement('figure'); fig.appendChild(f);
+      var p=/^(\d{4})-(\d{2})-(\d{2})$/.exec(item.date||'');
+      if(p){var c=document.createElement('figcaption'); c.textContent='Posted on '+Number(p[3])+' '+MONTHS[Number(p[2])-1]+' '+p[1]; fig.appendChild(c);}
+      box.appendChild(fig);
     });
     box.hidden=false; var t=document.getElementById('ig-topics'); if(t) t.hidden=true;
   }).catch(function(){});
