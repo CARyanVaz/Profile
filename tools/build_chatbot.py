@@ -31,7 +31,7 @@ MENU = [
         ("ais", "AIS and Form 26AS", r"\bAIS\b|26AS"),
         ("notices", "Notices and appeals", r"notice|intimation|defective"),
         ("tds", "TDS and TCS", r"\bTDS\b|\bTCS\b"),
-        ("planning", "Regime and advance tax", r"regime|advance tax|no tax"),
+        ("planning", "Regime, salary and advance tax", r"regime|advance tax|no tax"),
         ("gains", "Capital gains and gifts", r"house|shares|gift"),
         ("returns", "Returns and due dates", r".")]),
     ("gst", "GST", [
@@ -81,7 +81,7 @@ MENU_LINKS = {
     "tools/all": [["Compliance calendar", "/compliance-calendar/"], ["Tax calculators", "/tax-tools/"]],
 }
 PATH_AREA = {"gst": "gst", "gst-reconciliation": "gst", "gst-notices": "gst", "gstr-9-annual-return": "gst", "gst-updates": "gst",
-             "income-tax": "income-tax", "income-tax-act-2025": "income-tax", "tds-tcs": "income-tax", "itr-returns-refunds": "income-tax", "ais-26as-reconciliation": "income-tax", "nri-taxation": "nri", "nri-tax-questions": "nri",
+             "income-tax": "income-tax", "income-tax-act-2025": "income-tax", "tds-tcs": "income-tax", "itr-returns-refunds": "income-tax", "old-new-tax-regime-salary": "income-tax", "capital-gains": "income-tax", "ais-26as-reconciliation": "income-tax", "nri-taxation": "nri", "nri-tax-questions": "nri",
              "audit-assurance": "audit", "forensic-audit": "audit", "housing-society": "society",
              "accounts-bookkeeping": "accounts", "fractional-cfo": "accounts", "financial-modelling": "accounts",
              "foreign-business": "foreign", "international": "foreign", "ca-borivali-west": "firm",
@@ -111,9 +111,11 @@ def menu_area(path, anchor, q):
 
 def menu_place(path, anchor, q):
     group = re.match(r"nri-(status|returns|property|banking|dtaa|investments|notices)-", anchor)
-    tax = re.match(r"it-(act|tds|returns)-", anchor)
+    tax = re.match(r"it-(act|tds|returns|gains)-", anchor)
     if tax:
         return "income-tax/" + tax.group(1)
+    if anchor.startswith("it-regime-"):
+        return "income-tax/planning"
     if group:  # the NRI questions page groups its own answers
         return "nri/" + group.group(1)
     area = menu_area(path, anchor, q)
