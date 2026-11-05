@@ -44,10 +44,13 @@ MENU = [
         ("changes", "Circulars and latest changes", r"changes? (in|applicable)|What changes|discount|credit note"),
         ("other", "Other GST questions", r".")]),
     ("nri", "NRI", [
-        ("property", "Property sale", r"property|buyer|\bTAN\b"),
-        ("accounts", "Returning to India: NRE, NRO, RFC", r"returning|NRE|NRO|RFC|fixed deposit|dormant|resident account"),
-        ("status", "Residential status", r"RNOR|resident"),
-        ("other", "Returns and other questions", r".")]),
+        ("status", "Residential status", r"RNOR|Who is|Who qualifies|non-resident \\(NRI\\)"),
+        ("returns", "Filing returns", r"file an income tax return"),
+        ("property", "Property", r"property|buyer|\\bTAN\\b"),
+        ("banking", "NRE, NRO and returning to India", r"."),
+        ("dtaa", "DTAA", r"$^"),
+        ("investments", "Investments", r"$^"),
+        ("notices", "Notices", r"$^")]),
     ("audit", "Audit", [
         ("forensic", "Forensic audit", r"forensic"),
         ("audit", "Statutory, tax and internal audit", r".")]),
@@ -77,7 +80,7 @@ MENU_LINKS = {
     "tools/all": [["Compliance calendar", "/compliance-calendar/"], ["Tax calculators", "/tax-tools/"]],
 }
 PATH_AREA = {"gst": "gst", "gst-reconciliation": "gst", "gst-notices": "gst", "gstr-9-annual-return": "gst", "gst-updates": "gst",
-             "income-tax": "income-tax", "ais-26as-reconciliation": "income-tax", "nri-taxation": "nri",
+             "income-tax": "income-tax", "ais-26as-reconciliation": "income-tax", "nri-taxation": "nri", "nri-tax-questions": "nri",
              "audit-assurance": "audit", "forensic-audit": "audit", "housing-society": "society",
              "accounts-bookkeeping": "accounts", "fractional-cfo": "accounts", "financial-modelling": "accounts",
              "foreign-business": "foreign", "international": "foreign", "ca-borivali-west": "firm",
@@ -106,6 +109,9 @@ def menu_area(path, anchor, q):
 
 
 def menu_place(path, anchor, q):
+    group = re.match(r"nri-(status|returns|property|banking|dtaa|investments|notices)-", anchor)
+    if group:  # the NRI questions page groups its own answers
+        return "nri/" + group.group(1)
     area = menu_area(path, anchor, q)
     for a, _, subs in MENU:
         if a == area:
