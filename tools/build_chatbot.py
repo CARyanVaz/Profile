@@ -81,7 +81,7 @@ MENU_LINKS = {
     "tools/all": [["Compliance calendar", "/compliance-calendar/"], ["Tax calculators", "/tax-tools/"]],
 }
 PATH_AREA = {"gst": "gst", "gst-reconciliation": "gst", "gst-notices": "gst", "gstr-9-annual-return": "gst", "gst-updates": "gst",
-             "income-tax": "income-tax", "income-tax-act-2025": "income-tax", "tds-tcs": "income-tax", "itr-returns-refunds": "income-tax", "old-new-tax-regime-salary": "income-tax", "capital-gains": "income-tax", "ais-26as-reconciliation": "income-tax", "nri-taxation": "nri", "nri-tax-questions": "nri",
+             "income-tax": "income-tax", "income-tax-act-2025": "income-tax", "tds-tcs": "income-tax", "itr-returns-refunds": "income-tax", "old-new-tax-regime-salary": "income-tax", "capital-gains": "income-tax", "ais-26as-reconciliation": "income-tax", "nri-taxation": "nri", "nri-tax-questions": "nri", "startup-tax-80-iac": "business",
              "audit-assurance": "audit", "forensic-audit": "audit", "housing-society": "society",
              "accounts-bookkeeping": "accounts", "fractional-cfo": "accounts", "financial-modelling": "accounts",
              "foreign-business": "foreign", "international": "foreign", "ca-borivali-west": "firm",
