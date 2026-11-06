@@ -1,6 +1,6 @@
 /* Vaz & Associates: Piju, the site assistant (vanilla JS, no dependencies).
    Runs entirely in the visitor's browser and only repeats answers published on this site
-   (assets/data/chatbot.json, built by tools/build_chatbot.py). It uses no AI service,
+   and reel captions reviewed by Ryan (assets/data/chatbot.json, built by tools/build_chatbot.py). It uses no AI service,
    writes nothing of its own, and sends what is typed nowhere unless the visitor chooses
    to pass it on by WhatsApp. Loaded by js/main.js when the assistant is first opened. */
 window.VazChatbot = (function () {
@@ -18,7 +18,9 @@ window.VazChatbot = (function () {
     automate: "automation", script: "apps script automation", macro: "automation", vba: "automation", python: "automation",
     website: "web design", calculator: "calculators tools", calculate: "calculators tools", deadline: "due date",
     duedate: "due date", overseas: "international nri", abroad: "international nri", property: "property house",
-    dubai: "gulf international", uae: "gulf international", singapore: "international", flat: "property house", house: "property house", mismatch: "reconciliation", reco: "reconciliation"
+    arrested: "arrest", arrests: "arrest", cancelled: "cancellation", cancel: "cancellation", cancelling: "cancellation",
+    filed: "file", filing: "file return", registered: "registration", register: "registration", replying: "reply", replied: "reply",
+    appealing: "appeal", eway: "e way bill", dubai: "gulf international", uae: "gulf international", singapore: "international", flat: "property house", house: "property house", mismatch: "reconciliation", reco: "reconciliation"
   };
 
   function stem(w) {
@@ -43,7 +45,7 @@ window.VazChatbot = (function () {
       return { e: e, q: q, all: all };
     });
     var N = docs.length;
-    var RANK = { faq: 1.25, page: 1, summary: 0.9, local: 0.8 };
+    var RANK = { faq: 1.25, page: 1, summary: 0.9, local: 0.8, reel: 1 };
     function idf(w) { return Math.log(1 + N / ((df[w] || 0) + 0.5)); }
     return function search(text) {
       var original = words(text);
@@ -88,7 +90,7 @@ window.VazChatbot = (function () {
 
   var FIXED = [
     { re: /^(hi|hello|hey|namaste|good (morning|afternoon|evening))\b[\s.!]*$/i,
-      text: "Hello. Type a question, or choose a topic below." },
+      text: "Hello. Type a question, or choose a subject from the menu." , menu: true },
     { re: /^(thanks?|thank you|ok|okay|fine|great)\b[\s.!]*$/i,
       text: "You are welcome. If your question needs more detail, Ryan can take it up with you directly.", wa: true },
     { re: /\b(are you|is this) (a |an )?(bot|human|real|person|ai|robot|chatbot)\b|\bwho are you\b|\b(what is|what's) your name\b|\b(who|what) is piju\b|^piju\b[\s?.!]*$/i,
@@ -123,7 +125,7 @@ window.VazChatbot = (function () {
 
   function create(opts) {
     var base = opts.base, track = opts.track, launcher = opts.launcher;
-    var search = null, loading = null, lastQuestion = "";
+    var search = null, loading = null, lastQuestion = "", menu = null, entries = [];
     var topic = (document.querySelector("h1") || {}).textContent;
 
     var panel = el("div", "cb-panel");
@@ -133,7 +135,8 @@ window.VazChatbot = (function () {
     var head = el("div", "cb-head");
     var heading = el("div");
     heading.appendChild(el("p", "cb-title", "Piju"));
-    heading.appendChild(el("p", "cb-sub", "Automated assistant. Answers from this website only."));
+    var subtitle = el("p", "cb-sub", "Automated assistant. Answers from this website only.");
+    heading.appendChild(subtitle);
     var close = el("button", "cb-close");
     close.type = "button";
     close.setAttribute("aria-label", "Close Piju");
@@ -156,7 +159,17 @@ window.VazChatbot = (function () {
     panel.appendChild(head); panel.appendChild(log); panel.appendChild(form); panel.appendChild(note);
     document.body.appendChild(panel);
 
-    function url(path) { return base + path.replace(/^\//, ""); }
+    function url(path) { return /^https:/.test(path) ? path : base + path.replace(/^\//, ""); }
+    function reelLink(e) {
+      var a = el("a", "cb-link", "Watch the " + e.t);
+      a.href = e.u; a.target = "_blank"; a.rel = "noopener";
+      return a;
+    }
+    /* The newest reel among those that match the question about as well as the best one. */
+    function newestReel(reels) {
+      return reels.filter(function (h) { return h.score >= reels[0].score * 0.6; })
+        .sort(function (x, y) { return x.e.d < y.e.d ? 1 : -1; })[0].e;
+    }
     function waLink(question) {
       var msg = question ? "Hello Ryan, I have a query: " + question
         : "Hello Ryan, I have a query" + (topic ? " (from your page: " + topic.replace(/\s+/g, " ").trim() + ")" : "") + ".";
@@ -184,6 +197,61 @@ window.VazChatbot = (function () {
       });
       return row;
     }
+    /* The menu: subject, then activity, then question. Built from assets/data/chatbot.json. */
+    function menuRow(items) {
+      var row = el("div", "cb-menu");
+      items.forEach(function (it) {
+        var c = el(it.href ? "a" : "button", "cb-menu-item" + (it.nav ? " cb-menu-nav" : ""), it.label);
+        if (it.href) { c.href = url(it.href); }
+        else { c.type = "button"; c.addEventListener("click", function () { it.go(it); }); }
+        row.appendChild(c);
+      });
+      log.appendChild(row);
+      return row;
+    }
+    function pick(label, draw, id) {
+      var mine = bubble(label, "me");
+      if (id) track("chatbot_menu", { item: id });
+      draw();
+      scroll(mine);
+    }
+    function homeNav() { return { label: "Main menu", nav: true, go: function () { pick("Main menu", showSubjects); } }; }
+    function showSubjects() {
+      bubble("Choose a subject.", "bot");
+      menuRow(menu.map(function (a) {
+        return { label: a.label, go: function () { pick(a.label, function () { showActivities(a); }, a.id); } };
+      }));
+    }
+    function showActivities(a) {
+      if (a.subs.length === 1) { showQuestions(a, a.subs[0]); return; }
+      bubble(a.label + ": choose an activity.", "bot");
+      menuRow(a.subs.map(function (s) {
+        return { label: s.label, go: function () { pick(s.label, function () { showQuestions(a, s); }, s.id); } };
+      }).concat([homeNav()]));
+    }
+    function backNav(a) {
+      return { label: "Back to " + a.label, nav: true, go: function () { pick("Back to " + a.label, function () { showActivities(a); }); } };
+    }
+    function showQuestions(a, s) {
+      bubble(a.subs.length === 1 ? a.label + ": choose a question." : s.label + ": choose a question.", "bot");
+      var rows = entries.filter(function (e) { return e.m === s.id; }).map(function (e) {
+        return { label: e.q, go: function () { pick(e.q, function () { showAnswer(a, s, e); }, s.id); } };
+      });
+      s.links.forEach(function (l) { rows.push({ label: l[0], href: l[1] }); });
+      if (a.subs.length > 1) rows.push(backNav(a));
+      rows.push(homeNav());
+      menuRow(rows);
+    }
+    function showAnswer(a, s, e) {
+      var b = bubble(e.a, "bot");
+      var more = el("a", "cb-link", "Read on: " + e.t);
+      more.href = url(e.u);
+      b.appendChild(more);
+      b.appendChild(waLink(e.q));
+      var nav = [{ label: "More on " + s.label, nav: true, go: function () { pick("More on " + s.label, function () { showQuestions(a, s); }); } }];
+      nav.push(homeNav());
+      menuRow(nav);
+    }
     function reply(question) {
       for (var i = 0; i < FIXED.length; i++) {
         if (FIXED[i].re.test(question)) {
@@ -194,12 +262,22 @@ window.VazChatbot = (function () {
             fb.appendChild(fl);
           }
           if (f.wa) fb.appendChild(waLink(f.wa === true ? "" : question));
+          if (f.menu && menu) menuRow([homeNav()]);
           track("chatbot_question", { matched: true });
           return fb;
         }
       }
-      var hits = search(question);
-      track("chatbot_question", { matched: hits.length > 0 });
+      var all = search(question);
+      var reels = all.filter(function (h) { return h.e.k === "reel"; });
+      var hits = all.filter(function (h) { return h.e.k !== "reel"; });
+      track("chatbot_question", { matched: all.length > 0 });
+      /* Published answers come first. A reel's caption is the answer only when nothing else matches. */
+      if (!hits.length && reels.length) {
+        var re = newestReel(reels), rb = bubble(re.a, "bot");
+        rb.appendChild(reelLink(re));
+        rb.appendChild(waLink(question));
+        return rb;
+      }
       if (!hits.length) {
         var nb = bubble("I could not find this on the website. Ryan can answer it directly.", "bot");
         nb.appendChild(waLink(question));
@@ -209,6 +287,7 @@ window.VazChatbot = (function () {
       var more = el("a", "cb-link", "Read on: " + top.t);
       more.href = url(top.u);
       b.appendChild(more);
+      if (reels.length) b.appendChild(reelLink(newestReel(reels)));
       b.appendChild(waLink(question));
       var seen = {}; seen[top.q] = 1;
       var related = [];
@@ -228,6 +307,7 @@ window.VazChatbot = (function () {
       input.value = "";
       load().then(function () {
         reply(question);
+        if (menu && !FIXED.some(function (f) { return f.menu && f.re.test(question); })) menuRow([homeNav()]);
         scroll(mine);
       }, function () {
         var b = bubble("The answers could not be loaded just now. Ryan can answer directly.", "bot");
@@ -239,7 +319,12 @@ window.VazChatbot = (function () {
       if (!loading) {
         loading = fetch(url("assets/data/chatbot.json"))
           .then(function (r) { if (!r.ok) throw new Error("load"); return r.json(); })
-          .then(function (d) { search = makeIndex(d.entries); })
+          .then(function (d) {
+            search = makeIndex(d.entries);
+            entries = d.entries;
+            menu = d.menu && d.menu.length ? d.menu : null;
+            if (d.entries.some(function (e) { return e.k === "reel"; })) subtitle.textContent = "Automated assistant. Answers from this website and Ryan's reels.";
+          })
           .catch(function (err) { loading = null; throw err; });
       }
       return loading;
@@ -250,10 +335,11 @@ window.VazChatbot = (function () {
       if (open) input.focus(); else launcher.focus();
     }
 
-    var hello = bubble("Hello, I am Piju. I can find answers published on this website on tax, GST, audit and related services. What would you like to know?", "bot");
+    var hello = bubble("Hello, I am Piju. I can find answers published on this website. Choose from the menu, or type your question below.", "bot");
     hello.appendChild(waLink(""));
-    log.appendChild(chipRow(CHIPS));
-    load().catch(function () { /* retried on the first question */ });
+    load().then(function () {
+      if (menu) showSubjects(); else log.appendChild(chipRow(CHIPS));
+    }).catch(function () { log.appendChild(chipRow(CHIPS)); /* retried on the first question */ });
 
     form.addEventListener("submit", function (e) { e.preventDefault(); ask(input.value); });
     close.addEventListener("click", function () { show(false); });

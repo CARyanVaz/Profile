@@ -1,0 +1,70 @@
+# Brings Instagram reels onto the site. See tools/update_reels.py.
+# Every day: the 3 newest reels on the home page, published directly.
+# Every Monday: new captions for Piju as a pull request for Ryan to review, and the token renewed.
+# Secrets: INSTAGRAM_TOKEN, and REELS_ADMIN_TOKEN (a fine-grained GitHub token for this repository with
+# read and write access to Contents, Pull requests and Secrets). Without them the job changes nothing.
+name: Instagram reels
+on:
+  schedule:
+    - cron: "30 2 * * *"   # 8:00 am IST daily
+  workflow_dispatch:
+    inputs:
+      weekly:
+        description: "Also run the Monday steps now"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  pages: write
+concurrency: instagram-reels
+env:
+  RUN_WEEKLY: ${{ github.event.inputs.weekly == 'true' && '1' || '' }}
+jobs:
+  reels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Home page reels
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 tools/update_reels.py home
+          if git diff --quiet assets/data/reels.json; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898583+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/reels.json
+          git commit -m "Update home page reels"
+          git push
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || true
+      - name: Captions for Piju, for review
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          GH_TOKEN: ${{ secrets.REELS_ADMIN_TOKEN }}
+        run: |
+          if [ "$(date -u +%u)" != "1" ] && [ -z "$RUN_WEEKLY" ]; then exit 0; fi
+          if [ -z "$GH_TOKEN" ]; then echo "REELS_ADMIN_TOKEN is not set yet; nothing changed."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898583+github-actions[bot]@users.noreply.github.com"
+          # Start again from main each week, so that unmerged captions are simply proposed again with the new ones.
+          git checkout -B reel-answers
+          python3 tools/update_reels.py captions "$RUNNER_TEMP/body.md"
+          if git diff --quiet assets/data/reel_answers.json; then exit 0; fi
+          git add assets/data/reel_answers.json
+          git commit -m "Add new reel captions for Piju"
+          git push --force origin reel-answers
+          if [ -n "$(gh pr list --head reel-answers --state open --json number --jq '.[0].number')" ]; then
+            gh pr edit reel-answers --body-file "$RUNNER_TEMP/body.md"
+          else
+            gh pr create --head reel-answers --base main --title "Reel captions for Piju" --body-file "$RUNNER_TEMP/body.md"
+          fi
+      - name: Renew the Instagram token
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          GH_TOKEN: ${{ secrets.REELS_ADMIN_TOKEN }}
+        run: |
+          if [ "$(date -u +%u)" != "1" ] && [ -z "$RUN_WEEKLY" ]; then exit 0; fi
+          if [ -z "$GH_TOKEN" ] || [ -z "$INSTAGRAM_TOKEN" ]; then exit 0; fi
+          NEW="$(python3 tools/update_reels.py refresh)"
+          echo "::add-mask::$NEW"
+          printf '%s' "$NEW" | gh secret set INSTAGRAM_TOKEN --repo "$GITHUB_REPOSITORY"
