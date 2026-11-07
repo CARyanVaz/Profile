@@ -27,6 +27,7 @@ Contact: +91 95384 16161, ryan@vazassociates.in. Office: Mangalmurti Apartments,
 - [Accounts writing and bookkeeping](https://vazassociates.in/services/accounts-bookkeeping/)
 - [Automated bookkeeping](https://vazassociates.in/services/automated-bookkeeping/): chartered accountant practice in Borivali West, Mumbai that keeps books with automated bank, invoice and GST imports into Tally Prime, Zoho Books, QuickBooks Online and Xero using Python, Excel VBA, Google Apps Script and AI-assisted extraction, with monthly review by Ryan Vaz, FCA
 - [Fractional CFO advisory](https://vazassociates.in/services/fractional-cfo/)
+- [Virtual fractional CFO](https://vazassociates.in/services/virtual-cfo/): part-time CFO work done online for businesses anywhere in India (Bengaluru, Delhi NCR, Pune, Hyderabad, Chennai, Ahmedabad, Kolkata and elsewhere) and abroad (Singapore, UAE, UK, US, Australia, East Africa): cash flow, MIS, budgets, bank and investor reporting, by Ryan Vaz, FCA
 - [Forensic audit](https://vazassociates.in/services/forensic-audit/)
 - [Financial modelling](https://vazassociates.in/services/financial-modelling/)
 
