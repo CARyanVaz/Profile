@@ -13,10 +13,10 @@ Contact: +91 95384 16161, ryan@vazassociates.in. Office: Mangalmurti Apartments,
 - [Capital gains](https://vazassociates.in/services/capital-gains/): rates, exemptions, property, shares, funds
 - [TDS and TCS](https://vazassociates.in/services/tds-tcs/): rates, defaults, corrections
 - [Returns and refunds](https://vazassociates.in/services/itr-returns-refunds/): forms, revised and updated returns, refunds
-- [GST](https://vazassociates.in/services/gst/): registration, GSTR-1 and GSTR-3B, QRMP and composition, GSTR-9 and 9C, LUT and refunds, e-invoicing, notice replies
+- [GST](https://vazassociates.in/services/gst/): for businesses in Mumbai and other states, with automated GSTR-2B reconciliation: registration, GSTR-1 and GSTR-3B, QRMP and composition, GSTR-9 and 9C, LUT and refunds, e-invoicing, notice replies
 - [Audit and assurance](https://vazassociates.in/services/audit-assurance/): statutory audit, tax audit, internal audit, internal financial controls (IFC), information systems audit, stock and receivables audit, trust and NGO audit
 - [Co-operative housing society accounting and audit](https://vazassociates.in/services/housing-society/): maintenance billing, annual accounts, audit under the Maharashtra Co-operative Societies Act, 1960, rectification reports, GST and TDS for societies
-- [NRI taxation](https://vazassociates.in/services/nri-taxation/): residential status and RNOR, NRE, NRO and RFC accounts, TDS on property sales, lower deduction certificates, DTAA relief, Forms 145 and 146 (formerly 15CA and 15CB)
+- [NRI taxation](https://vazassociates.in/services/nri-taxation/): for NRIs in the UAE and Gulf, US, UK, Canada, Australia, Singapore and East Africa, handled online: residential status and RNOR, NRE, NRO and RFC accounts, TDS on property sales, lower deduction certificates, DTAA relief, Forms 145 and 146 (formerly 15CA and 15CB)
 - [NRI tax questions](https://vazassociates.in/services/nri-tax-questions/): residential status, filing returns from abroad, property sale TDS, NRE, NRO and FCNR, DTAA, investments and income tax notices
 - [Foreign companies in India](https://vazassociates.in/services/foreign-business/): choice of subsidiary, LLP, branch, liaison or project office, FEMA and RBI reporting (FC-GPR, FLA), corporate tax, payments to non-residents, transfer pricing, GST, accounts, payroll and group reporting
 - [AIS and Form 26AS reconciliation](https://vazassociates.in/services/ais-26as-reconciliation/)
@@ -32,6 +32,8 @@ Contact: +91 95384 16161, ryan@vazassociates.in. Office: Mangalmurti Apartments,
 - [Financial modelling](https://vazassociates.in/services/financial-modelling/)
 
 ## Technology services
+
+- [Chartered accountancy using technology](https://vazassociates.in/services/technology-chartered-accountant/): how a Mumbai chartered accountant practice applies Python, Excel VBA, Google Apps Script, AI-assisted extraction, SAP and Oracle Fusion experience to income tax, GST, audit, bookkeeping and CFO work, under chartered accountant review
 
 - [AI and automation for finance](https://vazassociates.in/services/finance-automation/): Python, Excel VBA and AI-assisted document extraction and reconciliation
 - [Google Workspace automation (Apps Script)](https://vazassociates.in/services/google-apps-script/)
