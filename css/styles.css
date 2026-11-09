@@ -859,3 +859,9 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .hero .chips a, .page-hero .chips a { color:#ffffff; text-decoration:none; }
 .hero .chips li:hover, .page-hero .chips li:hover { background:#f0c46e; border-color:#f0c46e; }
 .hero .chips li:hover a, .page-hero .chips li:hover a { color:#0d2240; }
+/* Everything inside navy headers stays readable */
+.hero h2, .hero h3, .page-hero h2, .page-hero h3 { color:#ffffff; }
+.hero .muted, .page-hero .muted, .page-hero code { color:#d3dcea; }
+.hero .btn--ghost, .page-hero .btn--ghost { color:#ffffff; border-color:rgba(255,255,255,.45); background:transparent; }
+.hero .btn--ghost:hover, .page-hero .btn--ghost:hover, .hero .btn--ghost:focus-visible, .page-hero .btn--ghost:focus-visible { color:#0d2240; background:#ffffff; border-color:#ffffff; }
+.hero label, .page-hero label, .page-hero .field span { color:#ffffff; }
