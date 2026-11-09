@@ -834,13 +834,15 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 /* Firm card: white card on navy */
 .firm-card { background:#ffffff !important; color:var(--ink); border:1px solid rgba(226,180,92,.6); box-shadow:0 24px 60px rgba(0,0,0,.35); }
 .firm-card::before { display:none; }
-.firm-card h2 { color:var(--ink); }
-.firm-card dt { color:var(--muted); }
-.firm-card dd { color:var(--ink); }
-.firm-card dl div { border-bottom-color:var(--line); }
-.firm-card a { color:var(--accent); }
+.firm-card h2, .firm-card dd { color:#0d2240 !important; }
+.firm-card dt { color:#56637a !important; }
+.firm-card dl div { border-bottom-color:#dde5ee !important; }
+.firm-card a { color:#a8650f !important; }
+.firm-card a:hover { color:#0d2240 !important; }
 /* Section bands and cards */
 .section--alt { background:#f1f5fa; }
+:root[data-theme="dark"] .section--alt { background:#142438; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .section--alt { background:#142438; } }
 .card { border-top:3px solid var(--accent-soft); box-shadow:0 2px 10px rgba(13,34,64,.05); }
 .card:hover { box-shadow:0 14px 34px rgba(13,34,64,.12); transform:translateY(-2px); }
 .card-icon { background:#0d2240; color:#f0c46e; }
