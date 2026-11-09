@@ -828,7 +828,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .hero p, .page-hero p, .hero .lead, .page-hero .lead { color:#d3dcea; }
 .hero .eyebrow, .page-hero .eyebrow, .page-hero .eyebrow a { color:#f0c46e; }
 .hero .eyebrow::before, .page-hero .eyebrow::before { background:#f0c46e; }
-.page-hero a { color:#f0c46e; }
+.page-hero a, .hero a:not(.btn) { color:#ffffff; text-decoration-color:rgba(255,255,255,.6); }
+.page-hero .eyebrow a { color:#ffffff; }
 .hero .btn:not(.btn-primary):not(.btn--primary) { color:#fff; border-color:rgba(255,255,255,.45); background:transparent; }
 .hero .btn:not(.btn-primary):not(.btn--primary):hover { background:rgba(255,255,255,.1); }
 /* Firm card: white card on navy */
