@@ -807,8 +807,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 :root, :root[data-theme="light"] {
   --bg:#ffffff; --surface:#ffffff; --surface-2:#edf2f8; --tint:#eef3f9;
   --ink:#0d2240; --text:#24344d; --muted:#56637a; --line:#dde5ee;
-  --accent:#a8650f; --accent-soft:#d49a3c; --cta:#c9821e; --cta-hover:#b06f12;
-  --champagne:#e2b45c; --navy:#0d2240; --focus:#a8650f;
+  --accent:#0d2240; --accent-soft:#d49a3c; --cta:#0d2240; --cta-hover:#1d3d6b;
+  --champagne:#e2b45c; --navy:#0d2240; --focus:#0d2240;
   --scene-deep:#0d2240; --scene-mid:#183660; --scene-high:#28508a; --scene-focal:#e2b45c;
 }
 .btn-primary, .btn--primary { background: var(--cta); border-color: var(--cta); color:#fff; }
@@ -837,7 +837,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .firm-card h2, .firm-card dd { color:#0d2240 !important; }
 .firm-card dt { color:#56637a !important; }
 .firm-card dl div { border-bottom-color:#dde5ee !important; }
-.firm-card a { color:#a8650f !important; }
+.firm-card a { color:#0d2240 !important; }
 .firm-card a:hover { color:#0d2240 !important; }
 /* Section bands and cards */
 .section--alt { background:#f1f5fa; }
@@ -849,3 +849,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .eyebrow { color:var(--accent); }
 .wa-fab { background:#1f9e57 !important; color:#fff !important; }
 .wa-fab:hover { background:#178048 !important; }
+
+/* Primary button inside the navy hero: gold with navy text */
+.hero .btn--primary, .page-hero .btn--primary { background:#f0c46e; border-color:#f0c46e; color:#0d2240; }
+.hero .btn--primary:hover, .page-hero .btn--primary:hover { background:#ffd78a; border-color:#ffd78a; color:#0d2240; }
