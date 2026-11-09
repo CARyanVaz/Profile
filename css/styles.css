@@ -854,3 +854,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 /* Primary button inside the navy hero: gold with navy text */
 .hero .btn--primary, .page-hero .btn--primary { background:#f0c46e; border-color:#f0c46e; color:#0d2240; }
 .hero .btn--primary:hover, .page-hero .btn--primary:hover { background:#ffd78a; border-color:#ffd78a; color:#0d2240; }
+/* Chips inside navy headers: outlined, white text */
+.hero .chips li, .page-hero .chips li { background:rgba(255,255,255,.08); border-color:rgba(255,255,255,.35); color:#ffffff; }
+.hero .chips a, .page-hero .chips a { color:#ffffff; text-decoration:none; }
+.hero .chips li:hover, .page-hero .chips li:hover { background:#f0c46e; border-color:#f0c46e; }
+.hero .chips li:hover a, .page-hero .chips li:hover a { color:#0d2240; }
