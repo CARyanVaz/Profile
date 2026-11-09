@@ -865,3 +865,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .hero .btn--ghost, .page-hero .btn--ghost { color:#ffffff; border-color:rgba(255,255,255,.45); background:transparent; }
 .hero .btn--ghost:hover, .page-hero .btn--ghost:hover, .hero .btn--ghost:focus-visible, .page-hero .btn--ghost:focus-visible { color:#0d2240; background:#ffffff; border-color:#ffffff; }
 .hero label, .page-hero label, .page-hero .field span { color:#ffffff; }
+/* Calendar subscribe box: all four buttons gold like "Add to Google Calendar" */
+.page-hero .cal-subscribe .btn { background:#f0c46e; border-color:#f0c46e; color:#0d2240; }
+.page-hero .cal-subscribe .btn:hover, .page-hero .cal-subscribe .btn:focus-visible { background:#ffd78a; border-color:#ffd78a; color:#0d2240; }
+.page-hero .cal-sub-title { color:#ffffff; }
