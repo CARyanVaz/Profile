@@ -805,8 +805,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 
 /* ---------- Colour refresh: navy and gold (light theme) ---------- */
 :root, :root[data-theme="light"] {
-  --bg:#fbf8f2; --surface:#ffffff; --surface-2:#f4ecda; --tint:#f7efdd;
-  --ink:#0d2240; --text:#24344d; --muted:#56637a; --line:#e7dcc5;
+  --bg:#ffffff; --surface:#ffffff; --surface-2:#edf2f8; --tint:#eef3f9;
+  --ink:#0d2240; --text:#24344d; --muted:#56637a; --line:#dde5ee;
   --accent:#a8650f; --accent-soft:#d49a3c; --cta:#c9821e; --cta-hover:#b06f12;
   --champagne:#e2b45c; --navy:#0d2240; --focus:#a8650f;
   --scene-deep:#0d2240; --scene-mid:#183660; --scene-high:#28508a; --scene-focal:#e2b45c;
@@ -840,7 +840,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .firm-card dl div { border-bottom-color:var(--line); }
 .firm-card a { color:var(--accent); }
 /* Section bands and cards */
-.section--alt { background:#f4ecda; }
+.section--alt { background:#f1f5fa; }
 .card { border-top:3px solid var(--accent-soft); box-shadow:0 2px 10px rgba(13,34,64,.05); }
 .card:hover { box-shadow:0 14px 34px rgba(13,34,64,.12); transform:translateY(-2px); }
 .card-icon { background:#0d2240; color:#f0c46e; }
