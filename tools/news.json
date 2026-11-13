@@ -1,0 +1,92 @@
+{
+  "_readme": "News items for news/index.html. Add an item, then run: python tools/update_news.py. Fields: date (YYYY-MM-DD, date of the notification, circular or advisory), act (key in acts), title (plain, factual, no superlatives), ref (notification, circular or advisory number), effective (date or short text), summary (one or two plain sentences), link (site page with the detail, relative to the site root, optional). Use only the official notification as the source. Items older than 12 months may be removed.",
+  "last_updated": "2026-11-13",
+  "acts": {
+    "gst": "GST",
+    "income-tax": "Income tax and TDS",
+    "other": "Companies Act, LLP, labour and other laws"
+  },
+  "items": [
+    {
+      "date": "2026-11-04",
+      "act": "gst",
+      "title": "E-way bill numbers to go from 12 to 14 digits",
+      "ref": "GSTN advisory dated 4 November 2026",
+      "effective": "1 January 2027",
+      "summary": "Consolidated e-way bill numbers go from 10 to 11 digits. Businesses using ERP systems or APIs should update fields and validation rules; the change appears in the sandbox first.",
+      "link": "services/gst-updates/"
+    },
+    {
+      "date": "2026-10-30",
+      "act": "gst",
+      "title": "No further arrests, no notice below Rs 10,000, limits on e-way bill interception",
+      "ref": "Instruction 02/2026-GST",
+      "effective": "In force",
+      "summary": "Instruction to GST officers following the 57th GST Council meeting.",
+      "link": "services/gst-notices/#gst-small-notice-change"
+    },
+    {
+      "date": "2026-10-28",
+      "act": "gst",
+      "title": "Classification of goods and GST on certain services",
+      "ref": "Circulars 265 and 266",
+      "effective": "Issued",
+      "summary": "Two clarificatory circulars on classification and on the GST treatment of certain services.",
+      "link": "services/gst-updates/"
+    },
+    {
+      "date": "2026-10-26",
+      "act": "gst",
+      "title": "Post-sale discounts: credit note under section 34, no prior agreement needed",
+      "ref": "Notification 03/2026-Central Tax",
+      "effective": "1 November 2026",
+      "summary": "Brings sections 153 to 155 of the Finance Act, 2026 into force. A discount given after supply is excluded from taxable value if the supplier issues a credit note under section 34 and the recipient reverses the related ITC; the earlier condition of an agreement linked to specific invoices no longer applies. The same notification brings in the refund changes.",
+      "link": "services/gst-updates/#post-sale-discount-rules"
+    },
+    {
+      "date": "2026-10-26",
+      "act": "gst",
+      "title": "New REG-01 and REG-14, rule 14B for e-commerce sellers, revised cancellation, refund rules",
+      "ref": "Notification 05/2026-Central Tax",
+      "effective": "1 November 2026, with later dates for some forms",
+      "summary": "Revised registration and amendment forms, registration in a State through an e-commerce operator's warehouse, system approval of compliant REG-16 applications, and faster refund acknowledgement. Revised REG-16 and RFD-01 apply from 1 December 2026.",
+      "link": "services/gst-updates/"
+    },
+    {
+      "date": "2026-10-26",
+      "act": "gst",
+      "title": "GST TDS on purchases of specified scrap above Rs 2.5 lakh",
+      "ref": "Notifications 06/2026 and 07/2026-Central Tax",
+      "effective": "1 November 2026",
+      "summary": "A registered buyer deducts 2% GST TDS on used cooking oil, plastic and tyre scrap, metal scrap and e-waste bought from a registered supplier where the contract value exceeds Rs 2.5 lakh.",
+      "link": "services/gst-updates/"
+    },
+    {
+      "date": "2026-10-26",
+      "act": "gst",
+      "title": "Registration, demand and appeals, pre-deposit, ISD, section 17(4) and export receipts",
+      "ref": "Circulars 257 to 264",
+      "effective": "Issued",
+      "summary": "Circular 257 gives officers document lists for registration and limits on queries; Circular 258 allows up to four personal hearings on a show cause notice.",
+      "link": "services/gst-updates/"
+    },
+    {
+      "date": "2026-10-01",
+      "act": "income-tax",
+      "title": "Resident individual or HUF buying property from an NRI can deduct TDS without a TAN",
+      "ref": "Income-tax Act, 2025",
+      "effective": "1 October 2026",
+      "summary": "The buyer deducts and deposits the TDS using a PAN-based challan-cum-statement. Companies and firms buying from an NRI still need a TAN.",
+      "link": "services/nri-property-sale-tds/"
+    },
+    {
+      "date": "2026-07-06",
+      "act": "income-tax",
+      "title": "CBDT FAQs on the move to the Income-tax Act, 2025",
+      "ref": "CBDT FAQs dated 6 July 2026",
+      "effective": "Issued",
+      "summary": "Proceedings for tax years before 1 April 2026 continue under the 1961 Act; section 12AB and 80G registrations already granted remain valid.",
+      "link": "services/income-tax-act-2025/"
+    }
+  ]
+}
