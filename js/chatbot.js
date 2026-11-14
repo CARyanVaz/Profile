@@ -5,7 +5,7 @@
    to pass it on by WhatsApp. Loaded by js/main.js when the assistant is first opened. */
 window.VazChatbot = (function () {
   "use strict";
-  var WA = "https://wa.me/919538416161?text=";
+  var WA = "https://wa.me/916366446161?text=";
   var STOP = {};
   ("a an and any are as at be but by can could do does for from get give had has have how i if in into is it its me my need "
     + "of on or our please should so tell than that the their them then there these this to was we what when where which who why "
@@ -96,7 +96,7 @@ window.VazChatbot = (function () {
     { re: /\b(are you|is this) (a |an )?(bot|human|real|person|ai|robot|chatbot)\b|\bwho are you\b|\b(what is|what's) your name\b|\b(who|what) is piju\b|^piju\b[\s?.!]*$/i,
       text: "I am Piju, an automated assistant. I repeat answers published on this website and do not replace advice from Ryan Vaz, FCA.", wa: true },
     { re: /\b(talk|speak|call|meet|connect|contact|reach)\b.*\b(ryan|ca|someone|person|you|human|office|firm)\b|\bcontact (details|number)\b|\b(phone|mobile|whatsapp|email|e-mail)\b|^contact\b/i,
-      text: "You can reach Ryan Vaz by phone or WhatsApp on +91 95384 16161, or by email at ryan@vazassociates.in. The contact page has a form too.", link: ["/contact/", "Contact page"], wa: true },
+      text: "You can reach Ryan Vaz by phone or WhatsApp on +91 63664 46161, or by email at ryan@vazassociates.in. The contact page has a form too.", link: ["/contact/", "Contact page"], wa: true },
     { re: /\b(where|address|location|located|office|directions?|timings?|hours|open)\b.*\b(you|your|office|firm|ryan)\b|^(address|location|office)\b|\byour (address|office|location|timings?|hours)\b/i,
       text: "The practice is in Borivali West, Mumbai. Meetings are by appointment, so please confirm a time with Ryan first.", link: ["/ca-borivali-west/", "Borivali West office"], wa: true },
     { re: /\b(your|ryan'?s?|you) (fee|fees|charge|charges|rates?|pricing|price)\b|\b(do|will) you charge\b|\bhow much (do|will|would|does|is) (you|it|that|this)( cost| charge)?\b|^(fees?|charges?|pricing|prices?|quote|rates)\b[\s?.!]*$|\bwhat (are|is) (the )?(fees?|charges?)\b[\s?.!]*$/i,

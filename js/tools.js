@@ -2,7 +2,7 @@
    Rates as on 1 November 2026 (Income-tax Act, 2025; tax year 2026-27; CGST Act 2017 s.50). */
 (function () {
   "use strict";
-  var WA = "https://wa.me/919538416161?text=";
+  var WA = "https://wa.me/916366446161?text=";
   var INF = Infinity;
 
   function $(id) { return document.getElementById(id); }
