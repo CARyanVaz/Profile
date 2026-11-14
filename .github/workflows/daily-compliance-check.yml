@@ -1,0 +1,69 @@
+# Daily compliance calendar, GST and News check, run by Claude inside GitHub.
+# Lives in the repository, so it cannot be lost when a chat is deleted.
+# Needs one repository secret: CLAUDE_CODE_OAUTH_TOKEN (from "claude setup-token",
+# uses the Claude subscription) or ANTHROPIC_API_KEY (billed on the API account).
+# Opens a pull request on calendar-update-YYYYMMDD only when something changed.
+name: Daily compliance check
+on:
+  schedule:
+    - cron: "29 1 * * *"   # 6:59 am IST
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+concurrency: daily-compliance-check
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Skip if today's pull request is already open
+        id: open
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          b="calendar-update-$(TZ=Asia/Kolkata date +%Y%m%d)"
+          echo "branch=$b" >> "$GITHUB_OUTPUT"
+          n=$(gh pr list --head "$b" --state open --json number --jq length)
+          echo "skip=$([ "$n" != "0" ] && echo yes || echo no)" >> "$GITHUB_OUTPUT"
+      - uses: anthropics/claude-code-action@v1
+        if: steps.open.outputs.skip == 'no'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ github.token }}
+          claude_args: |
+            --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(git:*),Bash(gh pr:*),Bash(date:*),Bash(ls:*)"
+          prompt: |
+            Daily compliance check for vazassociates.in (this repository, GitHub Pages).
+            Today's branch name, if a change is needed: ${{ steps.open.outputs.branch }}
+            Work unattended. Do not ask questions.
+
+            1. Read tools/calendar.json (note its last_updated date) and tools/news.json.
+            2. Check official sources for anything issued since last_updated that changes a due date,
+               a GST rule shown on the site, or belongs on the News page:
+               CBDT and the Income Tax Department (incometaxindia.gov.in), CBIC and the GST Council
+               (cbic-gst.gov.in, gstcouncil.gov.in), GST portal news and advisories (gst.gov.in),
+               MCA (mca.gov.in), EPFO (epfindia.gov.in), ESIC (esic.gov.in), Maharashtra Professional
+               Tax (mahagst.gov.in). Use only official pages. Never guess dates, form numbers or rates;
+               leave out anything you cannot confirm on an official page.
+            3. If nothing changed: make no commits, open nothing, and finish with "No change".
+            4. If something changed, on branch ${{ steps.open.outputs.branch }} created from main:
+               - edit tools/calendar.json and run python3 tools/update_calendar.py;
+               - for GST changes, update faq/ (GST answers), the GST page table and services/gst-updates/;
+               - add each new notification or circular to tools/news.json and run python3 tools/update_news.py;
+               - update dateModified, sitemap.xml lastmod and any "Status as on <date>" on each changed page;
+               - keep FAQPage markup identical to the visible FAQs;
+               - ICAI rules: no fees, no superlatives, no solicitation, no testimonials; plain British-style
+                 English; cite the Income-tax Act, 2025 with "formerly section X" where relevant; income tax
+                 and GST kept separate;
+               - run python3 tools/check_site.py and fix every error it reports;
+               - commit with a plain message, push the branch, and open a pull request against main with
+                 gh pr create. In the description list each change with the official source link.
+            5. Finish with two lines: what was checked, and what changed (or "No change").

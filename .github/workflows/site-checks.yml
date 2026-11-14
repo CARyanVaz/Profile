@@ -1,0 +1,28 @@
+# Runs on every push and pull request: link, schema, ICAI wording and sitemap checks
+# (tools/check_site.py). After a push to main that passes, tells Bing and other
+# IndexNow search engines which pages changed (tools/indexnow.py).
+name: Site checks and IndexNow
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/check_site.py
+  indexnow:
+    needs: checks
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Wait for GitHub Pages to publish
+        run: sleep 90
+      - run: python3 tools/indexnow.py "${{ github.event.before }}" "${{ github.sha }}"
