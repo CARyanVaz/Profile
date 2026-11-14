@@ -50,7 +50,7 @@ Contact: +91 63664 46161, ryan@vazassociates.in. Office: Mangalmurti Apartments,
 - [Website design and development](https://vazassociates.in/web-design/): a separate service for small businesses and professionals
 
 ## Reference
-
+- [Privacy notice](https://vazassociates.in/privacy/): how personal data from website visits and WhatsApp, email and phone enquiries is handled, AI-assisted drafts approved by Ryan Vaz, retention, and rights under the Digital Personal Data Protection Act, 2023.
 - [News](https://vazassociates.in/news/): dated changes in GST, income tax and TDS, and other laws, with notification number, date in force and a link to the detail
 - [Compliance calendar](https://vazassociates.in/compliance-calendar/): month-wise and Act-wise due dates for income tax, TDS and TCS, GST, ROC, LLP, EPF and ESI, and Maharashtra professional tax, checked daily for government extensions
 - [Knowledge and FAQ](https://vazassociates.in/faq/): short, dated answers on the GST changes of 2026-27, NRI tax, AIS and Form 26AS, income tax notices, late filing, capital gains, gifts, GST reconciliation, starting a business, composition, GST on rent, e-invoicing, Udyam and fractional CFO services

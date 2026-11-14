@@ -235,6 +235,8 @@
 (function(){
   if (/^\/web-design\//.test(location.pathname)) return;
   var NUMBER = "916366446161";
+  var ms = document.querySelector('script[src$="js/main.js"]');
+  var BASE = ms ? ms.src.replace(/js\/main\.js$/, "") : "/";
   var TOPICS = [
     "Income tax",
     "GST",
@@ -260,6 +262,8 @@
     ".wa-pick ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}" +
     ".wa-pick li button{width:100%;text-align:left;font:inherit;font-size:16px;padding:8px 14px;border-radius:10px;border:1px solid var(--line,#dce4ea);background:transparent;color:var(--ink,#101c2c);cursor:pointer}" +
     ".wa-pick li button:hover,.wa-pick li button:focus-visible{border-color:#1f9e57;background:rgba(31,158,87,.08);outline:none}" +
+    ".wa-pick .wa-pick-note{margin:0 0 10px;font-size:13px;color:var(--muted,#4f6170)}" +
+    ".wa-pick .wa-pick-note a{color:inherit}" +
     ".wa-pick .wa-pick-x{margin-top:14px;font:inherit;font-size:15px;background:none;border:0;color:var(--muted,#4f6170);cursor:pointer;text-decoration:underline}";
   document.head.appendChild(css);
 
@@ -282,6 +286,13 @@
     box.setAttribute("aria-modal", "true");
     box.setAttribute("aria-labelledby", "wa-pick-title");
     box.innerHTML = '<h2 id="wa-pick-title">What would you like to discuss?</h2><p>Choose a topic. WhatsApp will open with it filled in.</p>';
+    var priv = document.createElement("p");
+    priv.className = "wa-pick-note";
+    priv.appendChild(document.createTextNode("Ryan reads every message. An AI tool helps prepare draft replies, and Ryan approves each reply before it is sent. Please do not send PAN, Aadhaar or bank details. "));
+    var pl = document.createElement("a");
+    pl.href = BASE + "privacy/#whatsapp-ai"; pl.textContent = "Privacy notice";
+    priv.appendChild(pl);
+    box.appendChild(priv);
     var ul = document.createElement("ul");
     TOPICS.forEach(function(t){
       var li = document.createElement("li");
