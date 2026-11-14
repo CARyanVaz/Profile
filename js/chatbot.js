@@ -174,7 +174,7 @@ window.VazChatbot = (function () {
       var msg = question ? "Hello Ryan, I have a query: " + question
         : "Hello Ryan, I have a query" + (topic ? " (from your page: " + topic.replace(/\s+/g, " ").trim() + ")" : "") + ".";
       var a = el("a", "cb-wa", "Ask Ryan on WhatsApp");
-      a.href = WA + encodeURIComponent(msg); a.target = "_blank"; a.rel = "noopener";
+      a.href = WA + encodeURIComponent(msg); a.target = "_blank"; a.rel = "noopener"; a.setAttribute("data-wa-direct", "");
       return a;
     }
     function scroll(node) {

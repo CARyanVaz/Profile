@@ -229,3 +229,84 @@
     document.head.appendChild(s);
   });
 })();
+
+/* WhatsApp topic picker: any WhatsApp link opens a short list of topics first;
+   the chosen topic is filled into the WhatsApp message. Not used on web-design pages. */
+(function(){
+  if (/^\/web-design\//.test(location.pathname)) return;
+  var NUMBER = "916366446161";
+  var TOPICS = [
+    "Income tax",
+    "GST",
+    "Audit and assurance",
+    "Accounting and bookkeeping",
+    "NRI taxation",
+    "Housing society accounts",
+    "Banking and bank finance",
+    "Fractional CFO and MIS",
+    "IT, automation and AI",
+    "Other"
+  ];
+  var h1 = document.querySelector("h1");
+  var page = h1 ? h1.textContent.replace(/\s+/g, " ").trim() : document.title;
+
+  var css = document.createElement("style");
+  css.textContent =
+    ".wa-pick-back{position:fixed;inset:0;background:rgba(13,34,64,.55);z-index:1000;display:flex;align-items:flex-end;justify-content:center;padding:16px}" +
+    "@media(min-width:600px){.wa-pick-back{align-items:center}}" +
+    ".wa-pick{background:var(--surface,#fff);color:var(--text,#253746);border:1px solid var(--line,#dce4ea);border-radius:14px;max-width:420px;width:100%;max-height:90vh;overflow:auto;padding:20px;box-shadow:0 12px 40px rgba(0,0,0,.25)}" +
+    ".wa-pick h2{font-size:20px;margin:0 0 4px;color:var(--ink,#101c2c)}" +
+    ".wa-pick p{margin:0 0 10px;font-size:15px;color:var(--muted,#4f6170)}" +
+    ".wa-pick ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}" +
+    ".wa-pick li button{width:100%;text-align:left;font:inherit;font-size:16px;padding:8px 14px;border-radius:10px;border:1px solid var(--line,#dce4ea);background:transparent;color:var(--ink,#101c2c);cursor:pointer}" +
+    ".wa-pick li button:hover,.wa-pick li button:focus-visible{border-color:#1f9e57;background:rgba(31,158,87,.08);outline:none}" +
+    ".wa-pick .wa-pick-x{margin-top:14px;font:inherit;font-size:15px;background:none;border:0;color:var(--muted,#4f6170);cursor:pointer;text-decoration:underline}";
+  document.head.appendChild(css);
+
+  var back = null, lastFocus = null, intro = "";
+  function close(){ if (back) { back.remove(); back = null; } if (lastFocus) lastFocus.focus(); }
+  function send(topic){
+    var msg = intro || ("Hello Ryan, I have a query" + (page ? " (from your page: " + page + ")" : "") + ".");
+    msg += topic === "Other" ? "\nTopic: Other - " : "\nTopic: " + topic;
+    if (typeof window.gtag === "function") window.gtag("event", "whatsapp_topic", { topic: topic, page: location.pathname });
+    close();
+    window.open("https://wa.me/" + NUMBER + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
+  }
+  function open(){
+    lastFocus = document.activeElement;
+    back = document.createElement("div");
+    back.className = "wa-pick-back";
+    var box = document.createElement("div");
+    box.className = "wa-pick";
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-modal", "true");
+    box.setAttribute("aria-labelledby", "wa-pick-title");
+    box.innerHTML = '<h2 id="wa-pick-title">What would you like to discuss?</h2><p>Choose a topic. WhatsApp will open with it filled in.</p>';
+    var ul = document.createElement("ul");
+    TOPICS.forEach(function(t){
+      var li = document.createElement("li");
+      var b = document.createElement("button");
+      b.type = "button"; b.textContent = t;
+      b.addEventListener("click", function(){ send(t); });
+      li.appendChild(b); ul.appendChild(li);
+    });
+    box.appendChild(ul);
+    var x = document.createElement("button");
+    x.type = "button"; x.className = "wa-pick-x"; x.textContent = "Cancel";
+    x.addEventListener("click", close);
+    box.appendChild(x);
+    back.appendChild(box);
+    back.addEventListener("click", function(e){ if (e.target === back) close(); });
+    back.addEventListener("keydown", function(e){ if (e.key === "Escape") close(); });
+    document.body.appendChild(back);
+    ul.querySelector("button").focus();
+  }
+  document.addEventListener("click", function(e){
+    var a = e.target.closest && e.target.closest('a[href*="wa.me/"]');
+    if (!a || a.hasAttribute("data-wa-direct")) return;
+    e.preventDefault();
+    var m = (a.getAttribute("href") || "").match(/[?&]text=([^&]*)/);
+    try { intro = m ? decodeURIComponent(m[1].replace(/\+/g, " ")).trim() : ""; } catch (err) { intro = ""; }
+    open();
+  });
+})();
