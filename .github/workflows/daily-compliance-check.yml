@@ -38,22 +38,32 @@ jobs:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ github.token }}
+          display_report: "true"
           claude_args: |
+            --max-turns 120
             --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(git:*),Bash(gh pr:*),Bash(date:*),Bash(ls:*)"
           prompt: |
             Daily compliance check for vazassociates.in (this repository, GitHub Pages).
             Today's branch name, if a change is needed: ${{ steps.open.outputs.branch }}
             Work unattended. Do not ask questions.
 
-            1. Read tools/calendar.json (note its last_updated date) and tools/news.json.
-            2. Check official sources for anything issued since last_updated that changes a due date,
-               a GST rule shown on the site, or belongs on the News page:
-               CBDT and the Income Tax Department (incometaxindia.gov.in), CBIC and the GST Council
-               (cbic-gst.gov.in, gstcouncil.gov.in), GST portal news and advisories (gst.gov.in),
-               MCA (mca.gov.in), EPFO (epfindia.gov.in), ESIC (esic.gov.in), Maharashtra Professional
-               Tax (mahagst.gov.in). Use only official pages. Never guess dates, form numbers or rates;
-               leave out anything you cannot confirm on an official page.
-            3. If nothing changed: make no commits, open nothing, and finish with "No change".
+            1. Read tools/calendar.json (note its last_updated date), tools/news.json and the items already
+               listed on services/gst-updates/index.html, so you know what the site already says.
+            2. Check EVERY source below one by one. For each, open the official listing page with WebFetch
+               (use WebSearch restricted to that domain only to find the right listing page if a fetch fails),
+               and read the newest items dated after last_updated. Do not skip a source and do not stop early.
+               a. CBDT notifications and circulars: incometaxindia.gov.in
+               b. Income-tax due date extensions and press releases: incometaxindia.gov.in, pib.gov.in (Ministry of Finance)
+               c. CBIC GST central tax notifications, circulars and instructions: cbic-gst.gov.in
+               d. GST Council meeting decisions: gstcouncil.gov.in
+               e. GST portal news and advisories: gst.gov.in and tutorial.gst.gov.in
+               f. MCA notifications and due date extensions: mca.gov.in
+               g. EPFO circulars: epfindia.gov.in
+               h. ESIC circulars: esic.gov.in
+               i. Maharashtra Professional Tax and MahaGST notifications: mahagst.gov.in
+               Use only official pages. Never guess dates, form numbers or rates; leave out anything you
+               cannot confirm on an official page. A page that cannot be opened is reported, not guessed.
+            3. If nothing changed: make no commits, open nothing, and go to step 5.
             4. If something changed, on branch ${{ steps.open.outputs.branch }} created from main:
                - edit tools/calendar.json and run python3 tools/update_calendar.py;
                - for GST changes, update faq/ (GST answers), the GST page table and services/gst-updates/;
@@ -66,4 +76,7 @@ jobs:
                - run python3 tools/check_site.py and fix every error it reports;
                - commit with a plain message, push the branch, and open a pull request against main with
                  gh pr create. In the description list each change with the official source link.
-            5. Finish with two lines: what was checked, and what changed (or "No change").
+            5. Finish with a plain-text report (it is shown on the run's Summary page):
+               - a table with one row per source a to i: source, page opened, newest item seen and its
+                 date, and "no change", "changed" or "could not open";
+               - then one line: "No change" or "Pull request opened: <link>".
