@@ -1,0 +1,1190 @@
+{
+ "version": "2026.11.17",
+ "label": "Finance Act 2026 | Income-tax Act 2025 | Tax Year 2026-27",
+ "latestAppVersion": "1.0.0",
+ "appDownloadUrl": "",
+ "notice": "",
+ "years": {
+  "2026-27": {
+   "title": "Tax Year 2026-27 (FY 2026-27, AY 2027-28) - Income-tax Act 2025",
+   "act": "2025",
+   "individual": {
+    "new": {
+     "slabs": [
+      [
+       400000,
+       0
+      ],
+      [
+       800000,
+       0.05
+      ],
+      [
+       1200000,
+       0.1
+      ],
+      [
+       1600000,
+       0.15
+      ],
+      [
+       2000000,
+       0.2
+      ],
+      [
+       2400000,
+       0.25
+      ],
+      [
+       null,
+       0.3
+      ]
+     ],
+     "stdDeduction": 75000,
+     "familyPensionDeduction": 25000,
+     "rebateLimit": 1200000,
+     "rebateMax": 60000,
+     "rebateMarginalRelief": true,
+     "surcharge": [
+      [
+       5000000,
+       0.1
+      ],
+      [
+       10000000,
+       0.15
+      ],
+      [
+       20000000,
+       0.25
+      ]
+     ],
+     "employerNpsPct": 0.14
+    },
+    "old": {
+     "slabsBelow60": [
+      [
+       250000,
+       0
+      ],
+      [
+       500000,
+       0.05
+      ],
+      [
+       1000000,
+       0.2
+      ],
+      [
+       null,
+       0.3
+      ]
+     ],
+     "slabsSenior": [
+      [
+       300000,
+       0
+      ],
+      [
+       500000,
+       0.05
+      ],
+      [
+       1000000,
+       0.2
+      ],
+      [
+       null,
+       0.3
+      ]
+     ],
+     "slabsSuperSenior": [
+      [
+       500000,
+       0
+      ],
+      [
+       1000000,
+       0.2
+      ],
+      [
+       null,
+       0.3
+      ]
+     ],
+     "stdDeduction": 50000,
+     "familyPensionDeduction": 15000,
+     "rebateLimit": 500000,
+     "rebateMax": 12500,
+     "surcharge": [
+      [
+       5000000,
+       0.1
+      ],
+      [
+       10000000,
+       0.15
+      ],
+      [
+       20000000,
+       0.25
+      ],
+      [
+       50000000,
+       0.37
+      ]
+     ],
+     "employerNpsPct": 0.1
+    },
+    "specialSurchargeCap": 0.15,
+    "cess": 0.04,
+    "rates": {
+     "stcg111A": 0.2,
+     "ltcg112A": 0.125,
+     "ltcg112A_exemption": 125000,
+     "ltcg112": 0.125,
+     "ltcg112_indexed": 0.2,
+     "winnings": 0.3,
+     "vda": 0.3
+    },
+    "limits": {
+     "s80C": 150000,
+     "s80CCD1B": 50000,
+     "s80D_self": 25000,
+     "s80D_self_senior": 50000,
+     "s80D_parents": 25000,
+     "s80D_parents_senior": 50000,
+     "s80D_checkup": 5000,
+     "s80TTA": 10000,
+     "s80TTB": 50000,
+     "s24b_selfOccupied": 200000,
+     "hpLossSetoff": 200000
+    }
+   },
+   "entity": {
+    "company_normal_small": {
+     "label": "Domestic company - normal provisions (turnover in reference year up to Rs 400 Cr)",
+     "rate": 0.25,
+     "surcharge": [
+      [
+       10000000,
+       0.07
+      ],
+      [
+       100000000,
+       0.12
+      ]
+     ],
+     "mat": true
+    },
+    "company_normal": {
+     "label": "Domestic company - normal provisions (other)",
+     "rate": 0.3,
+     "surcharge": [
+      [
+       10000000,
+       0.07
+      ],
+      [
+       100000000,
+       0.12
+      ]
+     ],
+     "mat": true
+    },
+    "company_115BAA": {
+     "label": "Domestic company - concessional regime (old s.115BAA)",
+     "rate": 0.22,
+     "flatSurcharge": 0.1,
+     "mat": false
+    },
+    "company_115BAB": {
+     "label": "New manufacturing company (old s.115BAB, legacy units only)",
+     "rate": 0.15,
+     "flatSurcharge": 0.1,
+     "mat": false
+    },
+    "company_foreign": {
+     "label": "Foreign company",
+     "rate": 0.35,
+     "surcharge": [
+      [
+       10000000,
+       0.02
+      ],
+      [
+       100000000,
+       0.05
+      ]
+     ],
+     "mat": true
+    },
+    "firm": {
+     "label": "Partnership firm / LLP",
+     "rate": 0.3,
+     "surcharge": [
+      [
+       10000000,
+       0.12
+      ]
+     ],
+     "amt": 0.185
+    },
+    "coop_normal": {
+     "label": "Co-operative society - normal slabs",
+     "slabs": [
+      [
+       10000,
+       0.1
+      ],
+      [
+       20000,
+       0.2
+      ],
+      [
+       null,
+       0.3
+      ]
+     ],
+     "surcharge": [
+      [
+       10000000,
+       0.07
+      ],
+      [
+       100000000,
+       0.12
+      ]
+     ],
+     "amt": 0.15
+    },
+    "coop_115BAD": {
+     "label": "Co-operative society - concessional (old s.115BAD)",
+     "rate": 0.22,
+     "flatSurcharge": 0.1
+    },
+    "coop_115BAE": {
+     "label": "New manufacturing co-op society (old s.115BAE)",
+     "rate": 0.15,
+     "flatSurcharge": 0.1
+    },
+    "local_authority": {
+     "label": "Local authority",
+     "rate": 0.3,
+     "surcharge": [
+      [
+       10000000,
+       0.12
+      ]
+     ]
+    },
+    "matRate": 0.14,
+    "matNote": "From Tax Year 2026-27 MAT is a final tax at 14% (no fresh MAT credit). Brought-forward MAT credit up to 31-03-2026 is usable only under the concessional regime, capped at 25% of tax liability."
+   },
+   "cii": {
+    "2001-02": 100,
+    "2002-03": 105,
+    "2003-04": 109,
+    "2004-05": 113,
+    "2005-06": 117,
+    "2006-07": 122,
+    "2007-08": 129,
+    "2008-09": 137,
+    "2009-10": 148,
+    "2010-11": 167,
+    "2011-12": 184,
+    "2012-13": 200,
+    "2013-14": 220,
+    "2014-15": 240,
+    "2015-16": 254,
+    "2016-17": 264,
+    "2017-18": 272,
+    "2018-19": 280,
+    "2019-20": 289,
+    "2020-21": 301,
+    "2021-22": 317,
+    "2022-23": 331,
+    "2023-24": 348,
+    "2024-25": 363,
+    "2025-26": 376
+   },
+   "presumptive": {
+    "s44AD": {
+     "limit": 30000000,
+     "limitBasic": 20000000,
+     "rateDigital": 0.06,
+     "rateOther": 0.08
+    },
+    "s44ADA": {
+     "limit": 7500000,
+     "limitBasic": 5000000,
+     "rate": 0.5
+    },
+    "s44AE": {
+     "heavyPerTonPerMonth": 1000,
+     "otherPerVehiclePerMonth": 7500,
+     "maxVehicles": 10
+    }
+   },
+   "interest": {
+    "rate234A": 0.01,
+    "rate234B": 0.01,
+    "rate234C": 0.01,
+    "advanceTaxThreshold": 10000
+   },
+   "depreciation": [
+    [
+     "bld_res",
+     "Building - residential",
+     0.05
+    ],
+    [
+     "bld",
+     "Building - other (office, factory)",
+     0.1
+    ],
+    [
+     "bld_temp",
+     "Building - temporary structures",
+     0.4
+    ],
+    [
+     "furn",
+     "Furniture & fittings",
+     0.1
+    ],
+    [
+     "pm",
+     "Plant & machinery (general)",
+     0.15
+    ],
+    [
+     "car",
+     "Motor cars (non-hire)",
+     0.15
+    ],
+    [
+     "veh_hire",
+     "Motor vehicles used in hire business",
+     0.3
+    ],
+    [
+     "comp",
+     "Computers incl. software",
+     0.4
+    ],
+    [
+     "books",
+     "Books (annual publications / professional)",
+     0.4
+    ],
+    [
+     "ships",
+     "Ships",
+     0.2
+    ],
+    [
+     "intang",
+     "Intangibles (know-how, patents, licences)",
+     0.25
+    ],
+    [
+     "poll",
+     "Energy saving / pollution control (notified)",
+     0.4
+    ]
+   ],
+   "s40b": {
+    "firstSlab": 600000,
+    "firstPct": 0.9,
+    "minFirst": 300000,
+    "balancePct": 0.6,
+    "interestMax": 0.12
+   },
+   "audit44AB": {
+    "business": 10000000,
+    "businessLowCash": 100000000,
+    "profession": 5000000,
+    "professionLowCash": 7500000
+   }
+  }
+ },
+ "tds": [
+  {
+   "old": "192",
+   "new": "392",
+   "nature": "Salary",
+   "rateInd": "slab",
+   "rateOth": "slab",
+   "threshold": 0,
+   "basis": "Average rate on estimated income (use Salary TDS tool)"
+  },
+  {
+   "old": "192A",
+   "new": "392",
+   "nature": "Premature EPF withdrawal",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 50000,
+   "basis": "Per payment"
+  },
+  {
+   "old": "193",
+   "new": "393(1) Sl.5(i)",
+   "nature": "Interest on securities",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 10000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194",
+   "new": "393(1)",
+   "nature": "Dividend",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 10000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194A",
+   "new": "393(1) Sl.5(ii)",
+   "nature": "Interest by bank / co-op bank / post office (non-senior)",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 50000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194A",
+   "new": "393(1) Sl.5(ii)",
+   "nature": "Interest by bank / co-op bank / post office (senior citizen)",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 100000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194A",
+   "new": "393(1) Sl.5(iii)",
+   "nature": "Interest - others",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 10000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194B",
+   "new": "393",
+   "nature": "Lottery, crossword, card game winnings",
+   "rateInd": 0.3,
+   "rateOth": 0.3,
+   "threshold": 10000,
+   "basis": "Per transaction"
+  },
+  {
+   "old": "194BA",
+   "new": "393",
+   "nature": "Online game net winnings",
+   "rateInd": 0.3,
+   "rateOth": 0.3,
+   "threshold": 0,
+   "basis": "No threshold"
+  },
+  {
+   "old": "194BB",
+   "new": "393",
+   "nature": "Horse race winnings",
+   "rateInd": 0.3,
+   "rateOth": 0.3,
+   "threshold": 10000,
+   "basis": "Per transaction"
+  },
+  {
+   "old": "194C",
+   "new": "393(1) Sl.6(i)",
+   "nature": "Contractor / sub-contractor (incl. manpower supply)",
+   "rateInd": 0.01,
+   "rateOth": 0.02,
+   "threshold": 30000,
+   "threshold2": 100000,
+   "basis": "Rs 30,000 single or Rs 1,00,000 aggregate"
+  },
+  {
+   "old": "194D",
+   "new": "393(1) Sl.1(i)",
+   "nature": "Insurance commission",
+   "rateInd": 0.02,
+   "rateOth": 0.1,
+   "threshold": 20000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194DA",
+   "new": "393",
+   "nature": "Life insurance maturity (income portion)",
+   "rateInd": 0.02,
+   "rateOth": 0.02,
+   "threshold": 100000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194EE",
+   "new": "393",
+   "nature": "NSS deposit withdrawal",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 2500,
+   "basis": "Per payment"
+  },
+  {
+   "old": "194G",
+   "new": "393",
+   "nature": "Commission on lottery tickets",
+   "rateInd": 0.02,
+   "rateOth": 0.02,
+   "threshold": 20000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194H",
+   "new": "393(1) Sl.1(ii)",
+   "nature": "Commission or brokerage",
+   "rateInd": 0.02,
+   "rateOth": 0.02,
+   "threshold": 20000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194I(a)",
+   "new": "393(1) Sl.2(ii)(a)",
+   "nature": "Rent - plant, machinery, equipment",
+   "rateInd": 0.02,
+   "rateOth": 0.02,
+   "threshold": 50000,
+   "basis": "Per month or part of month"
+  },
+  {
+   "old": "194I(b)",
+   "new": "393(1) Sl.2(ii)(b)",
+   "nature": "Rent - land, building, furniture",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 50000,
+   "basis": "Per month or part of month"
+  },
+  {
+   "old": "194-IA",
+   "new": "393(1) Sl.3(i)",
+   "nature": "Purchase of immovable property (resident seller)",
+   "rateInd": 0.01,
+   "rateOth": 0.01,
+   "threshold": 5000000,
+   "basis": "Consideration or stamp value, whichever higher"
+  },
+  {
+   "old": "194-IB",
+   "new": "393",
+   "nature": "Rent by individual/HUF not under audit",
+   "rateInd": 0.02,
+   "rateOth": 0.02,
+   "threshold": 50000,
+   "basis": "Per month or part of month"
+  },
+  {
+   "old": "194-IC",
+   "new": "393",
+   "nature": "Joint development agreement - monetary consideration",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 0,
+   "basis": "No threshold"
+  },
+  {
+   "old": "194J(a)",
+   "new": "393(1) Sl.6(iii)(b)",
+   "nature": "Fees for technical services, royalty (film), call centre",
+   "rateInd": 0.02,
+   "rateOth": 0.02,
+   "threshold": 50000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194J(b)",
+   "new": "393(1) Sl.6(iii)(a)",
+   "nature": "Fees for professional services, royalty, non-compete",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 50000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194J",
+   "new": "393",
+   "nature": "Director sitting fees / remuneration (non-salary)",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 0,
+   "basis": "No threshold"
+  },
+  {
+   "old": "194K",
+   "new": "393",
+   "nature": "Income from mutual fund units",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 10000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194LA",
+   "new": "393",
+   "nature": "Compensation on compulsory acquisition",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 500000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194LBB",
+   "new": "393(1) Sl.4(iii)",
+   "nature": "Income from investment fund units",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 0,
+   "basis": "No threshold"
+  },
+  {
+   "old": "194M",
+   "new": "393",
+   "nature": "Contract/professional/commission paid by individual/HUF not under audit",
+   "rateInd": 0.02,
+   "rateOth": 0.02,
+   "threshold": 5000000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194N",
+   "new": "393(3) Sl.5",
+   "nature": "Cash withdrawal (Rs 3 Cr for co-op society)",
+   "rateInd": 0.02,
+   "rateOth": 0.02,
+   "threshold": 10000000,
+   "basis": "On amount exceeding Rs 1 Cr in tax year",
+   "excessOnly": true
+  },
+  {
+   "old": "194O",
+   "new": "393",
+   "nature": "E-commerce operator payment to participant",
+   "rateInd": 0.001,
+   "rateOth": 0.001,
+   "threshold": 500000,
+   "basis": "Rs 5 lakh for individual/HUF participant with PAN"
+  },
+  {
+   "old": "194Q",
+   "new": "393(1) Sl.8(ii)",
+   "nature": "Purchase of goods (buyer turnover above Rs 10 Cr)",
+   "rateInd": 0.001,
+   "rateOth": 0.001,
+   "threshold": 5000000,
+   "basis": "On amount exceeding Rs 50 lakh",
+   "excessOnly": true
+  },
+  {
+   "old": "194R",
+   "new": "393(1) Sl.8(iv)",
+   "nature": "Business perquisite / benefit",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 20000,
+   "basis": "Aggregate in tax year"
+  },
+  {
+   "old": "194S",
+   "new": "393",
+   "nature": "Transfer of virtual digital asset",
+   "rateInd": 0.01,
+   "rateOth": 0.01,
+   "threshold": 10000,
+   "basis": "Rs 50,000 for specified persons"
+  },
+  {
+   "old": "194T",
+   "new": "393(1)",
+   "nature": "Salary/commission/interest to partner by firm",
+   "rateInd": 0.1,
+   "rateOth": 0.1,
+   "threshold": 20000,
+   "basis": "Aggregate in tax year"
+  }
+ ],
+ "tdsNotes": [
+  "No PAN (old s.206AA): higher of twice the rate, rate in force, or 20% (5% for 194O/194Q type payments).",
+  "Old s.206AB / 206CCA (non-filer higher rate) stand omitted from 01-04-2025.",
+  "Payment or credit on or after 01-04-2026: quote Income-tax Act 2025 references (s.392 salary, s.393 others, s.394 TCS). Earlier transactions stay under the 1961 Act.",
+  "TDS on interest awarded by Motor Accidents Claims Tribunal to individuals: nil from 01-04-2026.",
+  "Property bought from non-resident: resident individual/HUF buyer need not obtain TAN from 01-10-2026."
+ ],
+ "tcs": [
+  {
+   "old": "206C(1)",
+   "nature": "Alcoholic liquor for human consumption",
+   "rate": 0.02,
+   "threshold": 0
+  },
+  {
+   "old": "206C(1)",
+   "nature": "Tendu leaves",
+   "rate": 0.02,
+   "threshold": 0
+  },
+  {
+   "old": "206C(1)",
+   "nature": "Timber / other forest produce",
+   "rate": 0.025,
+   "threshold": 0
+  },
+  {
+   "old": "206C(1)",
+   "nature": "Scrap",
+   "rate": 0.02,
+   "threshold": 0
+  },
+  {
+   "old": "206C(1)",
+   "nature": "Minerals - coal, lignite, iron ore",
+   "rate": 0.02,
+   "threshold": 0
+  },
+  {
+   "old": "206C(1C)",
+   "nature": "Parking lot, toll plaza, mining lease",
+   "rate": 0.02,
+   "threshold": 0
+  },
+  {
+   "old": "206C(1F)",
+   "nature": "Motor vehicle / notified luxury goods above Rs 10 lakh",
+   "rate": 0.01,
+   "threshold": 1000000
+  },
+  {
+   "old": "206C(1G)",
+   "nature": "LRS - education or medical treatment",
+   "rate": 0.02,
+   "threshold": 1000000,
+   "verify": true
+  },
+  {
+   "old": "206C(1G)",
+   "nature": "LRS - other purposes",
+   "rate": 0.2,
+   "threshold": 1000000
+  },
+  {
+   "old": "206C(1G)",
+   "nature": "Overseas tour programme package",
+   "rate": 0.02,
+   "threshold": 0
+  }
+ ],
+ "dueDates": [
+  {
+   "date": "2026-11-30",
+   "what": "ITR - transfer pricing cases (FY 2025-26)",
+   "who": "s.92E cases"
+  },
+  {
+   "date": "2026-12-07",
+   "what": "TDS/TCS deposit for November",
+   "who": "All deductors"
+  },
+  {
+   "date": "2026-12-15",
+   "what": "Advance tax - 3rd instalment (75%)",
+   "who": "All liable"
+  },
+  {
+   "date": "2026-12-31",
+   "what": "Belated return (FY 2025-26)",
+   "who": "All"
+  },
+  {
+   "date": "2027-01-07",
+   "what": "TDS/TCS deposit for December",
+   "who": "All deductors"
+  },
+  {
+   "date": "2027-01-15",
+   "what": "TCS return Q3 (Form 27EQ equivalent)",
+   "who": "Collectors"
+  },
+  {
+   "date": "2027-01-31",
+   "what": "TDS return Q3",
+   "who": "Deductors"
+  },
+  {
+   "date": "2027-02-07",
+   "what": "TDS/TCS deposit for January",
+   "who": "All deductors"
+  },
+  {
+   "date": "2027-03-07",
+   "what": "TDS/TCS deposit for February",
+   "who": "All deductors"
+  },
+  {
+   "date": "2027-03-15",
+   "what": "Advance tax - 4th instalment (100%); 44AD/44ADA single instalment",
+   "who": "All liable"
+  },
+  {
+   "date": "2027-03-31",
+   "what": "Revised return (FY 2025-26) - fee applies after 31 Dec",
+   "who": "All"
+  },
+  {
+   "date": "2027-04-30",
+   "what": "TDS/TCS deposit for March",
+   "who": "All deductors"
+  },
+  {
+   "date": "2027-05-15",
+   "what": "TCS return Q4",
+   "who": "Collectors"
+  },
+  {
+   "date": "2027-05-31",
+   "what": "TDS return Q4",
+   "who": "Deductors"
+  },
+  {
+   "date": "2027-06-15",
+   "what": "Form 16 issue; Advance tax 1st instalment (15%) TY 2027-28",
+   "who": "Employers / All"
+  },
+  {
+   "date": "2027-07-31",
+   "what": "ITR - ITR-1 / ITR-2 filers (TY 2026-27)",
+   "who": "Individuals, HUF (no business)"
+  },
+  {
+   "date": "2027-08-31",
+   "what": "ITR - non-audit business/profession, trusts (TY 2026-27)",
+   "who": "ITR-3 / ITR-4 non-audit"
+  },
+  {
+   "date": "2027-09-30",
+   "what": "Tax audit report (TY 2026-27)",
+   "who": "s.44AB cases"
+  },
+  {
+   "date": "2027-10-31",
+   "what": "ITR - audit cases (TY 2026-27)",
+   "who": "Companies, audited firms"
+  },
+  {
+   "date": "2027-11-30",
+   "what": "ITR - transfer pricing cases (TY 2026-27)",
+   "who": "s.92E cases"
+  }
+ ],
+ "library": [
+  {
+   "title": "Choosing the regime (individual/HUF)",
+   "tags": "regime 115BAC new old default",
+   "text": "New regime is the default. Salaried individuals can choose regime each year in the return. Persons with business income can opt out once and switch back only once. Under the new regime most deductions (80C, 80D, HRA, LTA, 24(b) self-occupied) are unavailable; standard deduction Rs 75,000, employer NPS 80CCD(2) at 14% and 80CCH (Agniveer) remain."
+  },
+  {
+   "title": "Rebate - new regime",
+   "tags": "87A rebate 12 lakh",
+   "text": "Resident individual with total income up to Rs 12,00,000: rebate up to Rs 60,000. Marginal relief above Rs 12 lakh so that tax does not exceed income above Rs 12 lakh. Rebate is not available against tax on special-rate income (111A, 112A, winnings)."
+  },
+  {
+   "title": "Rebate - old regime",
+   "tags": "87A rebate 5 lakh",
+   "text": "Resident individual with total income up to Rs 5,00,000: rebate up to Rs 12,500. Not available against tax on LTCG u/s 112A."
+  },
+  {
+   "title": "Presumptive business - 44AD",
+   "tags": "44AD presumptive business turnover",
+   "text": "Eligible: resident individual, HUF, partnership firm (not LLP). Turnover up to Rs 2 Cr, or Rs 3 Cr if cash receipts do not exceed 5%. Income deemed 6% of digital receipts and 8% of other receipts (higher actual may be declared). Advance tax fully by 15 March. Opting out triggers 5-year lock-out."
+  },
+  {
+   "title": "Presumptive profession - 44ADA",
+   "tags": "44ADA presumptive profession doctor CA architect",
+   "text": "Eligible: resident individual / partnership firm (not LLP) in specified professions u/s 44AA(1). Gross receipts up to Rs 50 lakh, or Rs 75 lakh if cash receipts do not exceed 5%. Income deemed 50% of receipts."
+  },
+  {
+   "title": "Presumptive transport - 44AE",
+   "tags": "44AE goods carriage truck",
+   "text": "Owner of not more than 10 goods carriages. Heavy goods vehicle: Rs 1,000 per ton of gross vehicle weight per month; others Rs 7,500 per vehicle per month."
+  },
+  {
+   "title": "Corporate concessional regime",
+   "tags": "115BAA 22% company new regime MAT",
+   "text": "Domestic company may opt for 22% + 10% surcharge + 4% cess (25.168%) foregoing specified deductions/incentives. MAT does not apply. From TY 2026-27 brought-forward MAT credit can be set off only under this regime, capped at 25% of tax liability."
+  },
+  {
+   "title": "MAT from Tax Year 2026-27",
+   "tags": "MAT book profit 14% final tax",
+   "text": "MAT rate reduced to 14% of book profit and becomes a final tax for domestic companies in the normal regime; no fresh MAT credit. Effective rate approx 16.31% (with 12% surcharge and cess)."
+  },
+  {
+   "title": "Capital gains rates",
+   "tags": "capital gains 111A 112A 112 STCG LTCG indexation",
+   "text": "Transfers on or after 23-07-2024: STCG on listed equity/equity MF (STT paid) 20%; LTCG on listed equity 12.5% above Rs 1.25 lakh; other LTCG 12.5% without indexation. Resident individual/HUF selling land or building acquired before 23-07-2024 may compute 20% with indexation if lower. Holding period: 12 months for listed securities, 24 months for others. Specified MF / market-linked debentures are always short-term."
+  },
+  {
+   "title": "Exemptions on capital gains",
+   "tags": "54 54EC 54F reinvestment house bonds",
+   "text": "54: LTCG on residential house reinvested in one house in India (cap Rs 10 Cr). 54F: LTCG on other asset, net consideration invested in a house (cap Rs 10 Cr; must not own more than one other house). 54EC: LTCG on land/building invested in specified bonds within 6 months, max Rs 50 lakh, 5-year lock-in. 54B agricultural land."
+  },
+  {
+   "title": "Buy-back of shares",
+   "tags": "buyback 2026 capital gains promoter",
+   "text": "From 01-04-2026 buy-back consideration is taxed as capital gains in the shareholder's hands (not deemed dividend); promoters bear an additional tax so that effective rate is higher. Verify current provision before advising."
+  },
+  {
+   "title": "Startup tax holiday",
+   "tags": "80-IAC DPIIT startup",
+   "text": "DPIIT-recognised eligible startup (incorporated up to 31-03-2030) can claim 100% deduction of profits for any 3 consecutive years out of first 10 years, with IMB certificate."
+  },
+  {
+   "title": "HUF as a planning tool",
+   "tags": "HUF planning family",
+   "text": "HUF is a separate assessee with its own basic exemption and deductions (80C, 80D under old regime). Income from ancestral property, gifts on partition-free basis and business carried on by HUF can be taxed in its hands. Clubbing (s.64(2)) applies to individual's property converted into HUF property."
+  },
+  {
+   "title": "Interest for defaults",
+   "tags": "234A 234B 234C interest advance tax",
+   "text": "234A: 1% per month for late filing on tax unpaid. 234B: 1% per month if advance tax paid is less than 90% of assessed tax, from 1 April after the tax year. 234C: 1% per month on instalment shortfall (3 months each for Jun/Sep/Dec, 1 month for Mar); 12% and 36% safe margins for Jun and Sep."
+  },
+  {
+   "title": "Return due dates (from Finance Act 2026)",
+   "tags": "due date ITR 31 August revised 31 March",
+   "text": "31 July: ITR-1 / ITR-2 filers. 31 August: non-audit business/profession and trusts. 31 October: audit cases. 30 November: transfer pricing. Belated: 31 December. Revised return up to 31 March (fee after 31 December). Updated return within 4 years."
+  },
+  {
+   "title": "Income-tax Act 2025 - transition",
+   "tags": "new act 2025 tax year transition",
+   "text": "Income-tax Act 2025 applies from 01-04-2026. 'Tax year' replaces previous year/assessment year. Proceedings for years up to FY 2025-26 continue under the 1961 Act. TDS: s.392 salary, s.393 other payments; TCS: s.394; MAT: s.206."
+  }
+ ],
+ "noticeSections": [
+  "143(1) intimation",
+  "139(9) defective return",
+  "142(1) inquiry",
+  "143(2) scrutiny",
+  "148 / 148A reassessment",
+  "245 adjustment of refund",
+  "270A penalty",
+  "271AAC penalty",
+  "Demand (156)",
+  "Faceless assessment",
+  "Appeal - CIT(A)",
+  "Appeal - ITAT",
+  "Other"
+ ],
+ "workTypes": [
+  "ITR filing",
+  "Tax computation / planning",
+  "TDS return",
+  "TCS return",
+  "Form 16 / 16A",
+  "Advance tax",
+  "Tax audit (3CA/3CB-3CD)",
+  "Notice reply",
+  "Appeal",
+  "Statutory audit",
+  "Accounts writing",
+  "GST return",
+  "PAN application",
+  "TAN application",
+  "PAN correction",
+  "Other"
+ ],
+ "checklists": {
+  "Salaried (ITR-1 / ITR-2)": [
+   "PAN, Aadhaar, bank account (pre-validated)",
+   "Form 16 from each employer",
+   "Salary slips / HRA rent receipts and landlord PAN (rent above Rs 1 lakh)",
+   "Form 26AS, AIS and TIS",
+   "Interest certificates (savings, FD, RD)",
+   "Home loan interest certificate",
+   "80C/80D/80CCD proofs",
+   "Capital gains statements (broker, mutual fund CAS)",
+   "Foreign assets / income details (ITR-2)"
+  ],
+  "Business / profession (ITR-3 / ITR-4)": [
+   "Books of account / trial balance",
+   "Bank statements for all accounts",
+   "GST returns and turnover reconciliation",
+   "Form 26AS / AIS / TIS",
+   "Fixed asset register (depreciation)",
+   "Loan statements and interest certificates",
+   "Stock statement",
+   "Previous year return and computation",
+   "Tax audit report if applicable"
+  ],
+  "Firm / LLP (ITR-5)": [
+   "Partnership deed / LLP agreement and changes",
+   "Financial statements",
+   "Partner capital accounts, remuneration and interest working (40(b))",
+   "Form 26AS / AIS",
+   "Tax audit report (3CB-3CD) if applicable",
+   "TDS returns filed (incl. 194T on partner payments)"
+  ],
+  "Company (ITR-6)": [
+   "Audited financial statements and board report",
+   "Tax audit report (3CA-3CD)",
+   "MAT working (book profit) or 22% regime option (Form 10-IC)",
+   "Form 26AS / AIS",
+   "Shareholding and director details",
+   "Depreciation as per Income-tax rules",
+   "Transfer pricing report (3CEB) if applicable"
+  ],
+  "Trust (ITR-7)": [
+   "Registration (12AB) and 80G approval",
+   "Audit report (Form 10B / 10BB)",
+   "Application of income statement / Form 9A or 10",
+   "Donor list and corpus donations",
+   "Form 26AS / AIS"
+  ]
+ },
+ "portalGuides": [
+  {
+   "title": "File an income-tax return online",
+   "url": "https://www.incometax.gov.in/iec/foportal/",
+   "steps": [
+    "Log in at https://www.incometax.gov.in with PAN (or as the client's Authorised Representative / ERI).",
+    "Go to e-File > Income Tax Returns > File Income Tax Return.",
+    "Select Assessment Year, mode Online, status (Individual/HUF/Others) and the ITR form TaxDesk suggests (Tax audit & ITR form screen).",
+    "Check the pre-filled data against the TaxDesk computation and AIS; add missing income and deductions schedule-wise (use the ITR data sheet).",
+    "Confirm tax payable matches TaxDesk; pay any balance through e-Pay Tax first (Challan type: Self-assessment tax).",
+    "Preview, validate, submit and e-verify (Aadhaar OTP / net banking / DSC) within 30 days."
+   ]
+  },
+  {
+   "title": "File using the offline utility / JSON upload",
+   "url": "https://www.incometax.gov.in/iec/foportal/downloads/income-tax-returns",
+   "steps": [
+    "Download the Common Offline Utility (ITR 1-4) or the Excel utility for ITR-5/6/7 from the downloads page.",
+    "In the utility: import the pre-filled JSON (downloaded from e-File > Income Tax Returns > Download Pre-filled Data).",
+    "Key in the figures from the TaxDesk ITR data sheet and validate.",
+    "Generate the JSON and upload it at e-File > Income Tax Returns > File Income Tax Return > Mode: Offline.",
+    "E-verify the return."
+   ]
+  },
+  {
+   "title": "Pay tax (advance / self-assessment / demand)",
+   "url": "https://eportal.incometax.gov.in/iec/foservices/#/e-pay-tax-prelogin/user-details",
+   "steps": [
+    "Open e-Pay Tax (link above) or log in and go to e-File > e-Pay Tax.",
+    "Enter PAN/TAN and mobile, verify OTP.",
+    "Select Income Tax, the Assessment/Tax Year and the type of payment (Advance tax, Self-assessment tax, Regular assessment, TDS/TCS).",
+    "Enter the amounts (tax, surcharge, cess, interest, fee) as computed in TaxDesk.",
+    "Pay by net banking, debit card, UPI or NEFT/RTGS mandate; download the challan (CIN) and record it."
+   ]
+  },
+  {
+   "title": "Download AIS, TIS and Form 26AS",
+   "url": "https://www.incometax.gov.in/iec/foportal/",
+   "steps": [
+    "Log in to the e-filing portal.",
+    "AIS: go to Services > Annual Information Statement (AIS), open AIS, download as PDF or JSON.",
+    "26AS: e-File > Income Tax Returns > View Form 26AS, proceed to TRACES and download for the year.",
+    "Give feedback in AIS for any wrong entries before filing the return."
+   ]
+  },
+  {
+   "title": "Link Aadhaar with PAN",
+   "url": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/bl-link-aadhaar",
+   "steps": [
+    "Open the Link Aadhaar page (link above).",
+    "Enter PAN and Aadhaar; if the late fee is unpaid, pay it via e-Pay Tax first.",
+    "Verify with Aadhaar OTP and submit; check status under Link Aadhaar Status."
+   ]
+  },
+  {
+   "title": "Reply to a notice (e-Proceedings)",
+   "url": "https://www.incometax.gov.in/iec/foportal/",
+   "steps": [
+    "Log in; go to Pending Actions > e-Proceedings.",
+    "Open the notice, note the DIN and response due date (record it in TaxDesk Notices).",
+    "Click Submit Response, attach the reply PDF and evidence (max size per file as shown), submit.",
+    "For faceless assessments, request a personal hearing / adjournment from the same screen if needed."
+   ]
+  },
+  {
+   "title": "Rectification u/s 154 / refund reissue",
+   "url": "https://www.incometax.gov.in/iec/foportal/",
+   "steps": [
+    "Log in; go to Services > Rectification (or Services > Refund Reissue).",
+    "Choose the assessment year and the type of request (reprocess, tax credit mismatch, status correction).",
+    "Attach supporting documents and submit; track under the same menu."
+   ]
+  },
+  {
+   "title": "Add a CA / authorise a representative",
+   "url": "https://www.incometax.gov.in/iec/foportal/",
+   "steps": [
+    "Client logs in; go to My CA > Add CA, enter the CA membership number and assign forms (e.g. 3CA-3CD, 3CB-3CD, 10B).",
+    "For filing on behalf: Authorised Partners > Register as Representative, attach authorisation.",
+    "CA accepts the assignment from Worklist > For your action."
+   ]
+  },
+  {
+   "title": "Opt out of the new regime (business income) - Form 10-IEA",
+   "url": "https://www.incometax.gov.in/iec/foportal/",
+   "steps": [
+    "Log in; e-File > Income Tax Forms > File Income Tax Forms.",
+    "Select Form 10-IEA, the assessment year, fill details and submit before the return due date u/s 139(1).",
+    "Quote the acknowledgement number in the ITR."
+   ]
+  },
+  {
+   "title": "File TDS / TCS statements",
+   "url": "https://www.protean-tinpan.com/",
+   "steps": [
+    "Prepare the statement in the Return Preparation Utility (RPU) from the Protean TIN site using the TDS details recorded in TaxDesk.",
+    "Download the latest challan status (CSI) file from the e-filing portal and validate with the File Validation Utility (FVU).",
+    "Upload the .fvu file on the e-filing portal: e-File > Income Tax Forms > TDS > Upload TDS, e-verify with DSC/EVC.",
+    "Download Form 16/16A from TRACES (https://www.tdscpc.gov.in) after processing."
+   ]
+  },
+  {
+   "title": "Lower / nil TDS certificate",
+   "url": "https://www.tdscpc.gov.in",
+   "steps": [
+    "Log in to TRACES as taxpayer.",
+    "Statements/Forms > Request for lower deduction certificate (Form 13 equivalent).",
+    "Enter estimated income, deductor TANs and amounts, attach financials and submit; certificate is emailed and visible on TRACES."
+   ]
+  },
+  {
+   "title": "Apply for PAN",
+   "url": "https://onlineservices.proteantech.in/paam/endUserRegisterContact.html",
+   "steps": [
+    "Prepare the application in TaxDesk (PAN / TAN applications screen) and collect the documents listed.",
+    "Open Protean (link above) or UTIITSL (https://www.pan.utiitsl.com).",
+    "Choose New PAN: Form 93 (Indian citizen), Form 94 (Indian company/firm/LLP/HUF/AOP/trust), Form 95 (foreign citizen), Form 96 (foreign entity).",
+    "Fill details exactly as in the TaxDesk sheet, upload proofs, pay the fee, e-sign with Aadhaar OTP or send signed documents.",
+    "Note the 15-digit acknowledgement number in TaxDesk Work register; track status on the same site."
+   ]
+  },
+  {
+   "title": "Apply for TAN",
+   "url": "https://www.protean-tinpan.com/",
+   "steps": [
+    "Prepare the TAN application in TaxDesk: Form 134 (Government deductor) or Form 135 (others).",
+    "Apply online on the Protean TIN site (link above) > Services > TAN > Apply online.",
+    "Fill details incl. PAN, name, designation and phone of the person responsible, pay the fee and submit.",
+    "Send the signed acknowledgement if required; record the acknowledgement number in TaxDesk."
+   ]
+  }
+ ]
+}
