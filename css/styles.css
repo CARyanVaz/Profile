@@ -886,3 +886,14 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .cb-fab { padding: 12px; }
 .cb-fab span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 @media (max-width: 760px) { .cb-fab { display: none; } .hero-hours { padding-bottom: 56px; } }
+/* 19 November 2026: compact footer */
+.site-footer { padding: var(--s6) 0 var(--s4); font-size: .9375rem; }
+.site-footer p { margin: 0 0 6px; }
+.footer-grid { gap: var(--s5); }
+@media (min-width: 800px) { .footer-grid { grid-template-columns: 1.6fr 1fr; } }
+.footer-brand { font-size: 1.125rem; margin-bottom: 4px; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 12px !important; }
+.footer-links li + li { margin-top: 0; }
+.footer-social { display: flex; gap: 14px; }
+.footer-social a { display: inline-flex; padding: 6px; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; }
+.site-footer .disclaimer { margin-top: var(--s4); }
