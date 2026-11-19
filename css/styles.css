@@ -897,3 +897,12 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .footer-social { display: flex; gap: 14px; }
 .footer-social a { display: inline-flex; padding: 6px; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; }
 .site-footer .disclaimer { margin-top: var(--s4); }
+/* 19 November 2026: two-line footer */
+.site-footer { padding: 20px 0 16px; font-size: .875rem; }
+.site-footer p { margin: 0; }
+.footer-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,.12); }
+.site-footer .footer-brand { font: 600 1rem/1.2 var(--font-serif); color: #fff; margin: 0; }
+.site-footer .footer-links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin: 0; }
+.site-footer .footer-icon { display: inline-flex; padding: 4px; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; }
+.site-footer .disclaimer { margin-top: 10px; font-size: .78rem; line-height: 1.5; color: #a7b6c4; }
+.site-footer .disclaimer { border-top: 0; padding-top: 0; }
