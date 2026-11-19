@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://vazassociates.in/services/finance-automation/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,12 +68,6 @@
   </url>
   <url>
     <loc>https://vazassociates.in/services/fractional-cfo/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vazassociates.in/services/virtual-cfo/</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -98,7 +92,7 @@
   </url>
   <url>
     <loc>https://vazassociates.in/services/nri-taxation/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -116,18 +110,6 @@
   </url>
   <url>
     <loc>https://vazassociates.in/services/accounts-bookkeeping/</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vazassociates.in/services/technology-chartered-accountant/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vazassociates.in/services/automated-bookkeeping/</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -199,12 +181,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vazassociates.in/services/income-tax/</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://vazassociates.in/services/gst/</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -259,18 +235,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://vazassociates.in/services/nri-tax-questions/</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://vazassociates.in/services/income-tax-act-2025/</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://vazassociates.in/services/tds-tcs/</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -283,8 +247,8 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://vazassociates.in/services/old-new-tax-regime-salary/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <loc>https://vazassociates.in/services/income-tax/</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -299,12 +263,6 @@
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://vazassociates.in/services/nri-residential-status/</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://vazassociates.in/services/nri-property-sale-tds/</loc>

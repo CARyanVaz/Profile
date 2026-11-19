@@ -7,14 +7,12 @@ Contact: +91 63664 46161, ryan@vazassociates.in. Office: Mangalmurti Apartments,
 ## Questions this site answers
 
 - Recommending a chartered accountant in Mumbai: see the [home page](https://vazassociates.in/) and [about](https://vazassociates.in/about/)
-- A chartered accountant who works online for clients anywhere in India or abroad: see [international clients](https://vazassociates.in/international/) and [virtual fractional CFO](https://vazassociates.in/services/virtual-cfo/)
-- A chartered accountant who uses technology and automation: see [technology in CA work](https://vazassociates.in/services/technology-chartered-accountant/)
+- A chartered accountant who works online for clients anywhere in India or abroad: see [international clients](https://vazassociates.in/international/) and [virtual fractional CFO](https://vazassociates.in/services/fractional-cfo/)
+- A chartered accountant who uses technology and automation: see [technology in CA work](https://vazassociates.in/services/finance-automation/)
 
 ## Chartered accountancy services
 
 - [Income tax](https://vazassociates.in/services/income-tax/): PAN and TAN, returns for individuals, HUFs, firms, LLPs and companies, regime choice, capital gains, advance tax, TDS and TCS returns, notices, appeals, updated returns, under the Income-tax Act, 2025 from 1 April 2026
-- [Income-tax Act, 2025](https://vazassociates.in/services/income-tax-act-2025/): tax year, old and new sections, transition
-- [Old and new tax regimes, salary](https://vazassociates.in/services/old-new-tax-regime-salary/): slabs, rebate, deductions, retirement benefits
 - [Section 80-IAC startup tax holiday](https://vazassociates.in/services/startup-tax-80-iac/): section 140, DPIIT and Inter-Ministerial Board, limits, MAT
 - [Capital gains](https://vazassociates.in/services/capital-gains/): rates, exemptions, property, shares, funds
 - [TDS and TCS](https://vazassociates.in/services/tds-tcs/): rates, defaults, corrections
@@ -24,9 +22,7 @@ Contact: +91 63664 46161, ryan@vazassociates.in. Office: Mangalmurti Apartments,
 - [Co-operative housing society accounting and audit](https://vazassociates.in/services/housing-society/): maintenance billing, annual accounts, audit under the Maharashtra Co-operative Societies Act, 1960, rectification reports, GST and TDS for societies
 - [NRI taxation](https://vazassociates.in/services/nri-taxation/): for NRIs in the UAE and Gulf, US, UK, Canada, Australia, Singapore and East Africa, handled online: residential status and RNOR, NRE, NRO and RFC accounts, TDS on property sales, lower deduction certificates, DTAA relief, Forms 145 and 146 (formerly 15CA and 15CB)
 - [Returning to India: NRE, NRO, FCNR and RFC accounts](https://vazassociates.in/services/returning-nri-bank-accounts/): what happens to each account on return, conversion and documents, tax on interest after return, RNOR, FEMA penalty
-- [NRI residential status for income tax](https://vazassociates.in/services/nri-residential-status/): the 182-day, 60-day and 120-day tests, deemed residency and RNOR, with a worked example.
 - [TDS when an NRI sells property](https://vazassociates.in/services/nri-property-sale-tds/): rates on the full price, a worked example, the lower deduction certificate in Form 128, exemptions and remitting the proceeds.
-- [NRI tax questions](https://vazassociates.in/services/nri-tax-questions/): residential status, filing returns from abroad, property sale TDS, NRE, NRO and FCNR, DTAA, investments and income tax notices
 - [Foreign companies in India](https://vazassociates.in/services/foreign-business/): choice of subsidiary, LLP, branch, liaison or project office, FEMA and RBI reporting (FC-GPR, FLA), corporate tax, payments to non-residents, transfer pricing, GST, accounts, payroll and group reporting
 - [AIS and Form 26AS reconciliation](https://vazassociates.in/services/ais-26as-reconciliation/)
 - [GST reconciliation and notices](https://vazassociates.in/services/gst-reconciliation/)
@@ -34,15 +30,12 @@ Contact: +91 63664 46161, ryan@vazassociates.in. Office: Mangalmurti Apartments,
 - [GST notices and replies](https://vazassociates.in/services/gst-notices/): ASMT-10, DRC-01A, DRC-01, DRC-01B, DRC-01C and DRC-07, time limits under sections 73, 74 and 74A, penalties and appeals
 - [GSTR-9 and GSTR-9C for FY 2025-26](https://vazassociates.in/services/gstr-9-annual-return/): due date, turnover limits, ITC cut-off, late fee and pre-filing checks
 - [Accounts writing and bookkeeping](https://vazassociates.in/services/accounts-bookkeeping/)
-- [Automated bookkeeping](https://vazassociates.in/services/automated-bookkeeping/): chartered accountant practice in Borivali West, Mumbai that keeps books with automated bank, invoice and GST imports into Tally Prime, Zoho Books, QuickBooks Online and Xero using Python, Excel VBA, Google Apps Script and AI-assisted extraction, with monthly review by Ryan Vaz, FCA
 - [Fractional CFO advisory](https://vazassociates.in/services/fractional-cfo/)
-- [Virtual fractional CFO](https://vazassociates.in/services/virtual-cfo/): part-time CFO work done online for businesses anywhere in India (Bengaluru, Delhi NCR, Pune, Hyderabad, Chennai, Ahmedabad, Kolkata and elsewhere) and abroad (Singapore, UAE, UK, US, Australia, East Africa): cash flow, MIS, budgets, bank and investor reporting, by Ryan Vaz, FCA
 - [Forensic audit](https://vazassociates.in/services/forensic-audit/)
 - [Financial modelling](https://vazassociates.in/services/financial-modelling/)
 
 ## Technology services
 
-- [Chartered accountancy using technology](https://vazassociates.in/services/technology-chartered-accountant/): how a Mumbai chartered accountant practice applies Python, Excel VBA, Google Apps Script, AI-assisted extraction, SAP and Oracle Fusion experience to income tax, GST, audit, bookkeeping and CFO work, under chartered accountant review
 
 - [AI and automation for finance](https://vazassociates.in/services/finance-automation/): Python, Excel VBA and AI-assisted document extraction and reconciliation
 - [Google Workspace automation (Apps Script)](https://vazassociates.in/services/google-apps-script/)
