@@ -1,12 +1,21 @@
 {
   "_readme": "News items for news/index.html. Add an item, then run: python tools/update_news.py. Fields: date (YYYY-MM-DD, date of the notification, circular or advisory), act (key in acts), title (plain, factual, no superlatives), ref (notification, circular or advisory number), effective (date or short text), summary (one or two plain sentences), link (site page with the detail, relative to the site root, optional). Use only the official notification as the source. Items older than 12 months may be removed.",
-  "last_updated": "2026-11-13",
+  "last_updated": "2026-11-19",
   "acts": {
     "gst": "GST",
     "income-tax": "Income tax and TDS",
     "other": "Companies Act, LLP, labour and other laws"
   },
   "items": [
+    {
+      "date": "2026-11-17",
+      "act": "gst",
+      "title": "E-invoices for reverse charge self-invoices: live from 15 December 2026, required from 1 January 2027",
+      "ref": "GSTN advisory dated 17 November 2026; Notifications 04/2026 and 05/2026-Central Tax",
+      "effective": "1 January 2027 (voluntary from 15 December 2026)",
+      "summary": "Self-invoices issued under reverse charge for supplies from unregistered persons (RCMDOM) and for imports of services (RCMIMP) are to be reported on the invoice registration portals for an IRN, with scope and exemptions as set out in the notifications. The facility is proposed to go live on 15 December 2026 for documents dated from that day, is voluntary until 31 December 2026 and mandatory from 1 January 2027.",
+      "link": "services/gst-updates/"
+    },
     {
       "date": "2026-11-04",
       "act": "gst",
