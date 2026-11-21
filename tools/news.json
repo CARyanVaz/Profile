@@ -17,6 +17,15 @@
       "link": "services/gst-updates/"
     },
     {
+      "date": "2026-11-18",
+      "act": "gst",
+      "title": "Corrections to the CGST (Amendment) Rules, 2026",
+      "ref": "CBIC corrigendum G.S.R. 1001(E) dated 18 November 2026",
+      "effective": "Corrects the rules notified on 26 October 2026",
+      "summary": "CBIC corrected errors in the English version of the CGST (Amendment) Rules, 2026 (Notification 05/2026-Central Tax), including provisions on refunds, input tax credit declarations and registration documents. The rules should be read with the corrigendum.",
+      "link": "faq/#gst-changes-november-2026"
+    },
+    {
       "date": "2026-11-17",
       "act": "gst",
       "title": "E-invoices for reverse charge self-invoices: live from 15 December 2026, required from 1 January 2027",
