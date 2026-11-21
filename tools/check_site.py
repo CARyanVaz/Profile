@@ -7,7 +7,7 @@ without lastmod or pointing to a missing page.
 Warns (does not fail) on: pages missing from sitemap.xml.
 Standard library only.
 """
-import json, os, re, sys
+import json, os, posixpath, re, sys
 from html.parser import HTMLParser
 from urllib.parse import urlparse, unquote
 
@@ -28,6 +28,32 @@ BANNED = [
 ]
 BANNED_NUMBERS = [(re.compile(r"\b110356\b"), "ICAI membership number"),
                   (re.compile(r"\b025088S\b", re.I), "firm registration number")]
+
+
+# A fee set by law (late fee for a TDS statement, a penalty, interest) is not the firm's own pricing.
+# Applied only to the "fees or price" rule, and only to its "fee(s) of/from/start" forms - never to
+# "our fees", "consultation fee", "retainer fee", "affordable pricing" or "starting from Rs".
+STATUTORY_CONTEXT = re.compile(
+    r"\b(late|delay\w*|default\w*|penalt\w+|statutory|prescribed|levied|attracts?|attracted|"
+    r"interest|section\s+\d+\w*|rule\s+\d+\w*|under\s+the\s+[\w\s-]*\bact\b)\b", re.I)
+FEE_RULE = "fees or price"
+
+
+def wording_problems(text):
+    """Return [(reason, snippet)] for ICAI-banned wording and banned numbers in page text."""
+    found = []
+    for rx, why in BANNED + BANNED_NUMBERS:
+        for m in rx.finditer(text):
+            before = text[max(0, m.start() - 60):m.start()].lower()
+            if re.search(r"\b(no|not|without|restrictions? on|rules? on|bans?)\b", before):
+                continue  # the rule itself being described, e.g. "restrictions on testimonials"
+            if why == FEE_RULE and re.match(r"fees?\b", m.group(0), re.I) \
+                    and STATUTORY_CONTEXT.search(text[max(0, m.start() - 100):m.start()]):
+                continue  # statutory late fee or penalty, e.g. "filed late attracts a fee of Rs 200 a day"
+            s = max(0, m.start() - 40)
+            found.append((why, " ".join(text[s:m.end() + 40].split())))
+            break
+    return found
 
 
 class Page(HTMLParser):
@@ -68,8 +94,17 @@ class Page(HTMLParser):
             self.text.append(data)
 
 
-def target_exists(path):
-    p = os.path.join(ROOT, unquote(path).lstrip("/"))
+def target_exists(path, root=None):
+    """True if a site URL path (always '/'-separated) maps to a file under root.
+
+    The path is split on '/' and rebuilt with os.path.join, so it behaves the same on Windows
+    and Linux. Segments with a backslash, a drive colon or '..' never match (no escaping root).
+    """
+    root = root or ROOT
+    parts = [s for s in unquote(path).split("/") if s not in ("", ".")]
+    if any(s == ".." or "\\" in s or ":" in s for s in parts):
+        return False
+    p = os.path.join(root, *parts)
     if path.endswith("/"):
         return os.path.isfile(os.path.join(p, "index.html"))
     return os.path.isfile(p) or os.path.isfile(p + ".html") or os.path.isfile(os.path.join(p, "index.html"))
@@ -87,8 +122,9 @@ def resolve(href, page_rel):
         return None
     if u.path.startswith("/"):
         return u.path
-    base = os.path.dirname("/" + page_rel)
-    return os.path.normpath(os.path.join(base, u.path)) + ("/" if u.path.endswith("/") else "")
+    # URL paths always use '/': posixpath keeps this identical on Windows (os.path would use '\').
+    base = posixpath.dirname("/" + page_rel.replace("\\", "/"))
+    return posixpath.normpath(posixpath.join(base, u.path)) + ("/" if u.path.endswith("/") else "")
 
 
 def page_url(rel):
@@ -122,14 +158,8 @@ def main():
             except ValueError as e:
                 errors.append(f"{rel}: JSON-LD block {i} does not parse ({e})")
         text = " ".join(p.text) + " " + " ".join(p.ldjson)
-        for rx, why in BANNED + BANNED_NUMBERS:
-            for m in rx.finditer(text):
-                before = text[max(0, m.start() - 60):m.start()].lower()
-                if re.search(r"\b(no|not|without|restrictions? on|rules? on|bans?)\b", before):
-                    continue  # the rule itself being described, e.g. "restrictions on testimonials"
-                s = max(0, m.start() - 40)
-                errors.append(f"{rel}: {why}: ...{' '.join(text[s:m.end() + 40].split())}...")
-                break
+        for why, snippet in wording_problems(text):
+            errors.append(f"{rel}: {why}: ...{snippet}...")
 
     sm = os.path.join(ROOT, "sitemap.xml")
     listed = set()
