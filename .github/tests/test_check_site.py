@@ -1,8 +1,12 @@
-"""Tests for tools/check_site.py. Run from the repository root:  python tools/test_check_site.py
+"""Tests for tools/check_site.py. Run from the repository root:  python .github/tests/test_check_site.py
+Kept under .github/ because GitHub Pages does not publish that folder, so the tests stay off the live site.
 Standard library only; runs the same on Windows and Linux."""
 import os, subprocess, sys, tempfile, unittest
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.dirname(os.path.abspath(__file__))
+TOOLS = os.path.join(HERE, "..", "..", "tools")
+sys.dont_write_bytecode = True
+sys.path.insert(0, TOOLS)
 import check_site as cs
 
 
@@ -111,7 +115,7 @@ class WordingTests(unittest.TestCase):
 
 class WholeSiteTests(unittest.TestCase):
     def test_checker_passes_on_the_site(self):
-        script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "check_site.py")
+        script = os.path.join(TOOLS, "check_site.py")
         r = subprocess.run([sys.executable, script], capture_output=True, text=True)
         self.assertEqual(r.returncode, 0, r.stdout[-1500:])
 
