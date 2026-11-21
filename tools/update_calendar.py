@@ -81,15 +81,15 @@ def main():
         for d, r in rows:
             if (d.year, d.month) != (y, m):
                 continue
-            trs.append('          <tr data-act="%s" data-date="%s"><td class="num"><time datetime="%s">%d %s %d</time></td>'
-                       '<td><span class="act-tag act-%s">%s</span></td><td>%s</td><td class="muted">%s</td></tr>'
+            trs.append('          <tr data-act="%s" data-date="%s"><td class="num" data-label="Due date"><time datetime="%s">%d %s %d</time></td>'
+                       '<td data-label="Act"><span class="act-tag act-%s">%s</span></td><td data-label="Compliance">%s</td><td class="muted" data-label="Applies to">%s</td></tr>'
                        % (r["act"], d.isoformat(), d.isoformat(), d.day, d.strftime("%b"), d.year,
                           r["act"], escape(acts[r["act"]]), escape(r["text"]), escape(r.get("who", ""))))
         label = dt.date(y, m, 1).strftime("%B %Y")
         secs.append('''    <section class="cal-month" data-month="%d-%02d" aria-labelledby="m%d%02d">
       <h2 id="m%d%02d" class="cal-month-title">%s</h2>
       <div class="table-wrap">
-        <table>
+        <table class="cal-table">
           <thead><tr><th scope="col" class="num">Due date</th><th scope="col">Act</th><th scope="col">Compliance</th><th scope="col">Who it applies to</th></tr></thead>
           <tbody>
 %s

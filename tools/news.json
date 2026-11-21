@@ -1,12 +1,21 @@
 {
   "_readme": "News items for news/index.html. Add an item, then run: python tools/update_news.py. Fields: date (YYYY-MM-DD, date of the notification, circular or advisory), act (key in acts), title (plain, factual, no superlatives), ref (notification, circular or advisory number), effective (date or short text), summary (one or two plain sentences), link (site page with the detail, relative to the site root, optional). Use only the official notification as the source. Items older than 12 months may be removed.",
-  "last_updated": "2026-11-19",
+  "last_updated": "2026-11-21",
   "acts": {
     "gst": "GST",
     "income-tax": "Income tax and TDS",
     "other": "Companies Act, LLP, labour and other laws"
   },
   "items": [
+    {
+      "date": "2026-11-20",
+      "act": "gst",
+      "title": "Metro Rail added as a mode of transport in e-way bills",
+      "ref": "GSTN advisory dated 20 November 2026; rule 138(2A) of the CGST Rules as amended by Notification 05/2026-Central Tax",
+      "effective": "Rule from 1 November 2026; web facility available now, API in sandbox",
+      "summary": "Metro Rail can now be selected as the mode of transport when generating an e-way bill, updating Part-B or the vehicle, and for consolidated e-way bills. A transport document number must be entered when Metro Rail is selected.",
+      "link": "services/gst-updates/"
+    },
     {
       "date": "2026-11-17",
       "act": "gst",
@@ -26,6 +35,15 @@
       "link": "services/gst-updates/"
     },
     {
+      "date": "2026-11-01",
+      "act": "gst",
+      "title": "Registration amendments other than principal place of business approved on submission",
+      "ref": "GSTN advisory dated 1 November 2026; rule 19 of the CGST Rules substituted by Notification 05/2026-Central Tax",
+      "effective": "1 November 2026",
+      "summary": "Changes such as legal name, partners or directors and additional places of business now amend the certificate on submission, after OTP verification of the authorised signatory and one promoter within 3 days and online checks of PAN, DIN and CIN. A change of principal place of business is still examined by the officer.",
+      "link": "services/gst/"
+    },
+    {
       "date": "2026-10-30",
       "act": "gst",
       "title": "No further arrests, no notice below Rs 10,000, limits on e-way bill interception",
@@ -42,6 +60,15 @@
       "effective": "Issued",
       "summary": "Two clarificatory circulars on classification and on the GST treatment of certain services.",
       "link": "services/gst-updates/"
+    },
+    {
+      "date": "2026-10-27",
+      "act": "other",
+      "title": "Cost audit report (CRA-4) for FY 2025-26: no additional fee up to 31 December 2026",
+      "ref": "MCA General Circular 06/2026 dated 27 October 2026",
+      "effective": "Up to 31 December 2026",
+      "summary": "Form CRA-4, the cost audit report in XBRL, for FY 2025-26 can be filed without additional fees up to 31 December 2026.",
+      "link": "compliance-calendar/"
     },
     {
       "date": "2026-10-26",
@@ -80,6 +107,15 @@
       "link": "services/gst-updates/"
     },
     {
+      "date": "2026-10-24",
+      "act": "other",
+      "title": "Annual filings for FY 2025-26: AOC-4 up to 31 December 2026, MGT-7 and MGT-7A up to 31 January 2027",
+      "ref": "MCA General Circular 05/2026 dated 24 October 2026",
+      "effective": "Without additional fees up to 31 December 2026 (AOC-4) and 31 January 2027 (MGT-7, MGT-7A)",
+      "summary": "Financial statements in AOC-4, AOC-4 CFS, AOC-4 XBRL and the NBFC Ind AS versions can be filed without additional fees up to 31 December 2026, and annual returns in MGT-7 or MGT-7A up to 31 January 2027. The time for holding the annual general meeting is not extended.",
+      "link": "compliance-calendar/"
+    },
+    {
       "date": "2026-10-01",
       "act": "income-tax",
       "title": "Resident individual or HUF buying property from an NRI can deduct TDS without a TAN",
@@ -87,6 +123,15 @@
       "effective": "1 October 2026",
       "summary": "The buyer deducts and deposits the TDS using a PAN-based challan-cum-statement. Companies and firms buying from an NRI still need a TAN.",
       "link": "services/nri-property-sale-tds/"
+    },
+    {
+      "date": "2026-09-28",
+      "act": "income-tax",
+      "title": "Tax audit report due 21 October 2026 and audit-case returns due 21 November 2026",
+      "ref": "CBDT Circular 07/2026 dated 28 September 2026",
+      "effective": "Assessment year 2026-27 (FY 2025-26)",
+      "summary": "For taxpayers whose accounts must be audited, the audit report date moved from 30 September to 21 October 2026 and the return due date from 31 October to 21 November 2026. Returns with a transfer pricing report remain due on 30 November 2026.",
+      "link": "compliance-calendar/"
     },
     {
       "date": "2026-07-06",
