@@ -1,6 +1,7 @@
 {
   "_readme": "News items for news/index.html. Add an item, then run: python tools/update_news.py. Fields: date (YYYY-MM-DD, date of the notification, circular or advisory), act (key in acts), title (plain, factual, no superlatives), ref (notification, circular or advisory number), effective (date or short text), summary (one or two plain sentences), link (site page with the detail, relative to the site root, optional). Use only the official notification as the source. Items older than 12 months may be removed.",
   "last_updated": "2026-11-21",
+  "last_checked": "2026-11-24",
   "acts": {
     "gst": "GST",
     "income-tax": "Income tax and TDS",
