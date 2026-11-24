@@ -55,7 +55,7 @@ def build(data):
 
 def main():
     data = json.load(open(DATA, encoding="utf-8"))
-    lu = dt.date.fromisoformat(data["last_updated"])
+    lu = max(dt.date.fromisoformat(data["last_updated"]), dt.date.fromisoformat(data.get("last_checked", data["last_updated"])))
     page = open(PAGE, encoding="utf-8").read()
     block = build(data)
     page, n = re.subn(r"(<!-- NEWS:START -->).*?(<!-- NEWS:END -->)",

@@ -107,7 +107,7 @@ def main():
     s_holder = [s]
     put("MONTHS", mopts)
     put("TABLES", "\n".join(secs))
-    lu = dt.date.fromisoformat(data["last_updated"])
+    lu = max(dt.date.fromisoformat(data["last_updated"]), dt.date.fromisoformat(data.get("last_checked", data["last_updated"])))
     put("UPDATED", "Last updated %s." % human(lu))
     s = s_holder[0]
     s = re.sub(r'"dateModified":"\d{4}-\d{2}-\d{2}"', '"dateModified":"%s"' % lu.isoformat(), s, count=1)
