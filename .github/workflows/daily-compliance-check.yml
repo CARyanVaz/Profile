@@ -68,6 +68,9 @@ jobs:
                - edit tools/calendar.json and run python3 tools/update_calendar.py;
                - for GST changes, update faq/ (GST answers), the GST page table and services/gst-updates/;
                - add each new notification or circular to tools/news.json and run python3 tools/update_news.py;
+                 each new item needs a "source" field: the full address of the official document or page you
+                 actually opened and took it from. Never construct or guess an address. If you have none,
+                 leave the item out and report it;
                - update dateModified, sitemap.xml lastmod and any "Status as on <date>" on each changed page;
                - keep FAQPage markup identical to the visible FAQs;
                - ICAI rules: no fees, no superlatives, no solicitation, no testimonials; plain British-style

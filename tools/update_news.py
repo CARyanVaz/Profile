@@ -7,6 +7,7 @@ Standard library only.
 """
 import json, os, re, sys, datetime as dt
 from html import escape
+from urllib.parse import urlparse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGE = os.path.join(ROOT, "news", "index.html")
@@ -44,8 +45,12 @@ def build(data):
                 title = escape(r["title"])
                 if r.get("link"):
                     title = '<a href="../%s">%s</a>' % (escape(r["link"], quote=True), title)
+                ref = escape(r["ref"])
+                if r.get("source"):
+                    ref += '<br><a href="%s" target="_blank" rel="noopener">Source: %s</a>' % (
+                    escape(r["source"], quote=True), escape(urlparse(r["source"]).netloc))
                 out.append('        <tr><td class="num" data-label="Date">%s</td><td data-label="Change">%s<br><span class="muted">%s</span></td><td data-label="Reference">%s</td><td data-label="In force from">%s</td></tr>'
-                           % (short(r["_d"]), title, escape(r["summary"]), escape(r["ref"]), escape(r["effective"])))
+                           % (short(r["_d"]), title, escape(r["summary"]), ref, escape(r["effective"])))
             out.append('      </tbody>')
             out.append('    </table></div>')
         out.append('  </div>')
