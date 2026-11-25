@@ -76,7 +76,37 @@ jobs:
                - run python3 tools/check_site.py and fix every error it reports;
                - commit with a plain message, push the branch, and open a pull request against main with
                  gh pr create. In the description list each change with the official source link.
-            5. Finish with a plain-text report (it is shown on the run's Summary page):
+            5. Always, as your last file action, write check-result.json in the repository root (never
+               commit it), with one entry for each source a to i, for example:
+               {"a": "no change", "b": "could not open", "c": "changed"}
+               Use "no change" or "changed" only if you actually opened the official listing page and read
+               its newest items. A search result or snippet alone, an error page, a blank or partly loaded
+               page, or any doubt means "could not open".
+            6. Finish with a plain-text report (it is shown on the run's Summary page):
                - a table with one row per source a to i: source, page opened, newest item seen and its
                  date, and "no change", "changed" or "could not open";
                - then one line: "No change" or "Pull request opened: <link>".
+      # The midnight stamp relies only on this marker: it is uploaded when all nine sources were
+      # opened and none showed a change. Its upload time is the date the site shows.
+      - name: Were all nine sources opened with no change?
+        id: verify
+        if: steps.open.outputs.skip == 'no'
+        run: |
+          python3 - <<'PY'
+          import json, os
+          try:
+              r = json.load(open("check-result.json"))
+              bad = {k: r.get(k, "missing") for k in "abcdefghi" if r.get(k) != "no change"}
+          except Exception as e:
+              bad = {"check-result.json": str(e)}
+          msg = "All nine sources opened, no change: date may be stamped." if not bad else "Date will NOT be stamped: %s" % bad
+          print(msg)
+          print(msg, file=open(os.environ["GITHUB_STEP_SUMMARY"], "a"))
+          print("ok=" + ("no" if bad else "yes"), file=open(os.environ["GITHUB_OUTPUT"], "a"))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: steps.verify.outputs.ok == 'yes'
+        with:
+          name: all-sources-checked
+          path: check-result.json
+          retention-days: 7
