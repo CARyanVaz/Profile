@@ -1,13 +1,40 @@
 {
   "_readme": "News items for news/index.html. Add an item, then run: python tools/update_news.py. Fields: date (YYYY-MM-DD, date of the notification, circular or advisory), act (key in acts), title (plain, factual, no superlatives), ref (notification, circular or advisory number), effective (date or short text), summary (one or two plain sentences), link (site page with the detail, relative to the site root, optional). Use only the official notification as the source. Items older than 12 months may be removed.",
-  "last_updated": "2026-11-21",
-  "last_checked": "2026-11-24",
+  "last_updated": "2026-11-28",
+  "last_checked": "2026-11-28",
   "acts": {
     "gst": "GST",
     "income-tax": "Income tax and TDS",
     "other": "Companies Act, LLP, labour and other laws"
   },
   "items": [
+    {
+      "date": "2026-11-26",
+      "act": "gst",
+      "title": "Revised refund application (RFD-01) on the GST portal from 1 December 2026",
+      "ref": "GSTN advisory dated 26 November 2026; Notification 05/2026-Central Tax",
+      "effective": "1 December 2026",
+      "summary": "Revised statements with HSN/SAC and tax rate columns, revised declarations and two new refund categories. Applications in draft, saved draft or submitted status on 1 December 2026 cannot be used and must be started afresh; applications with an ARN are not affected.",
+      "link": "services/gst-updates/#rfd-01-december-2026"
+    },
+    {
+      "date": "2026-11-25",
+      "act": "gst",
+      "title": "Cancellation of registration on application: electronic where returns and dues are complete",
+      "ref": "Notification 08/2026-Central Tax; rule 20(5) and (6) of the CGST Rules substituted",
+      "effective": "1 December 2026",
+      "summary": "Where the required returns were filed in time and all tax, interest, fee, penalty and other dues are paid, the portal cancels the registration from the date sought and communicates it in Form GST REG-38. Where returns or CMP-08 statements are not filed, or dues are unpaid, the application goes to the proper officer.",
+      "link": "services/gst-updates/#reg-16-automatic-cancellation"
+    },
+    {
+      "date": "2026-11-25",
+      "act": "gst",
+      "title": "Two grounds for cancellation of registration added back to rule 21 by corrigendum",
+      "ref": "CBIC corrigendum G.S.R. 1005(E) dated 25 November 2026",
+      "effective": "Corrects the rules notified on 26 October 2026",
+      "summary": "The corrigendum inserts two clauses: not conducting any business from the declared place of business, and issuing an invoice or bill without supply of goods or services in violation of the Act or rules.",
+      "link": "services/gst-updates/"
+    },
     {
       "date": "2026-11-20",
       "act": "gst",
