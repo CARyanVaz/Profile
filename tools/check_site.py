@@ -77,6 +77,8 @@ class Page(HTMLParser):
             self.links.append(a["src"])
         if tag == "meta" and a.get("name") == "robots" and "noindex" in (a.get("content") or ""):
             self.noindex = True
+        if tag == "meta" and a.get("http-equiv") == "refresh":
+            self.noindex = True  # forwarding stub: not listed in the sitemap
         if tag == "meta" and a.get("name") in ("description",) and a.get("content"):
             self.text.append(a["content"])
 
